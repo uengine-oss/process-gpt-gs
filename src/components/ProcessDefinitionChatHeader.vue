@@ -197,7 +197,7 @@
                         </div>
 
                         <!-- 마켓플레이스 -->
-                        <div class="mr-4 d-flex" v-if="bpmn && useMarketplace">
+                        <!-- <div class="mr-4 d-flex" v-if="bpmn && useMarketplace">
                             <v-tooltip location="bottom" :text="$t('ProcessDefinitionChatHeader.addMarketplace')">
                                 <template v-slot:activator="{ props }">
                                     <v-btn v-bind="props" icon variant="text" type="file" class="text-medium-emphasis" 
@@ -207,7 +207,7 @@
                                     </v-btn>
                                 </template>
                             </v-tooltip>
-                        </div>
+                        </div> -->
                     </v-row>
                 </div>
             </div>

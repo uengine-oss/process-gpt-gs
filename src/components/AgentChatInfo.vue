@@ -87,7 +87,7 @@
                     </p>
                     
                     <!-- Tools Section (agent only) -->
-                    <div v-if="isSectionVisible('tools')" class="pa-0 mb-1">
+                    <!-- <div v-if="isSectionVisible('tools')" class="pa-0 mb-1">
                         <v-icon size="small" class="mr-1">mdi-tools</v-icon>
                         <span class="text-body-2 font-weight-medium">{{ $t('AgentChatInfo.labels.tools') }}</span>
                     </div>
@@ -115,10 +115,10 @@
                                 {{ expandedTexts.tools ? $t('AgentChatInfo.collapse') : $t('AgentChatInfo.expand') }}
                             </v-btn>
                         </v-chip-group>
-                    </div>
+                    </div> -->
 
                     <!-- Endpoint Section (a2a only) -->
-                    <div v-if="isSectionVisible('endpoint')" class="pa-0 mb-1">
+                    <!-- <div v-if="isSectionVisible('endpoint')" class="pa-0 mb-1">
                         <v-icon size="small" class="mr-1">mdi-cloud-outline</v-icon>
                         <span class="text-body-2 font-weight-medium">{{ $t('AgentChatInfo.labels.endpoint') }}</span>
                     </div>
@@ -135,10 +135,10 @@
                         >
                             {{ expandedTexts.endpoint ? $t('AgentChatInfo.collapse') : $t('AgentChatInfo.expand') }}
                         </v-btn>
-                    </p>
+                    </p> -->
 
                     <!-- Description Section (a2a / pgagent) -->
-                    <div v-if="isSectionVisible('description')" class="pa-0 mb-1">
+                    <!-- <div v-if="isSectionVisible('description')" class="pa-0 mb-1">
                         <v-icon size="small" class="mr-1">mdi-text</v-icon>
                         <span class="text-body-2 font-weight-medium">{{ $t('AgentChatInfo.labels.description') }}</span>
                     </div>
@@ -150,7 +150,7 @@
                             variant="text" size="small" color="primary" class="pa-0 text-caption ml-1" style="min-width: auto; height: auto; vertical-align: baseline;">
                             {{ expandedTexts.description ? $t('AgentChatInfo.collapse') : $t('AgentChatInfo.expand') }}
                         </v-btn>
-                    </p>
+                    </p> -->
 
                     <!-- Alias Section (pgagent only; a2a alias는 기본값/숨김) -->
                     <div v-if="isSectionVisible('alias')" class="pa-0 mb-1">
@@ -162,7 +162,7 @@
                     </p>
 
                     <!-- Skills Section (agent / a2a / pgagent) -->
-                    <div v-if="isSectionVisible('skills')" class="d-flex align-center pa-0 mb-1">
+                    <!-- <div v-if="isSectionVisible('skills')" class="d-flex align-center pa-0 mb-1">
                         <span class="text-body-2 font-weight-medium mr-1">
                             <v-icon size="small" class="mr-1">mdi-brain</v-icon>
                             {{ parsedSkills ? $t('AgentSkills.skills') : $t('agentField.agentSkills') }}
@@ -180,8 +180,8 @@
                                 스킬 변경 이력
                             </v-tooltip>
                         </v-btn>
-                    </div>
-                    <v-chip-group v-if="isSectionVisible('skills') && !editSkills && parsedSkills && parsedSkills.length > 0" class="mb-3">
+                    </div> -->
+                    <!-- <v-chip-group v-if="isSectionVisible('skills') && !editSkills && parsedSkills && parsedSkills.length > 0" class="mb-3">
                         <v-chip
                             v-for="skill in parsedSkills"
                             :key="skill"
@@ -194,7 +194,7 @@
                     </v-chip-group>
                     <p v-else-if="isSectionVisible('skills') && !editSkills && !parsedSkills" class="text-body-2 text-medium-emphasis mb-3">
                         {{ agentInfo.skills }}
-                    </p>
+                    </p> -->
 
                     <!-- Model Section (agent only) -->
                     <div v-if="isSectionVisible('model')" class="pa-0 mb-1">
@@ -222,7 +222,7 @@
                     </v-tabs>
 
                     <!-- DMN Tabs -->
-                    <div v-if="!editDialog && agentType === 'agent'">
+                    <!-- <div v-if="!editDialog && agentType === 'agent'">
                         <v-divider class="mb-4"></v-divider>
                         <div class="d-flex align-center mb-1">
                             <span class="text-body-2 font-weight-medium mr-1">{{ $t('AgentChatInfo.businessRule') }}</span>
@@ -256,7 +256,7 @@
                                 {{ dmn.label }}
                             </v-tab>
                         </v-tabs>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -380,8 +380,8 @@ export default {
                 this.agentType = 'agent';
                 return [
                     { label: this.$t('AgentChatInfo.tabs.learning'), value: 'learning', icon: 'mdi-school' },
-                    { label: this.$t('AgentChatInfo.tabs.question'), value: 'question', icon: 'mdi-chat' },
-                    { label: this.$t('AgentChatInfo.tabs.actions'), value: 'actions', icon: 'mdi-tools' },
+                    // { label: this.$t('AgentChatInfo.tabs.question'), value: 'question', icon: 'mdi-chat' },
+                    // { label: this.$t('AgentChatInfo.tabs.actions'), value: 'actions', icon: 'mdi-tools' },
                     { label: this.$t('AgentChatInfo.tabs.knowledge'), value: 'knowledge', icon: 'mdi-database' },
                 ]
             } else {

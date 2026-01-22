@@ -856,7 +856,7 @@
                         </v-row >
                         
                         <div>
-                            <v-btn v-if="!isMicRecording && !isMicRecorderLoading" @click="startVoiceRecording()"
+                            <!-- <v-btn v-if="!isMicRecording && !isMicRecorderLoading" @click="startVoiceRecording()"
                                 class="mr-1 text-medium-emphasis"
                                 density="comfortable"
                                 icon
@@ -875,8 +875,8 @@
                                 style="border-color: #e0e0e0 !important;"
                             >
                                 <Icons :icon="'stop'" :size="'16'" />
-                            </v-btn>
-                            <Icons v-if="isMicRecorderLoading" :icon="'bubble-loading'" />
+                            </v-btn> -->
+                            <!-- <Icons v-if="isMicRecorderLoading" :icon="'bubble-loading'" />
                             <v-tooltip :text="$t('chat.headset')">
                                 <template v-slot:activator="{ props }">
                                     <v-btn @click="openChatMenu(); recordingModeChange()"
@@ -891,7 +891,7 @@
                                         <Icons :icon="'voice'" :size="16"  />
                                     </v-btn>
                                 </template>
-                            </v-tooltip>
+                            </v-tooltip> -->
 
                             <v-btn v-if="!isLoading"
                                 class="cp-send text-medium-emphasis"
@@ -1061,7 +1061,7 @@
                     </div>
                     
                     <div>
-                        <v-btn v-if="!isMicRecording && !isMicRecorderLoading" @click="startVoiceRecording()"
+                        <!-- <v-btn v-if="!isMicRecording && !isMicRecorderLoading" @click="startVoiceRecording()"
                             class="mr-1 text-medium-emphasis"
                             density="comfortable"
                             icon
@@ -1082,8 +1082,8 @@
                             :disabled="isGenerationFinished"
                         >
                             <Icons :icon="'stop'" :size="'16'" />
-                        </v-btn>
-                        <v-tooltip :text="$t('chat.headset')">
+                        </v-btn> -->
+                        <!-- <v-tooltip :text="$t('chat.headset')">
                             <template v-slot:activator="{ props }">
                                 <v-btn @click="openChatMenu(); recordingModeChange()"
                                     class="mr-1 text-medium-emphasis"
@@ -1099,7 +1099,7 @@
                                 </v-btn>
                             </template>
                         </v-tooltip>
-                        <Icons v-if="isMicRecorderLoading" :icon="'bubble-loading'" />
+                        <Icons v-if="isMicRecorderLoading" :icon="'bubble-loading'" /> -->
 
                         <v-btn v-if="!isLoading && !isGenerationFinished"
                             class="cp-send text-medium-emphasis"

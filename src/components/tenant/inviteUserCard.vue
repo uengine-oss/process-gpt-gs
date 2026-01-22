@@ -61,7 +61,7 @@
                     </div>
                 </v-card-text>
                 
-                <v-card @click="addUser"
+                <!-- <v-card @click="addUser"
                     class="pa-0"
                     elevation="10"
                 >
@@ -72,7 +72,7 @@
                         <v-icon class="mr-2" style="padding-top: 1px;">mdi-plus</v-icon>
                         <div>{{ $t('accountTab.addUser') }}</div>
                     </v-row>
-                </v-card>
+                </v-card> -->
 
                 <!-- <v-divider class="my-6"></v-divider> -->
 

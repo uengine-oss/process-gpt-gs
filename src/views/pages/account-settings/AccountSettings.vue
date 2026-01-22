@@ -12,28 +12,28 @@
                             <v-tab value="Account"> <UserCircleIcon class="mr-2" size="20" />{{ $t('accountTab.accountSetting') }} </v-tab>
                             <div v-if="admin">
                                 <v-tab value="ManageAccess"> <UsersIcon class="mr-2" size="20" />{{ $t('accountTab.manageAccess') }} </v-tab>
-                                <v-tab v-if="superAdmin && !isUEngineMode" value="Drive"> <BrandGoogleDriveIcon class="mr-2" size="20" />{{ $t('accountTab.drive') }} </v-tab>
-                                <v-tab v-if="!isUEngineMode" value="MCP-Servers"> <v-icon class="mr-2" size="20">mdi-server</v-icon> {{ $t('accountTab.mcpServers') }} </v-tab>
+                                <!-- <v-tab v-if="superAdmin && !isUEngineMode" value="Drive"> <BrandGoogleDriveIcon class="mr-2" size="20" />{{ $t('accountTab.drive') }} </v-tab> -->
+                                <!-- <v-tab v-if="!isUEngineMode" value="MCP-Servers"> <v-icon class="mr-2" size="20">mdi-server</v-icon> {{ $t('accountTab.mcpServers') }} </v-tab>
                                 <v-tab v-if="!isUEngineMode" value="MCP-Environments"> <v-icon class="mr-2" size="20">mdi-application-variable-outline</v-icon> {{ $t('accountTab.environments') }} </v-tab>
                                 <v-tab v-if="!isUEngineMode" value="Skills"> <v-icon class="mr-2" size="20">mdi-brain</v-icon> {{ $t('accountTab.skills') }} </v-tab>
                                 <v-tab v-if="!isUEngineMode" value="ConnectionInfo">
                                     <DatabaseIcon class="mr-2" size="20" />{{ $t('accountTab.dataSource') }}
-                                </v-tab>
+                                </v-tab> -->
                             </div>
                             <!-- <v-tab value="Notification"  class=""><BellIcon class="mr-2" size="20"/>Notification</v-tab> -->
                             <!-- <v-tab value="Bills"  class=""><ArticleIcon class="mr-2" size="20"/>Bills</v-tab> -->
                             <!-- <v-tab value="Security"  class=""><LockIcon class="mr-2" size="20"/>Security</v-tab> -->
                         </v-tabs>
-                        <div @click="goToTenantManage"
+                        <!-- <div @click="goToTenantManage"
                             class="settings-tenant-manage-btn v-tab-style text-none"
                             style="letter-spacing: 0;"
                         >
                             <Icons :icon="'office'"  :size="20" class="mr-2" />{{ $t('accountTab.tenantManage') }}
-                        </div>
+                        </div> -->
                         <v-spacer></v-spacer>
                         
                         <!-- 언어 선택 -->
-                        <v-chip 
+                        <!-- <v-chip 
                             variant="outlined"
                             class="language-chip-select-wrapper"
                             style="margin-right: 16px;"
@@ -54,7 +54,7 @@
                                     <span>{{ item.raw.label }}</span>
                                 </template>
                             </v-select>
-                        </v-chip>
+                        </v-chip> -->
                     </v-row>
                 </div>
 
@@ -82,7 +82,7 @@
                                 <UsersIcon class="mr-2" size="16" />{{ $t('accountTab.manageAccess') }}
                             </v-btn>
 
-                            <v-btn
+                            <!-- <v-btn
                                 v-if="superAdmin && !isUEngineMode"
                                 variant="text"
                                 color="default"
@@ -122,20 +122,20 @@
                                 :class="{ 'selected-tab': tab === 'ConnectionInfo' }"
                             >
                                 <DatabaseIcon class="mr-2" size="16" />{{ $t('accountTab.dataSource') }}
-                            </v-btn>
+                            </v-btn> -->
                         </template>
 
-                        <v-btn
+                        <!-- <v-btn
                             variant="text"
                             color="default"
                             size="small"
                             @click="goToTenantManage"
                         >
                             <Icons :icon="'office'"  :size="16" class="mr-2" />{{ $t('accountTab.tenantManage') }}
-                        </v-btn>
+                        </v-btn> -->
                     </div>
                     <!-- 모바일 언어 선택 -->
-                    <div class="d-flex justify-end mb-2">
+                    <!-- <div class="d-flex justify-end mb-2">
                         <v-chip 
                             variant="outlined"
                             class="language-chip-select-wrapper"
@@ -158,7 +158,7 @@
                                 </template>
                             </v-select>
                         </v-chip>
-                    </div>
+                    </div> -->
                 </div>
 
                 <v-divider></v-divider>
@@ -185,51 +185,51 @@
                         </v-window-item>
                         
                         <!-- Drive: 구글 드라이브 설정 탭 (accountTab.drive) -->
-                        <v-window-item v-if="!isUEngineMode" value="Drive">
+                        <!-- <v-window-item v-if="!isUEngineMode" value="Drive">
                             <div 
                                 style="overflow: auto;"
                                 :style="!isMobile ? 'height: calc(100vh - 205px);' : 'height: calc(100vh - 80px);'"
                             >
                                 <DriveTab />
                             </div>
-                        </v-window-item>
+                        </v-window-item> -->
                         
                         <!-- ConnectionInfo: 데이터소스 탭 (accountTab.dataSource) -->
-                        <v-window-item v-if="!isUEngineMode" value="ConnectionInfo">
+                        <!-- <v-window-item v-if="!isUEngineMode" value="ConnectionInfo">
                             <div 
                                 style="overflow: auto;"
                                 :style="!isMobile ? 'height: calc(100vh - 205px);' : 'height: calc(100vh - 80px);'"
                             >
                                 <ConnectionInfoTab />
                             </div>
-                        </v-window-item>
+                        </v-window-item> -->
                         
                         <!-- MCP-Servers: MCP 서버 탭 (accountTab.mcpServers) -->
-                        <v-window-item v-if="!isUEngineMode" value="MCP-Servers">
+                        <!-- <v-window-item v-if="!isUEngineMode" value="MCP-Servers">
                             <div>
                                 <MCPServerTab />
                             </div>
-                        </v-window-item>
+                        </v-window-item> -->
                         
                         <!-- MCP-Environments: 환경변수 탭 (accountTab.environments) -->
-                        <v-window-item v-if="!isUEngineMode" value="MCP-Environments">
+                        <!-- <v-window-item v-if="!isUEngineMode" value="MCP-Environments">
                             <div 
                                 style="overflow: auto;"
                                 :style="!isMobile ? 'height: calc(100vh - 205px);' : 'height: calc(100vh - 80px);'"
                             >
                                 <MCPEnvSecretTab />
                             </div>
-                        </v-window-item>
+                        </v-window-item> -->
                         
                         <!-- Skills: 스킬 탭 (accountTab.skills) -->
-                        <v-window-item v-if="!isUEngineMode" value="Skills">
+                        <!-- <v-window-item v-if="!isUEngineMode" value="Skills">
                             <div 
                                 style="overflow: auto;"
                                 :style="!isMobile ? 'height: calc(100vh - 205px);' : 'height: calc(100vh - 80px);'"
                             >
                                 <SkillsTab />
                             </div>
-                        </v-window-item>
+                        </v-window-item> -->
                         
                         <!-- <v-window-item value="Notification">
                             <NotificationTab/>

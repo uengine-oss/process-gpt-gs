@@ -17,7 +17,7 @@
                 ></v-text-field>
             </v-row>
             <!-- <v-text-field v-model="search" label="Search User" hide-details prepend-inner-icon="mdi-magnify"></v-text-field> -->
-            <v-spacer></v-spacer>
+            <!-- <v-spacer></v-spacer>
             <v-btn @click="openInviteUserCard = true"
                 color="primary"
                 variant="flat"
@@ -25,7 +25,7 @@
             >
                 <v-icon style="padding-top: 3px;">mdi-account-plus</v-icon>
                 <span class="ml-2">{{ $t('accountTab.addUser') }}</span>
-            </v-btn>
+            </v-btn> -->
         </v-row>
 
         <div class="manage-access-tab-table-box">

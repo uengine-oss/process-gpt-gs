@@ -30,7 +30,7 @@
         "pricing": "가격",
         "documentation": "사용 설명서",
         "support": "고객 지원",
-        "start": "베타 테스트하기",
+        "start": "시작하기",
         "title": "AI를 기반한 프로세스 관리에서 실행까지를 손쉽게 시작하세요",
         "subTitle": "프로세스 정의, 조직도 관리, To-Do 관리, 프로세스 실행, 프로세스 모니터링, 프로세스 분석"
     },
@@ -1636,7 +1636,7 @@
         "title1": "업무 프로세스를 정의하세요.",
         "title2": "실행은 Process GPT가 맡습니다.",
         "description1": "전략 목표에 맞춰 AI 에이전트들이 업무 흐름을 구성하고 실행합니다. 사람은 필요한 판단만 개입하고, 프로세스는 자동으로 이어집니다.",
-        "betaTestButton": "베타 테스트하기",
+        "betaTestButton": "시작하기",
         "educationButton": "교육과정 보기",
         "technicalReportLink": "Technical Report 보기"
     },
@@ -1836,7 +1836,7 @@
     "CTASection": {
         "title": "지금 바로 Process GPT를 시작하세요",
         "subtitle": "AI 기반 프로세스 관리의 혁신을 경험해보세요",
-        "betaTestButton": "베타 테스트하기",
+        "betaTestButton": "시작하기",
         "contactButton": "문의하기",
         "name": "이름",
         "email": "이메일",

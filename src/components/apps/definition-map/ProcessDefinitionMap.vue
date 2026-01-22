@@ -19,14 +19,14 @@
                     @sendMessage="handleMainChatMessage"
                 />
             </div> -->
-            <div v-if="mode !== 'uEngine' && componentName == 'DefinitionMapList' && !openConsultingDialog && !showFullScreenChat" class="pa-4">
+            <!-- <div v-if="mode !== 'uEngine' && componentName == 'DefinitionMapList' && !openConsultingDialog && !showFullScreenChat" class="pa-4">
                 <MainChatInput 
                     :agentInfo="mainChatAgentInfo"
                     :userId="userInfo.uid || userInfo.id"
                     @submit="handleMainChatSubmit"
                     @open-history="handleOpenHistory"
                 />
-            </div>
+            </div> -->
             
             <div v-if="componentName != 'SubProcessDetail'" class="pa-0 pl-6 pt-4 pr-6 d-flex align-center"
                 style="position: sticky; top: 0; z-index:2; background-color:white"
@@ -435,14 +435,14 @@ export default {
                 icon: 'image-download', 
                 title: 'processDefinitionMap.usageGuide.details.1.title' 
             },
-            { 
-                icon: 'magic', 
-                title: 'processDefinitionMap.usageGuide.details.2.title' 
-            },
-            { 
-                icon: 'market', 
-                title: 'processDefinitionMap.usageGuide.details.3.title' 
-            }
+            // { 
+            //     icon: 'magic', 
+            //     title: 'processDefinitionMap.usageGuide.details.2.title' 
+            // },
+            // { 
+            //     icon: 'market', 
+            //     title: 'processDefinitionMap.usageGuide.details.3.title' 
+            // }
         ],
         generator: null,
         initialConsultingMessage: null,
@@ -495,15 +495,15 @@ export default {
                 //         this.ProcessPreviewMode = false;
                 //     }
                 // },
-                {
-                    show: this.componentName === 'DefinitionMapList' && this.mode === 'ProcessGPT' && this.isAdmin,
-                    icon: 'market',
-                    title: this.$t('processDefinitionMap.marketplace'),
-                    description: this.$t('processDefinitionMap.marketplaceExplanation'),
-                    action: () => {
-                        this.openMarketplaceDialog = true;
-                    }
-                },
+                // {
+                //     show: this.componentName === 'DefinitionMapList' && this.mode === 'ProcessGPT' && this.isAdmin,
+                //     icon: 'market',
+                //     title: this.$t('processDefinitionMap.marketplace'),
+                //     description: this.$t('processDefinitionMap.marketplaceExplanation'),
+                //     action: () => {
+                //         this.openMarketplaceDialog = true;
+                //     }
+                // },
                 // {
                 //     show: this.componentName === 'DefinitionMapList' && this.isAdmin,
                 //     icon: 'file-tree',

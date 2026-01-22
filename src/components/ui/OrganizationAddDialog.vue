@@ -66,7 +66,7 @@
                     </v-btn>
                 </div>
             </v-card-title>
-            <v-card-text class="pa-4 pb-0"
+            <v-card-text class="pa-4 pb-0 pt-0"
                 style="max-height: calc(100vh - 374px);
                 overflow: auto;"
             >
@@ -86,6 +86,7 @@
                             chips 
                             closable-chips 
                             small-chips
+                            hide-details
                         >
                             <template v-slot:chip="{ props, item }">
                                 <v-chip v-if="item.raw.data.img" v-bind="props" :prepend-avatar="item.raw.data.img" :text="item.raw.data.name"></v-chip>
@@ -102,14 +103,14 @@
                             </template>
                         </v-autocomplete>
 
-                        <v-checkbox 
+                        <!-- <v-checkbox 
                             v-model="isNewUser" 
                             :label="$t('organizationChartDefinition.addNewUser')"
                             color="primary" 
                             density="compact"
-                        ></v-checkbox>
+                        ></v-checkbox> -->
 
-                        <div v-if="isNewUser">
+                        <!-- <div v-if="isNewUser">
                             <v-alert icon="$info" color="primary" variant="outlined" density="compact" class="mb-4">
                                 <div class="text-body-1">{{ $t('organizationChartDefinition.addNewUserExplanation') }}</div>
                             </v-alert>
@@ -131,7 +132,7 @@
                                 :label="$t('organizationChartDefinition.role')" 
                                 class="mb-2"
                             ></v-text-field>
-                        </div>
+                        </div> -->
                     </v-window-item>
 
                     <v-window-item value="agent">
@@ -240,15 +241,15 @@ export default {
                 text: 'organizationChartDefinition.addNewAgent',
                 value: 'agent',
             },
-            {
-                text: 'organizationChartDefinition.addNewA2A',
-                // text: 'A2A 에이전트 추가',
-                value: 'a2a',
-            },
-            {
-                text: 'organizationChartDefinition.addNewPGAgent',
-                value: 'pgagent',
-            },
+            // {
+            //     text: 'organizationChartDefinition.addNewA2A',
+            //     // text: 'A2A 에이전트 추가',
+            //     value: 'a2a',
+            // },
+            // {
+            //     text: 'organizationChartDefinition.addNewPGAgent',
+            //     value: 'pgagent',
+            // },
         ],
         
         selectedList: [],

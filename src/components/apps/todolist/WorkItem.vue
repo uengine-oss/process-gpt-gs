@@ -347,7 +347,7 @@
                                 <div v-if="formData && Object.keys(formData).length > 0 && !isCompleted && isOwnWorkItem"
                                     class="work-item-form-btn-box align-center"
                                 >
-                                    <v-btn v-if="hasGeneratedContent && (!selectedResearchMethod || selectedResearchMethod === 'default')"
+                                    <!-- <v-btn v-if="hasGeneratedContent && (!selectedResearchMethod || selectedResearchMethod === 'default')"
                                         @click="resetGeneratedContent"
                                         :disabled="isGeneratingExample"
                                         :class="isMobile ? 'mr-1 text-medium-emphasis' : 'mr-1'"
@@ -360,8 +360,8 @@
                                     >
                                         <v-icon>mdi-delete-outline</v-icon>
                                         <span v-if="!isMobile" class="ms-1">{{ $t('WorkItem.resetContent') }}</span>
-                                    </v-btn>
-                                    <v-menu
+                                    </v-btn> -->
+                                    <!-- <v-menu
                                         v-if="!isMobile"
                                         v-model="researchMethodMenu"
                                         :close-on-content-click="false"
@@ -394,7 +394,7 @@
                                                 @update:model-value="updateWorkItem"
                                             />
                                         </v-card>
-                                    </v-menu>
+                                    </v-menu> -->
                                     <!-- 피드백 버튼만 유지 -->
                                     <v-btn v-if="isSimulate == 'true' && !isMobile"
                                         class="feedback-btn rounded-pill mr-1" 
@@ -419,7 +419,7 @@
                                     >
                                         <v-icon>{{ showFeedbackForm ? 'mdi-close' : 'mdi-message-reply-text' }}</v-icon>
                                     </v-btn>
-                                    <v-btn v-if="!isMicRecording && !isMicRecorderLoading" @click="startVoiceRecording()"
+                                    <!-- <v-btn v-if="!isMicRecording && !isMicRecorderLoading" @click="startVoiceRecording()"
                                         class="mr-1 text-medium-emphasis"
                                         density="comfortable"
                                         icon
@@ -440,7 +440,7 @@
                                         :disabled="isGenerationFinished"
                                     >
                                         <Icons :icon="'stop'" :size="'16'" />
-                                    </v-btn>
+                                    </v-btn> -->
                                     
                                     <v-btn v-if="isMobile"
                                         @click="beforeGenerateExample"
