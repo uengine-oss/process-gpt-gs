@@ -1,0 +1,7 @@
+#kEditor1 .row {display: flex; margin: 5px;}
+#kEditor1 .col-sm-12 {width: 100%; padding: 10px;}
+#kEditor1 .col-sm-8 {width: 75%; padding: 10px;}
+#kEditor1 .col-sm-6 {width: 50%; padding: 10px;}
+#kEditor1 .col-sm-4 {width: 33.33%; padding: 10px;}
+#kEditor1 .col-sm-3 {width: 25%; padding: 10px;}
+

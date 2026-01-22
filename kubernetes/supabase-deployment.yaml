@@ -1,0 +1,259 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-studio-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supabase-studio
+  template:
+    metadata:
+      labels:
+        app: supabase-studio
+    spec:
+      containers:
+      - name: supabase-studio
+        image: supabase/studio:20240326-5e5586d
+        ports:
+        - containerPort: 3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-kong-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supabase-kong
+  template:
+    metadata:
+      labels:
+        app: supabase-kong
+    spec:
+      containers:
+      - name: supabase-kong
+        image: kong:2.8.1
+        ports:
+        - containerPort: 8000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-auth-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supabase-auth
+  template:
+    metadata:
+      labels:
+        app: supabase-auth
+    spec:
+      containers:
+      - name: supabase-auth
+        image: supabase/gotrue:v2.143.0
+        ports:
+        - containerPort: 9999
+        env:
+        - name: API_EXTERNAL_URL
+          value: "https://process-gpt.io/auth"
+        - name: GOTRUE_API_HOST
+          value: "0.0.0.0"
+        - name: GOTRUE_API_PORT
+          value: "9999"
+        - name: GOTRUE_DB_DRIVER
+          value: "postgres"
+        - name: GOTRUE_DB_DATABASE_URL
+          value: "postgres://supabase_auth_admin:root@postgres:5432/postgres"
+        - name: GOTRUE_SITE_URL
+          value: "http://localhost:3000"
+        - name: GOTRUE_JWT_SECRET
+          value: "COJHReikGoxvQjx69he7teG8euynm9BqOaPYzskiI+cjNDQuFKtGQLvMAP66paXfq6y7QYVrvVpBcrSpa7yi6w=="
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-rest-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supabase-rest
+  template:
+    metadata:
+      labels:
+        app: supabase-rest
+    spec:
+      containers:
+      - name: supabase-rest
+        image: postgrest/postgrest:v12.0.1
+        ports:
+        - containerPort: 3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: realtime-dev-supabase-realtime-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: realtime-dev-supabase-realtime
+  template:
+    metadata:
+      labels:
+        app: realtime-dev-supabase-realtime
+    spec:
+      containers:
+      - name: realtime-dev-supabase-realtime
+        image: supabase/realtime:v2.27.5
+        ports:
+        - containerPort: 4000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-storage-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supabase-storage
+  template:
+    metadata:
+      labels:
+        app: supabase-storage
+    spec:
+      containers:
+      - name: supabase-storage
+        image: supabase/storage-api:v0.46.4
+        ports:
+        - containerPort: 5000
+        env:
+        - name: PGRST_JWT_SECRET
+          value: "COJHReikGoxvQjx69he7teG8euynm9BqOaPYzskiI+cjNDQuFKtGQLvMAP66paXfq6y7QYVrvVpBcrSpa7yi6w=="
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-imgproxy-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supabase-imgproxy
+  template:
+    metadata:
+      labels:
+        app: supabase-imgproxy
+    spec:
+      containers:
+      - name: supabase-imgproxy
+        image: darthsim/imgproxy:v3.8.0
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-meta-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supabase-meta
+  template:
+    metadata:
+      labels:
+        app: supabase-meta
+    spec:
+      containers:
+      - name: supabase-meta
+        image: supabase/postgres-meta:v0.80.0
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-edge-functions-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supabase-edge-functions
+  template:
+    metadata:
+      labels:
+        app: supabase-edge-functions
+    spec:
+      containers:
+      - name: supabase-edge-functions
+        image: supabase/edge-runtime:v1.41.2
+        ports:
+        - containerPort: 5432
+        command: ["edge-runtime"]
+        args: ["start"]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-analytics-deployment
+spec:
+  replicas: 1
+  selector:
+        matchLabels:
+      app: supabase-analytics
+  template:
+    metadata:
+      labels:
+        app: supabase-analytics
+    spec:
+      containers:
+      - name: supabase-analytics
+        image: supabase/logflare:1.4.0
+        ports:
+        - containerPort: 3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-db-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supabase-db
+  template:
+    metadata:
+      labels:
+        app: supabase-db
+    spec:
+      containers:
+      - name: supabase-db
+        image: postgres:15.1.0.147
+        ports:
+        - containerPort: 5432
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: supabase-vector-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: supabase-vector
+  template:
+    metadata:
+      labels:
+        app: supabase-vector
+    spec:
+      containers:
+      - name: supabase-vector
+        image: timberio/vector:0.28.1-alpine
+        ports:
+        - containerPort: 8383

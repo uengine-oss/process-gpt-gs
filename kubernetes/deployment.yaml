@@ -1,0 +1,221 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+spec:
+  replicas: 3
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: ghcr.io/uengine-oss/process-gpt:a787c64
+        ports:
+        - containerPort: 8080
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+        env:
+        - name: VITE_OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: openai-secret
+              key: OPENAI_API_KEY
+        - name: VITE_SUPABASE_URL
+          valueFrom:
+            configMapKeyRef:
+              name: my-config
+              key: SUPABASE_URL
+        - name: VITE_SUPABASE_KEY
+          valueFrom:
+            secretKeyRef:
+              name: my-secrets
+              key: SUPABASE_KEY
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: execution-deployment
+spec:
+  replicas: 3
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: execution
+  template:
+    metadata:
+      labels:
+        app: execution
+    spec:
+      containers:
+      - name: execution
+        image: ghcr.io/uengine-oss/process-gpt-execution:ee41747
+        ports:
+        - containerPort: 8000
+        resources:
+          requests:
+            cpu: "200m"
+            memory: "512Mi"
+        env:
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: openai-secret
+              key: OPENAI_API_KEY
+        - name: SUPABASE_URL
+          valueFrom:
+            configMapKeyRef:
+              name: my-config
+              key: SUPABASE_URL
+        - name: SUPABASE_KEY
+          valueFrom:
+            secretKeyRef:
+              name: my-secrets
+              key: SERVICE_ROLE_KEY
+        - name: SUPABASE_JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: my-secrets
+              key: JWT_SECRET
+        - name: DB_NAME
+          valueFrom:
+            secretKeyRef:
+              name: my-secrets
+              key: DB_NAME
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: my-secrets
+              key: DB_USER
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: my-secrets
+              key: DB_PASSWORD
+        - name: DB_HOST
+          valueFrom:
+            secretKeyRef:
+              name: my-secrets
+              key: DB_HOST
+        - name: DB_PORT
+          valueFrom:
+            secretKeyRef:
+              name: my-secrets
+              key: DB_PORT
+        - name: ENV
+          value: production
+        - name: LANGSMITH_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: langsmith-secrets
+              key: LANGSMITH_API_KEY
+        - name: LANGSMITH_PROJECT
+          valueFrom:
+            secretKeyRef:
+              name: langsmith-secrets
+              key: LANGSMITH_PROJECT
+        volumeMounts:
+        - mountPath: /etc/secrets
+          name: firebase-credentials
+          readOnly: true
+      volumes:
+      - name: firebase-credentials
+        secret:
+          defaultMode: 420
+          secretName: firebase-credentials
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: autonomous-deployment
+spec:
+  replicas: 2
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: autonomous
+  template:
+    metadata:
+      labels:
+        app: autonomous
+    spec:
+      containers:
+      - name: autonomous
+        image: ghcr.io/uengine-oss/process-gpt-autonomous:6778a3c
+        ports:
+        - containerPort: 6789
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+        envFrom:
+        - secretRef:
+            name: openai-secret
+        # - name: SERPER_API_KEY
+        #   valueFrom:
+        #     secretKeyRef:
+        #       name: serper-api-key-secret
+        #       key: SERPER_API_KEY
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: memento-deployment
+spec:
+  replicas: 3
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: memento
+  template:
+    metadata:
+      labels:
+        app: memento
+    spec:
+      containers:
+      - name: memento
+        image: ghcr.io/uengine-oss/process-gpt-memento:16cfe7f
+        ports:
+        - containerPort: 8005
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+        env:
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: openai-secret
+              key: OPENAI_API_KEY
+        - name: SUPABASE_URL
+          valueFrom:
+            configMapKeyRef:
+              name: my-config
+              key: SUPABASE_URL
+        - name: SUPABASE_KEY
+          valueFrom:
+            secretKeyRef:
+              name: my-secrets
+              key: SERVICE_ROLE_KEY
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: "/secrets/credentials.json"
+        - name: GOOGLE_DRIVE_FOLDER_ID
+          valueFrom:
+            configMapKeyRef:
+              name: my-config
+              key: GOOGLE_DRIVE_FOLDER_ID
+        volumeMounts:
+        - name: google-credentials
+          mountPath: "/secrets"
+          readOnly: true
+      volumes:
+      - name: google-credentials
+        secret:
+          secretName: google-credentials

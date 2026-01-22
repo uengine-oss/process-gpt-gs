@@ -1,0 +1,29 @@
+// 
+// common
+// 
+
+.inside-left-sidebar {
+    .left-part {
+        width: 240px;
+    }
+}
+.dialog_form{
+    .v-label.v-field-label{
+        color: rgb(var(--v-theme-textPrimary));
+    }
+}
+
+@media screen and (max-width:767px){
+    .blog-detail{
+        .text-h1{
+            font-size: 20px !important;
+            line-height: inherit;
+        }
+        .text-h2,.text-h4{
+            font-size: 18px !important;
+        }
+        .text-h3{
+            font-size: 16px !important;
+        }
+    }
+}

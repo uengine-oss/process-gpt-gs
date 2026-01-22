@@ -1,0 +1,15 @@
+apiVersion: networking.gke.io/v1
+kind: GCPBackendPolicy
+metadata:
+  name: streaming-backend-policy
+  namespace: dev
+spec:
+  default:
+    timeoutSec: 86400  # 24시간 (스트리밍을 위한 긴 타임아웃)
+    connectionDraining:
+      drainingTimeoutSec: 60
+  targetRef:
+    group: ""
+    kind: Service
+    name: gateway
+

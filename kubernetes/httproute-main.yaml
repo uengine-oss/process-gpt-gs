@@ -1,0 +1,24 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: main-httproute
+  namespace: default
+spec:
+  parentRefs:
+  - name: process-gpt-gateway-root
+    namespace: default
+  - name: process-gpt-gateway
+    namespace: default
+  hostnames:
+  - "process-gpt.io"
+  - "www.process-gpt.io"
+  rules:
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /
+    backendRefs:
+    - name: gateway
+      namespace: default
+      port: 80
+      weight: 100 

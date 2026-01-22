@@ -1,0 +1,2357 @@
+{
+    "message": "ko",
+    "changePath": "저장되지 않은 변경사항이 있습니다. 이동하시겠습니까?",
+    "successMsg": {
+        "simulatedProcess": "Process 시뮬레이션 완료",
+        "runningTheProcess": "Process 실행",
+        "formGenerationCompleted": "폼 생성 완료",
+        "processGenerationCompleted": "프로세스 생성 완료",
+        "processExecutionCompleted": "프로세스 실행 완료",
+        "workCompleted": "해당 업무 완료",
+        "save": "저장되었습니다.",
+        "intermediate": "중간 저장 완료",
+        "delete": "삭제되었습니다.",
+        "instanceDelete": "인스턴스가 삭제되었습니다.",
+        "completed": "실행 완료",
+        "savedMarketplace": "마켓플레이스에 등록되었습니다.",
+        "reworkRequested": "재작업이 요청되었습니다."
+    },
+    "errorMsg": {
+        "isBackendConnected": "AI 통신을 위한 백엔드 서버에 연결하지 못했습니다. 백엔드가 정상적으로 작동하는지 확인해 주세요.",
+        "languageChangeFailed": "언어 설정 변경에 실패했습니다."
+    },
+    "App": {
+        "view": "자세히 보기"
+    },
+    "mainPage": {
+        "login": "로그인",
+        "logout": "로그아웃",
+        "demo": "데모",
+        "pricing": "가격",
+        "documentation": "사용 설명서",
+        "support": "고객 지원",
+        "start": "베타 테스트하기",
+        "title": "AI를 기반한 프로세스 관리에서 실행까지를 손쉽게 시작하세요",
+        "subTitle": "프로세스 정의, 조직도 관리, To-Do 관리, 프로세스 실행, 프로세스 모니터링, 프로세스 분석"
+    },
+    "headerMenu": {
+        "sidebar" : "사이드바 접기/펼치기",
+        "dashboard" : "대시보드",
+        "todoList" : "나의 업무",
+        "schedule" : "스케줄러",
+        "calendar" : "달력",
+        "layoutSetting" : "레이아웃 설정",
+        "admin" : "관리자 페이지",
+        "setting" : "설정",
+        "search": "검색",
+        "searchResult": "검색 결과",
+        "searchKeyword": "검색하고자 하는 키워드 입력 후 엔터를 눌러주세요.",
+        "searching": "검색 중",
+        "noSearchResult": "검색 결과가 없습니다.",
+        "agent": "에이전트",
+        "pricing": "가격 정보"
+    },
+    "DashboardTodoList": {
+        "todo": "나의 업무",
+        "inProgress": "진행 중",
+        "done": "완료"
+    },
+    "DashboardUpcomingScheduls": {
+        "title": "다가오는 일정",
+        "schedule": "일정",
+        "dateAndTime": "일시",
+        "category": "구분"
+    },
+    "DefaultWorkItem": {
+        "intermediateSave": "중간 저장",
+        "complete": "완료"
+    },
+    "dashboard": {
+        "title": "대시보드",
+        "startProcess": "프로세스 시작",
+        "startProcessDescription": "프로세스 시작을 눌러 프로세스를 시작 할 수 있습니다.",
+        "welcome": "환영합니다."
+    },
+    "todoList": {
+        "title": "업무 목록",
+        "todo": "예정업무",
+        "inProgress": "진행 중",
+        "pending": "보류/반송",
+        "done": "완료됨",
+        "addTask": "업무 등록",
+        "sort": "정렬",
+        "sortByDueDate": "마감일 가까운 순",
+        "sortByStartDate": "시작일 최근 순",
+        "endOfList": "모든 업무를 확인했습니다"
+    },
+    "TodoDialog": {
+        "editTask": "할 일 수정",
+        "addTask": "업무 등록",
+        "taskName": "할일명",
+        "startDate": "시작일",
+        "dueDate": "마감일",
+        "description": "설명",
+        "save": "저장",
+        "todo": "할 일",
+        "title": "제목",
+        "status": "상태",
+        "close": "닫기"
+    },
+    "calendar": {
+        "title": "달력",
+        "evnet": "일정",
+        "scheduleTitle": "제목",
+        "start": "시작일",
+        "end": "종료일",
+        "description": "설명",
+        "color": "색상",
+        "save": "저장",
+        "delete": "삭제",
+        "newEventTitle": "새 일정의 제목을 입력하세요."
+    },
+    "chats": {
+        "title": "채팅",
+        "document": "업무 지시",
+        "assignTask": "업무 지시하기",
+        "requestCancelled": "{name}님의 요청이 취소되었습니다.",
+        "startProcess": "{title}프로세스를 시작하겠습니다.",
+        "todoAdded": "{activityId} 할 일이 추가되었습니다.",
+        "scheduleAdded": "{title} 일정이 추가되었습니다.",
+        "processDefinitionCreated": "프로세스 정의가 생성되었습니다.",
+        "processDefinitionModificationStarted": "프로세스 정의 수정이 시작되었습니다.",
+        "userRequestedAction": "{name}님이 요청하신 {action}",
+        "processExecutionFailed": "요청하신 {title} 프로세스 실행에 실패하였습니다. 다시 시도해주세요.",
+        "today": "오늘",
+        "yesterday": "어제",
+        "thisYear": "{month}월 {day}일 {dayName}",
+        "otherYear": "{year}년 {month}월 {day}일 {dayName}",
+        "sunday": "일요일",
+        "monday": "월요일",
+        "tuesday": "화요일",
+        "wednesday": "수요일",
+        "thursday": "목요일",
+        "friday": "금요일",
+        "saturday": "토요일"
+    },
+    "AssistantChats": {
+        "document": "지시할 업무 내용을 입력하세요. 업무에 관한 정보를 주시면 업무를 받는 사람이 확인할 업무 미리보기가 좌측에 표시됩니다. 미리보기를 확인하고 부족한 부분을 개선합니다. 개선이 완료되었다면 '업무 지시하기'로 업무를 지시합니다."
+    },
+    "proposals": {
+        "title": "제안서"
+    },
+    "instance": {
+        "title": "프로세스 참여"
+    },
+    "processExecution": {
+        "title": "프로세스 실행",
+        "cardTitle": "프로세스 실행",
+        "processDefinitionExplanation": "대화형으로 프로세스를 실행하십시오. \n 예를 들어,\n '휴가를 신청할게:\n 1. 사유: 개인사유\n 2. 휴가 시작일: 오늘\n 3. 휴가 복귀일: 금요일' 와 같은 명령을 할 수 있습니다.",
+        "agent": "Agent 기능을 사용해 제안서 초안을 작성하십시오.",
+        "search": "검색",
+        "newChat": "새 채팅",
+        "recentChats": "최근 채팅",
+        "sortByTime": "시간 순으로 정렬",
+        "sortByCompleted": "완료 순으로 정렬"
+    },
+    "runningInstance": {
+        "title": "시작 중인 인스턴스",
+        "running": " 시작 중..."
+    },
+    "ProcessInstanceRunning": {
+        "generating": "생성중입니다"
+    },
+    "admin": {
+        "title": "관리자 메뉴",
+        "viewDetails": "상세보기",
+        "instanceList": "인스턴스 목록",
+        "instanceId": "인스턴스 ID",
+        "name": "이름",
+        "status": "상태",
+        "startedDate": "시작일",
+        "finishedDate": "종료일",
+        "initiator": "요청자",
+        "subProcess": "서브 프로세스",
+        "actions": "작업",
+        "search": "검색",
+        "itemsPerPageText": "페이지 수",
+        "noSearch": "검색 결과가 없습니다."
+    },
+    "adminDetail": {
+        "processVariables": "프로세스 변수",
+        "properties": "속성",
+        "noProcessDefinition": "프로세스 정의가 없습니다.",
+        "key": "키",
+        "value": "값",
+        "tools": "작업",
+        "edit": "수정",
+        "save": "저장",
+        "rollback": "되돌리기",
+        "rollbackMessage": "으로 되돌리시겠습니까?",
+        "start": "실행",
+        "success": "실행 완료",
+        "send": "보내기",
+        "goBack": "뒤로가기"
+    },
+    "completeInstance": {
+        "title": "종료된 인스턴스"
+    },
+    "definitionManagement": {
+        "title": "프로세스",
+        "upload": "정의 목록 업로드",
+        "release": "정의 내보내기",
+        "defaultForm": "기본 폼 관리",
+        "completedList": "완료된 인스턴스 목록 보기"
+    },
+    "systemDefinition": {
+        "title": "시스템 정의"
+    },
+    "organizationChartDefinition": {
+        "title": "조직도 추가 및 관리",
+        "cardTitle": "조직도 관리",
+        "organizationChartExplanation": "대화형으로 조직도를 관리하십시오.\n 팀(부서) 롤(역할), 직원들을 등록 수정 삭제할 수 있습니다. \n예를 들어, '개발팀, 관리팀을 등록하고, 홍길동님을 신입사원으로 관리팀에 등록해줘. 역할은 개발자로 들어오셨어. 관리팀의 팀장은 아무개 팀장님이야.' 와 같은 명령을 할 수 있습니다.",
+        "addTeam": "팀 추가",
+        "deleteTeam": "팀 삭제",
+        "editTeam": "팀 수정",
+        "teamId": "팀 ID",
+        "teamName": "팀명",
+        "team": "팀",
+        "teamMember": "팀원",
+        "role": "역할",
+        "selectTeamMember": "팀원 선택",
+        "deleteMessage": "을/를 삭제하시겠습니까?",
+        "deleteMessage1": "님을 삭제하시겠습니까?",
+        "from": "에서",
+        "edit": "수정",
+        "save": "저장",
+        "add": "추가",
+        "delete": "삭제",
+        "close": "닫기",
+        "addNewUser": "신규 사용자(팀원) 추가",
+        "addNewAgent": "신규 에이전트 추가",
+        "addNewA2A": "A2A 에이전트 추가",
+        "addNewPGAgent": "ProcessGPT 에이전트 추가",
+        "userName": "이름",
+        "userEmail": "이메일",
+        "idRequired": "ID를 입력해주세요.",
+        "nameRequired": "이름을 입력해주세요.",
+        "emailRequired": "이메일을 입력해주세요.",
+        "emailInvalid": "유효하지 않은 이메일 형식입니다.",
+        "emailAlreadyExists": "이미 존재하는 이메일입니다.",
+        "addUserSuccess": "사용자가 추가되었습니다.",
+        "addUserFailed": "사용자 추가에 실패했습니다.",
+        "addNewTeam": "신규 팀 추가",
+        "addTeamSuccess": "팀이 추가되었습니다.",
+        "addTeamFailed": "팀 추가에 실패했습니다.",
+        "addNewUserExplanation": "신규 사용자를 추가하려면 이름과 이메일을 입력해 주세요. 입력된 이메일 주소로 회원가입이 자동 처리되며, 초기 비밀번호는 000000으로 설정됩니다.",
+        "agent": "에이전트",
+        "deleteAgentExplanation": "팀원 삭제가 아닌 영구 삭제입니다. 삭제된 에이전트는 복구할 수 없습니다. 팀원 삭제를 원하신다면 소속 팀의 + 버튼을 눌러 팀원을 수정해주세요.",
+        "oauth": "OAuth 설정",
+        "aliasRequired": "별칭을 입력해주세요.",
+        "aliasAlreadyExists": "이미 존재하는 별칭입니다."
+    },
+    "agentField": {
+        "agentId": "에이전트 ID",
+        "agentName": "이름",
+        "agentRole": "역할",
+        "agentGoal": "목표",
+        "agentPersona": "페르소나",
+        "agentEndpoint": "엔드포인트",
+        "agentDescription": "설명",
+        "agentTools": "도구",
+        "agentSkills": "기술",
+        "aiProvider": "AI 제공사",
+        "aiModel": "AI 모델",
+        "alias": "별칭"
+    },
+    "processDefinitionMap": {
+        "title": "프로세스 정의 체계도",
+        "mobileTitle": "시작하기",
+        "lock": "저장하려면 저장 아이콘을 누르십시오.",
+        "unlock": "편집하려면 연필 아이콘을 누르십시오.",
+        "addMega": "Mega 프로세스",
+        "addMajor": "Major 프로세스",
+        "addSub": "Sub 프로세스",
+        "save": "저장",
+        "downloadImage": "정의 체계도를 이미지로 다운로드",
+        "consultingAI": "프로세스 컨설팅 AI",
+        "consultingButton": "프로세스 컨설팅 시작하기",
+        "analyzeAndImproveProcessWithAI": "프로세스 컨설팅 시작하기",
+        "usageGuide": {
+            "title": "프로세스 정의 체계도 사용 가이드",
+            "details": [
+                {
+                    "icon": "pencil",
+                    "title": "연필 아이콘\n편집 버튼으로 프로세스 정의 체계도를 수정할 수 있습니다."
+                },
+                {
+                    "icon": "image-download",
+                    "title": "이미지 다운로드 아이콘\n생성된 체계도를 이미지로 다운로드하는 기능입니다."
+                },
+                {
+                    "icon": "magic",
+                    "title": "프로세스 컨설팅\nAI를 활용해 초기 프로세스를 만들 수 있습니다.\n예) '휴가신청 프로세스를 생성해줘'와 같이 입력하면 자동으로 생성됩니다."
+                },
+                {
+                    "icon": "market",
+                    "title": "마켓플레이스\n이미 다른 사람들에 의해 등록된 예시 프로세스를 테스트 및 동작시켜볼 수 있습니다."
+                }
+            ]
+        },
+        "editingUser": "{name} 님이 수정 중 입니다.",
+        "checkIn": "잠금",
+        "checkOut": "잠금 해제",
+        "saveCheckIn": "저장",
+        "cancelCheckIn": "저장 안함",
+        "confirm": "확인",
+        "close": "닫기",
+        "cancel": "취소",
+        "download": "다운로드",
+        "uncategorized": "미분류",
+        "closeConsulting": "저장하지 않은 정보는 모두 유실됩니다. 컨설팅을 종료하시겠습니까?",
+        "closeConsultingInPreview": "저장하지 않은 정보는 모두 유실됩니다.\n저장하시려면 우측 저장 버튼을 클릭하여 저장하실 수 있습니다.\n\n컨설팅을 종료하시겠습니까?",
+        "checkInDBError": "DB 연결이 끊어졌습니다. 수정된 데이터를 다운로드하여 저장하고 관리자에게 문의주세요.",
+        "checkOutDBError": "DB 연결이 끊어졌습니다. 관리자에게 문의해주세요.",
+        "checkInMessage": "편집을 종료하시겠습니까? \n저장하지 않을 경우, 수정된 내용은 반영되지 않습니다.",
+        "checkOutMessage": "프로세스 정의 체계도를 수정하시겠습니까?",
+        "forcedCheckOutMessage": "현재 {name} 님께서 수정 중입니다. 편집을 진행하는 경우 {name}님이 수정한 내용은 손상되어 저장되지 않습니다. \n편집을 진행 하시겠습니까?",
+        "settingPermission": "권한 설정",
+        "isReadable": "열람",
+        "isWritable": "개정",
+        "isDeployable": "배포",
+        "marketplace": "마켓플레이스",
+        "marketplaceExplanation": "비즈니스 프로세스 템플릿을 찾아보세요",
+        "treeView": "트리 뷰로 보기",
+        "treeViewExplanation": "프로세스를 트리 구조로 확인하고 편집하세요"
+    },
+    "processDefinitionTree": {
+        "search": "검색",
+        "uploadExcel": "엑셀 업로드",
+        "createMap": "맵 생성"
+    },
+    "uiDefinition": {
+        "title": "화면 정의",
+        "cardTitle": "화면 정의 관리",
+        "uiDefinitionExplanation": "대화형으로 화면을 관리하십시오.\n 예를 들어, '유저 정보를 입력 받는 폼을 만들고 싶어. 유저 정보에는 유저명, 이메일, 성별, 유저 프로필 이미지를 입력받아야 해.'와 같은 명령을 할 수 있습니다.",
+        "add": "추가",
+        "edit": "수정",
+        "delete": "삭제",
+        "cancel": "취소",
+        "save": "화면 저장",
+        "deleteForm": "폼 삭제",
+        "deleteFormMessage": "폼을 삭제하시겠습니까?",
+        "redaction": "편집",
+        "preview": "미리보기"
+    },
+    "dmn": {
+        "title": "비즈니스 규칙",
+        "cardTitle": "DMN 관리",
+        "explanation": "대화형으로 비즈니스 규칙을 관리하십시오.",
+        "add": "추가",
+        "edit": "수정",
+        "delete": "삭제",
+        "cancel": "취소",
+        "save": "DMN 저장",
+        "deleteDmn": "DMN 삭제",
+        "deleteDmnMessage": "DMN을 삭제하시겠습니까?",
+        "editMode": "편집 모드",
+        "viewMode": "보기 모드",
+        "creation": "생성",
+        "inference": "추론"
+    },
+    "processDefinition": {
+        "title": "프로세스 정의",
+        "cardTitle": "프로세스 정의 관리",
+        "processDefinitionExplanation": "대화형으로 프로세스를 관리하십시오. \n 예를 들어,\n '영업관리 프로세스를 다음과 같이 등록해줘:\n 1. 영업기회등 고객명, 예상사업규모, 키맨, 요구사항\n 2. 제안 작성: 제안 내용, 가격\n 3. 수주 혹은 실주\n 4. 수주한 경우, 계약진행' 와 같은 명령을 할 수 있습니다.",
+        "name": "이름",
+        "type": "타입",
+        "form": "폼",
+        "description": "설명",
+        "dataSource": "데이터소스",
+        "query": "쿼리",
+        "actions": "작업",
+        "itemsPerPage": "페이지당 항목 수",
+        "processVariables": "프로세스 변수",
+        "editProcessData": "프로세스 데이터 수정",
+        "instanceNamePattern": "인스턴스명 패턴",
+        "edit": "수정",
+        "delete": "삭제",
+        "zoom": "캔버스 확대/축소",
+        "execution": "프로세스 실행",
+        "showXML": "XML 보기",
+        "showModeling": "프로세스 보기",
+        "deleteProcess": "프로세스 삭제",
+        "deleteProcessMessage": "프로세스를 삭제하시겠습니까?",
+        "cancel": "취소",
+        "simulate": "시뮬레이션",
+        "preview": "미리보기",
+        "capture": "프로세스 이미지 다운로드",
+        "savePDF": "PDF 저장",
+        "restoreProcess": "복구",
+        "restore": "복구",
+        "restoreProcessMessage": "프로세스를 복구하시겠습니까?",
+        "webFormUrl": "웹 폼 URL",
+        "isReadOnlyMode": "읽기 모드입니다.",
+        "isReadOnlyModeWarningMsg": "읽기 모드입니다. 연필버튼을 클릭하여 수정하십시오."
+    },
+    "ProcessVariable": {
+        "name": "이름",
+        "type": "타입",
+        "key": "키",
+        "defaultValue": "폼",
+        "description": "설명",
+        "dataSource": "데이터소스",
+        "add": "추가",
+        "edit": "수정"
+    },
+    "processList": {
+        "title": "정의 목록"
+    },
+    "chat": {
+        "inputMessage": "메시지 입력",
+        "definitionMapInputMessage": "예: 휴가 신청 프로세스 만들어줘 / 휴가 신청 프로세스 실행해줘 / 실행중인 휴가 신청의 승인 여부 알려줘",
+        "lock": "저장하려면 저장 아이콘을 누르세요.",
+        "unlock": "편집하려면 연필 아이콘을 누르세요.",
+        "processDefinitionSave": "저장",
+        "history": "버전 히스토리",
+        "historyDisabled": "버전 히스토리 : 편집모드에서 확인 가능합니다.",
+        "import": "BPMN 파일 불러오기",
+        "addImage": "이미지 추가",
+        "fileUpLoad": "파일 업로드",
+        "isEnableProcessGPT": "Process GPT 활성화",
+        "isDisableProcessGPT": "Process GPT 비활성화",
+        "userReply": "{name}님에게 답장",
+        "systemReply": "system에게 답장",
+        "headset": "말하기/듣기",
+        "document": "업무 지시",
+        "camera": "카메라",
+        "user": "유저",
+        "chatRoom": "대화 목록",
+        "viewDetails": "상세보기",
+        "executeProcess": "프로세스 실행",
+        "participants": "참여자 현황",
+        "moveTop": "최상단으로 이동",
+        "moveBottom": "최하단으로 이동",
+        "helpTitle": "채팅 도움말",
+        "helpIntro": "이 채팅은 여러 정보를 기반으로 답변하는 AI 어시스턴트입니다.\n\n주요 기능:",
+        "helpScheduleRegistration": "• 스케줄 등록: 대화 중 일정 등록 요청 시 자동으로 스케줄을 등록합니다\n  예) \"내일 오전 10시에 팀 회의 일정 잡아줘\"",
+        "helpScheduleQuery": "• 일정 조회: 등록된 일정에 대한 질문에 답변합니다\n  예) \"이번 주 일정 알려줘\", \"다음주 월요일에 뭐 있어?\"",
+        "helpProcessStart": "• 프로세스 시작: 프로세스 실행 요청 시 자동으로 프로세스를 시작합니다\n  예) \"휴가 신청 프로세스 시작해줘\"",
+        "helpDocumentQuery": "• 문서 조회: 회사 문서나 정보에 대한 질문에 답변합니다\n  예) \"지난달 매출 보고서 찾아줘\"",
+        "helpDocumentGeneration": "• 문서 생성: 문서 작성 요청 시 자동으로 문서를 생성합니다\n  예) \"분기 실적 보고서 작성해줘\"",
+        "helpTodoRegistration": "• 할 일 목록 등록: 할 일 등록 요청 시 자동으로 작업을 추가합니다\n  예) \"고객 미팅 준비 할 일로 추가해줘\"",
+        "helpNote": "※ 참고: 이 채팅은 정의체계도 생성 기능은 지원하지 않습니다"
+    },
+    "accountTab": {
+        "accountSetting": "계정 설정",
+        "profileImageChange": "프로필 이미지 변경",
+        "imageSelect": "프로필 이미지 선택",
+        "selectImageExplanation": "JPG, GIF 또는 PNG가 허용됩니다. 최대 크기 800K",
+        "changePassword": "비밀번호 변경",
+        "changePasswordExplanation": "비밀번호를 변경하려면 여기에서 확인하세요.",
+        "currentPassword": "현재 비밀번호",
+        "newPassword": "새 비밀번호",
+        "confirmPassword": "비밀번호 확인",
+        "personalDetails": "개인정보",
+        "personalDetailsExplanation": "개인 세부정보를 변경하려면 여기에서 수정하고 저장하세요.",
+        "name": "이름",
+        "email": "이메일",
+        "phone": "전화번호",
+        "address": "주소",
+        "changeTenant": "테넌트 설정",
+        "save": "저장",
+        "manageAccess": "사용자 관리",
+        "addUser": "사용자 초대",
+        "drive": "구글 드라이브 설정",
+        "clientId": "클라이언트 ID",
+        "clientSecret": "클라이언트 Secret",
+        "folderId": "폴더 ID",
+        "edit": "수정",
+        "cancel": "취소",
+        "close": "닫기",
+        "dataSource": "데이터소스",
+        "dataSourceConnection": "데이터소스 연동",
+        "experimentalFeature": "실험 기능",
+        "experimentalFeatureExplanationOn": "폼 스캔 시 외부 dataSource를 자동으로 연동합니다",
+        "experimentalFeatureExplanationOff": "폼 스캔 시 dataSource 연동을 사용하지 않습니다",
+        "experimentalFeatureWarning": "이 기능은 현재 테스트 중이며, 예상과 다르게 동작할 수 있습니다. 피드백은 개발팀에 전달해 주세요.",
+        "addDataSource": "데이터소스 추가",
+        "editDataSource": "데이터소스 수정",
+        "addConnectionInfo": "접속 정보 추가",
+        "dataSourceConnectionOn": "dataSource 사용이 활성화되었습니다.",
+        "dataSourceConnectionOff": "dataSource 사용이 비활성화되었습니다.",
+        "tenantManage": "테넌트 관리",
+        "key": "키",
+        "value": "값",
+        "url": "URL",
+        "description": "설명",
+        "delete": "삭제",
+        "deleteUserSuccess": "{name} 사용자가 삭제되었습니다.",
+        "deleteUserFailed": "{name} 사용자 삭제에 실패했습니다.",
+        "confirmDeleteTitle": "사용자 삭제 확인",
+        "confirmDeleteMessage": "'{name}'을(를) 삭제하시겠습니까?",
+        "confirmDeleteInstruction": "삭제하려면 사용자 이름을 입력하세요:",
+        "addHeader": "헤더 추가",
+        "parameters": "파라미터",
+        "addParameter": "파라미터 추가",
+        "authentication": "인증",
+        "addAuthentication": "인증 추가",
+        "method": "메서드",
+        "endpoint": "엔드포인트",
+        "headers": "헤더",
+        "username": "유저명",
+        "password": "비밀번호",
+        "search": "사용자 검색",
+        "noSearchResults": "검색 결과가 없습니다",
+        "inviteUser": "사용자 초대",
+        "inviteUserMessage": "회사에 함께할 동료들을 초대해보세요",
+        "inviteUserMessage2": "*초대된 사용자들에게 이메일이 발송됩니다",
+        "skipAndStart": "건너뛰고 시작하기",
+        "sendInvitation": "초대 보내기",
+        "emailAddress": "이메일 주소",
+        "role": "역할",
+        "user": "사용자",
+        "admin": "관리자",
+        "add": "추가",
+        "addMCPServer": "새 MCP 서버 추가",
+        "addEnvironment": "추가",
+        "editEnvironment": "수정",
+        "addSecret": "추가",
+        "editSecret": "수정",
+        "addBrowserUseSecret": "추가",
+        "editBrowserUseSecret": "수정",
+        "mcpServers": "MCP 서버",
+        "mcpEnvironments": "MCP 환경변수",
+        "environments": "환경변수",
+        "showSecretData": "시크릿 데이터 보기",
+        "indicatesRequiredField": "*환경변수 설정은 필수 항목입니다.",
+        "billing": "청구",
+        "confirmDeleteConnectionTitle": "접속 정보 삭제",
+        "confirmDeleteConnectionText": "\"{name}\"을(를) 삭제하시겠습니까?",
+        "skills": "스킬",
+        "affiliatedTeam": "소속 팀"
+    },
+    "loginPage": {
+        "title": "Welcome to Process-GPT",
+        "google": "구글 로그인",
+        "or": "또는 다음 계정으로 로그인",
+        "userName": "이메일",
+        "password": "비밀번호",
+        "remeber": "이 장치에 기억",
+        "login": "로그인",
+        "create": "계정 생성",
+        "forgotPassword": "비밀번호 찾기"
+    },
+    "createAccount": {
+        "title": "Welcome to Process-GPT",
+        "already": "이미 계정이 있으신가요?",
+        "login": "로그인",
+        "userName": "이름",
+        "password": "비밀번호",
+        "email": "이메일",
+        "google": "구글 로그인",
+        "or": "또는 다음 계정으로 로그인",
+        "normalRegister": "일반 가입",
+        "tenantRegister": "테넌트 가입",
+        "confirmPassword": "비밀번호 확인",
+        "enterPassword": "비밀번호를 입력하세요",
+        "enterEmail": "이메일을 입력하세요",
+        "invalidEmailFormat": "유효하지 않은 이메일 형식입니다",
+        "enterName": "이름을 입력하세요",
+        "enterConfirmPassword": "비밀번호 확인을 입력하세요",
+        "passwordMismatch": "비밀번호가 일치하지 않습니다",
+        "signUp": "회원가입",
+        "checkEmailMessage": "회원가입이 완료되었습니다. 이메일 함을 확인하여 계정을 활성화하세요.",
+        "registrationFailed": "회원가입 과정에서 오류가 발생했습니다. 입력 정보를 확인 후 다시 시도해주세요."
+    },
+    "createAdminAccount": {
+        "createAccountHeader": "어드민 정보",
+        "tenantID": "테넌트 ID *",
+        "supabaseConnectionInfo": "Supabase 연결 정보"
+    },
+    "tenantManagePage": {
+        "title": "회사 관리",
+        "subTitle1": "새로운 회사를 생성하거나 선택한 회사가 관리하는 페이지로 이동합니다.",
+        "subTitle2": "(* 모바일 환경에서는 가입 진행이 불가능합니다.)",
+        "subTitle3": "회사를 선택하시면 선택한 회사가 관리하는 페이지로 이동합니다.",
+        "createCompany": "회사 생성"
+    },
+    "tenantInfoField": {
+        "step1": "STEP 1. 계정 만들기",
+        "step1-text": "( *비밀번호는 대문자, 소문자, 숫자, 특수문자가 모두 포함돼야 합니다. )<br>1. <a href='https://supabase.com/dashboard/sign-up' target='_blank'>Supabase 회원가입 페이지</a>로 들어가서 계정을 생성합니다.",
+        "step2-1": "STEP 2. 프로젝트 또는 조직 만들기",
+        "step2-1-text": "1. 계정 생성 이후 화면에서 새 프로젝트(New Project) 또는 신규 조직(New organization)을 선택합니다.<br>2. 선택 후 New Project를 클릭합니다.",
+        "step2-2": "STEP 2. 신규 조직(New organization) 생성",
+        "step2-2-text": "(*이미 조직(organization)이 있으면 이 단계는 건너뛰어도 괜찮습니다.)<br>1. 새롭게 생성할 조직(New organization)명을 Name 항목에 입력합니다.<br>2. Create organization 버튼을 클릭해서 새로운 기관을 생성합니다.",
+        "step2-3": "STEP 2. 새 프로젝트(New Project) 만들기",
+        "step2-3-text": "1. 생성한 조직(organization)을 선택하고, 생성할 프로젝트명을 Project name 항목에 입력합니다.<br>2. 사용할 데이터베이스 비밀번호를 입력합니다.<br>(*입력한 비밀번호를 아래의 Database Password 입력창에 붙혀넣어줍니다.)<br>3. Region을 위의 스크린샷과 같이 Seoul로 선택합니다.<br>4. Create new project 버튼을 클릭해서 프로젝트를 생성합니다.<br>",
+        "step3-1": "STEP 3. Project URL 연결하기",
+        "step3-1-text": "1. 프로젝트 생성이 완료되면 왼쪽 최하단의 톱니바퀴 모양 아이콘을 클릭합니다.<br>2. 화면에 표시되는 Settings 메뉴리스트중 API 메뉴를 선택합니다.<br>3. (*Project URL 섹션에 있는 URL 항목을 복사하여 아래의 URL 입력창에 붙혀넣습니다.)",
+        "step3-2": "STEP 3. Secret API Key 연결",
+        "step3-2-text": "1. Project API keys 섹션의 Reveal 버튼을 클릭하여 Secret 키 값을 확인할 수 있습니다.<br>(*Secret 키를 복사하여 아래의 Secret 입력창에 붙혀넣습니다.)",
+        "step3-3": "STEP 3. DataBase 연결",
+        "step3-3-text": "1. Settings 메뉴리스트중 Database 메뉴를 선택합니다.<br>2. Connection parameters 섹션에서 Host, Database name, Port, User 값을 복사하여 아래의 각 입력창에 붙혀넣습니다.",
+        "step4": "STEP 1. 사용할 회사명 입력하기",
+        "step4-text": "1. 사용할 회사명을 아래의 ID 입력창에 입력하고 생성하기 버튼을 클릭해서 회사를 생성합니다.<br>입력한 회사명은 서브도메인으로 사용됩니다.<br>e.g. 입력한 회사명.process-gpt.io",
+        "step5": "STEP 5. Supabase Site URL 설정하기",
+        "step5-text": "1. 왼쪽 메뉴 중 자물쇠 아이콘(Authentication) 메뉴를 선택합니다.<br>2. URL Configuration을 클릭합니다.<br>3. 아래 보이는 STEP 4에서 입력한 회사명이 포함된 Site URL을 복사 버튼을 눌러 복사 후 복사하여 Site URL 입력란에 입력합니다.<br>4. save 버튼을 눌러 저장합니다."
+    },
+    "forgotPassword": {
+        "title": "비밀번호 찾기",
+        "email": "이메일 주소",
+        "sendEmail": "메일 전송",
+        "sendEmailExplanation": "이메일 주소를 입력하고 메일 전송 버튼을 누르면 비밀번호를 재설정 할 수 있는 링크가 메일로 전송됩니다.",
+        "login": "로그인",
+        "resetPassword": "비밀번호 재설정",
+        "password": "비밀번호",
+        "passwordExplanation": "재설정할 비밀번호를 입력하세요.",
+        "updatePassword": "비밀번호 변경"
+    },
+    "ExtraBox": {
+        "logOut": "로그아웃"
+    },
+    "BpmnPropertyPanel": {
+        "name": "이름",
+        "subProcessNamePattern": "서브프로세스명 패턴",
+        "condition": "조건",
+        "priority": "우선순위",
+        "description": "개요",
+        "inputData": "입력 데이터",
+        "outputData": "출력 데이터",
+        "checkPoints": "체크포인트",
+        "script": "스크립트",
+        "generateScript": "스크립트 생성",
+        "scriptPrompt": "프롬프트 입력",
+        "scriptType": "스크립트 타입",
+        "add": "추가",
+        "role": "역할",
+        "methodTypeUrl": "메서드 타입",
+        "apiUrl": "API URL",
+        "mapperDescriptionTitle": "데이터 매핑이란 다음 작업으로 변수들을 전달하는 기능",
+        "mapperDescriptionSubTitle1": "1. Variables : 변수항목에 추가한 값들 \n2. Roles : 스윔 레인에 등록한 역할(이름) \n3. Instance : 다음 실행될 task 작업의 종료일 등을 저장하는 곳 \n4. Activities : task에 등록한 역할(이름) \n5. Arguments : 속성에 등록한 이름(값)",
+        "mapperDescriptionSubTitle2": "사용 방법 \n- 마우스를 누른 상태로 연결할 곳에 끌어다 놓으면 연결\n- 선을 클릭하면 삭제",
+        "printDocument": "PDF로 내려받기",
+        "pdfPreview": "PDF 미리보기",
+        "ruleGenerator": "결정론적 규칙화",
+        "ruleGenerating": "결정론적 규칙화 중...",
+        "view": "보기",
+        "copyInputJson": "입력 JSON 복사",
+        "clearExamples": "예시 비우기",
+        "exampleDetail": "예시 상세",
+        "result": "결과",
+        "inputPreview": "입력 미리보기",
+        "ioExamples": "입출력 예시",
+        "close": "닫기",
+        "mismatch": "부적합",
+        "cancel": "취소",
+        "confirm": "확인",
+        "regenerate": "재생성",
+        "generatedFunction": "결정론적 규칙",
+        "generatedRulePreview": "결정론적 규칙 미리보기",
+        "expectedOutput": "예상 출력 결과",
+        "conditionWhen": "조건(When)",
+        "resultThen": "결과(Then)",
+        "setting": "설정",
+        "referenceInfo": "참조 정보",
+        "edit": "폼 편집",
+        "preview": "폼 미리보기",
+        "duration": "소요시간",
+        "attachments": "첨부파일",
+        "agentMode": "에이전트 모드 사용",
+        "orchestration": "에이전트 연구 방식",
+        "days": "일",
+        "selectForm": "참조할 폼 선택",
+        "noFormSelected": "폼을 선택해주세요",
+        "instruction": "지침",
+        "scriptVariable": "스크립트 내부에서 사용할 변수는 프로세스 변수에 정의해야 합니다.",
+        "customProperties": "사용자 속성"
+    },
+    "KeyValueField": {
+        "add": "추가",
+        "key": "Key",
+        "value": "Value",
+        "noItems": "등록된 항목이 없습니다.",
+        "duplicateKey": "중복된 Key입니다."
+    },
+    "PDFPreviewer": {
+        "saveDocument": "PDF 저장",
+        "close": "닫기",
+        "title": "PDF 저장 미리보기",
+        "splitBPMN": "분할",
+        "savingPDF": "PDF 저장중..."
+    },
+    "EscalationEventDefinitionPanel": {
+        "expression": "이벤트 키"
+    },
+    "SignalEventDefinitionPanel": {
+        "eventKey": "이벤트 키"
+    },
+    "NotificationDD": {
+        "notification": "알림"
+    },
+    "Customizer": {
+        "settings": "레이아웃 설정",
+        "themeColor": "색상 테마",
+        "containerOption": "화면 크기",
+        "boxed": "박스형",
+        "full": "가득찬"
+    },
+    "Mashup": {
+        "hoverText": "여기에 레이아웃(Container)을 드래그해서 폼 편집을 시작하십시오."
+    },
+    "ProcessDefinitionVersionDialog": {
+        "title": "프로세스 저장",
+        "title2": "버전 업",
+        "minorUpdate": "현 버전",
+        "majorUpdate": "주요 업데이트",
+        "update": "업데이트",
+        "release": "배포",
+        "releaseName": "배포 명",
+        "id": "아이디",
+        "name": "이름",
+        "message": "설명",
+        "versionTag": "버전 태그",
+        "save": "저장",
+        "versionDescriptionTitle": "저장 관련 도움말",
+        "idRequired": "ID는 필수 항목입니다.",
+        "idRules": "소문자, 숫자, 언더바만 사용할 수 있습니다. (예: new_process_id)",
+        "nameRequired": "이름은 필수 항목입니다.",
+        "optimize": "프로세스 정의 최적화 사용",
+        "generatingName": "추천이름 생성중...",
+        "generatingId": "추천아이디 생성중...",
+        "duplicateWarning": "이미 사용 중인 ID입니다. 기존 프로세스를 덮어쓰려면 체크 후 저장해주세요.",
+        "regenerateNameTooltip": "새 이름 추천받기",
+        "regenerateIdTooltip": "새 ID 추천받기",
+        "helpIntro": "이 다이얼로그에서는 프로세스를 저장하면서 버전과 설명, 최적화 옵션을 함께 설정할 수 있습니다.\n\n저장은 항상 별도의 버전 레코드로 남으며, 기존 버전은 그대로 유지됩니다.",
+        "helpVersionToggle": "• 버전 태그(minor / major):\n  - minor: 현재 버전의 소수점 이하를 1 증가시켜 저장합니다. 예) 1.3 → 1.4\n    * 주로 실제 운영(배포) 전에 여러 번 수정·보완하면서 \"임시 저장\"이나 작업 중인 스냅샷을 남길 때 사용합니다.\n  - major: 정수 버전을 1 증가시키고 소수점은 0으로 초기화합니다. 예) 1.3 → 2.0\n    * 실제로 적용·배포되는 프로세스 버전에 사용하며, 운영 환경에서 기준이 되는 버전입니다.\n  저장 시 선택한 버전 태그에 따라 다음 버전 번호(new version)가 자동 계산되어 사용됩니다.",
+        "helpOptimize": "• 프로세스 정의 최적화: 체크하면 저장 시 AI가 프로세스 정의를 분석하여 각 작업(액티비티)에 필요한 입력 데이터(참조 정보)와 데이터 흐름을 자동으로 보정합니다.\n  - 작업 간 데이터 연결 관계를 점검하고 필요한 변수를 추천\n  - 불필요한 필드나 누락된 필드를 제안하여 정의 품질 향상\n  - 직접 하나씩 수정하기 어려운 반복 작업을 자동화하여 모델링 시간을 단축합니다.",
+        "generatingDiff": "변경 내역을 분석 중입니다..."
+    },
+    "FormDefinitionPanel": {
+        "editForm": "폼 속성 수정",
+        "id": "아이디",
+        "name": "이름",
+        "type": "타입",
+        "readOnly": "읽기 모드",
+        "save": "저장",
+        "fixed": "고정 옵션",
+        "urlBinding": "URL 바인딩",
+        "dataBinding": "데이터 바인딩"
+    },
+    "ContainerSettingPanel": {
+        "title": "컨테이너 속성 편집",
+        "id": "아이디",
+        "name": "이름",
+        "save": "저장",
+        "multDataMode": "다중 데이터 모드"
+    },
+    "CodeField": {
+        "eventType": "이벤트 타입",
+        "nameToWatch": "감시 필드 명"
+    },
+    "BpmnParameterContexts": {
+        "addArgument": "아규먼트 추가",
+        "calleeVariable": "피호출측 변수",
+        "argument": "아규먼트",
+        "transformation": "변환",
+        "direction": "연결방향"
+    },
+    "BpmnRoleParameterContexts": {
+        "addMapping": "매핑 추가"
+    },
+    "DefaultArguments": {
+        "parameterContext": "파라미터 컨텍스트"
+    },
+    "CallActivityPanel": {
+        "parameterContext": "파라미터 컨텍스트",
+        "selectDefinition": "프로세스 정의 선택",
+        "noDefinitionSelected": "프로세스 정의가 선택되지 않았습니다.",
+        "roleMapping": "역할 매핑",
+        "move": "이동"
+    },
+    "ReceiveTaskPanel": {
+        "dataMapping": "데이터 매핑",
+        "inputData": "입력 데이터",
+        "selectService": "호출 서비스 선택",
+        "callUri": "호출 URI 패턴",
+        "noValidationForSSL": "SSL 인증서 검증 안함",
+        "skipIfNotFound": "리소스 없을 경우 (404) 오류 처리 하지 않음",
+        "title": "제목",
+        "content": "내용",
+        "to": "받는 사람",
+        "from": "보낸 사람",
+        "toRole": "받는 역할",
+        "fromRole": "보낸 역할",
+        "descriptionTitle": "제목 입력",
+        "descriptionContent": "내용 입력",
+        "descriptionTo": "받는 사람 입력",
+        "descriptionFrom": "보낸 사람 입력",
+        "descriptionToRole": "받는 역할 입력",
+        "descriptionFromRole": "보낸 역할 입력",
+        "emailActivity": "이메일 형식"
+    },
+    "ServiceTaskPanel": {
+        "dataMapping": "데이터 매핑",
+        "generation": "생성",
+        "methodTypeDescriptionTitle": "API 요청을 보낼 때 사용할 메서드(GET, POST, PUT, PATCH)와 요청을 처리할 서버의 엔드포인트 URL을 설정",
+        "methodTypeDescriptionSubTitle1": "1.GET : 서버로부터 데이터를 조회하는 요청 \n2.POST : 서버에 새 데이터를 생성하여 전송하는 요청 \n3.PUT : 기존 데이터를 업데이트하거나 전체를 대체하는 요청 \n4.PATCH : 기존 데이터의 일부를 수정하는 요청 \n5.API URL : 요청이 전송될 서버의 엔드포인트 주소\n"
+    },
+    "EventSynchronizationForm": {
+        "edit": "수정",
+        "delete": "삭제",
+        "url": "URL",
+        "eventType": "이벤트 타입",
+        "dataMapping": "데이터 매핑",
+        "eventAttributes": "속성",
+        "primaryKey": "고유 키",
+        "correlationKey": "관계 키",
+        "attributeType": "속성 타입",
+        "name": "이름",
+        "save": "저장",
+        "add": "추가",
+        "typeDescriptionTitle": "속성: 해당 항목에 대해 저장할 데이터를 정의",
+        "typeDescriptionSubTitle1": "1. 고유 키 : 각 레코드를 고유하게 식별하는 키로, 데이터베이스 내에서 중복을 허용하지 않습니다. \n2. 관계 키 : 서로 다른 데이터 간의 관계를 설정하고 추적하는 데 사용되는 키로, 데이터의 연관성을 유지합니다."
+    },
+    "UserTaskPanel": {
+        "default": "기본",
+        "defaultInfo": "현재 태스크의 역할에 해당하는 사용자 모두가 이 업무를 확인할 수 있습니다.  가장 먼저 업무를 선택한 사용자가 담당자로 지정됩니다.",
+        "sharedGroupInfo": "선택된 공동 담당 그룹에 속한 사용자는 모두 이 업무를 확인할 수 있으며, 먼저 선택한 사용자가 담당자가 됩니다.  ex) 작성자,검토자",
+        "assigneeInfo": "지정된 단일 사용자에게만 이 업무가 할당되며, 다른 사용자는 열람할 수 없습니다.",
+        "loadBalancingInfo": "지정된 그룹 내 사용자에게 자동으로 업무를 분배합니다. 분배 전략을 선택할 수 있습니다.",
+        "expressionInfo": "표현식을 기반으로 실행 시 동적으로 담당자를 결정합니다. ex) ${initiatorManager}",
+        "form": "폼",
+        "external": "외부 어플리케이션",
+        "formCreateDialog": "폼 생성을 하시겠습니까?",
+        "yes": "예",
+        "no": "아니오",
+        "radioSelectDescriptionTitle": "데이터 처리 방식 선택: 기본 데이터 처리, 커스텀 화면 생성, 외부 시스템 연동.",
+        "radioSelectDescriptionSubTitle1": "1. 기본 : 기본적인 데이터 사용 \n2. 폼 : 화면 정의에서 생성한 화면 \n3. 외부 어플리케이션 : 업무 화면 URL 입력 필드 생성",
+        "assignmentType": "업무 할당 방식",
+        "assignee": "담당자 지정",
+        "sharedGroup": "공동 담당 그룹",
+        "expression": "표현식 기반",
+        "loadBalancing": "로드 밸런싱",
+        "taskType": "작업 유형",
+        "descriptionTo": "할당 대상",
+        "descriptionToTitle": "할당 대상 입력",
+        "direction": "연결 방향",
+        "inputForm": "참조 폼",
+        "outputForm": "작성 폼",
+        "addFormParameter": "폼 추가",
+        "removeFormParameter": "폼 삭제",
+        "loadBalancingGroup": "로드밸런싱 그룹",
+        "loadBalancingStrategy": "할당 전략",
+        "roundRobin": "라운드 로빈 (순차 할당)",
+        "leastTasks": "최소 작업량 우선",
+        "idle": "오래 쉰 사용자 우선"
+    },
+    "Mapper": {
+        "mapper": "매퍼"
+    },
+    "TaskPanel": {
+        "inputData": "입력 데이터 (JSON/XML)",
+        "resultInputVariable": "결과 입력 변수"
+    },
+    "ManualTaskPanel": {
+        "inputData": "입력 데이터 (JSON/XML)",
+        "resultInputVariable": "결과 입력 변수"
+    },
+    "SubProcessPanel": {
+        "forEachRole": "역할 기반 다중 생성",
+        "role": "역할로 서브프로세스를 여러 개 생성함",
+        "forEachVariable": "변수 기반 다중 생성",
+        "variable": "변수로 서브프로세스를 여러 개 생성함",
+        "forEachVariableDescriptionTitle": "프로세스 변수에 등록된 데이터에 데이터 매핑을 해서 멀티 데이터를 삽입하면 프로세스 실행시 여러개 생성된 데이터를 기반으로 서브프로세스를 다중 생성",
+        "forEachVariableDescriptionSubTitle1": "1. 화면 정의 관리에서 편집모드를 통해 다중 데이터 모드 체크",
+        "forEachVariableDescriptionSubTitle2": "2. sub 프로세스가 실행될 이전 Task 패널에서 데이터 매핑 진행",
+        "forEachRoleDescriptionTitle": "선택된 역할(role)을 가진 모든 사람에게 Sub Process 생성",
+        "forEachRoleDescriptionSubTitle1": "적용 시나리오: \n다수의 팀원이 동일한 작업을 수행해야 하는 경우, 역할 기반 다중 생성을 통해 각 팀원에게 서브 프로세스를 개별적으로 할당할 수 있습니다. \n이를 통해 각 팀원이 독립적으로 작업을 진행하면서도 전체 프로세스는 중앙에서 관리될 수 있습니다. \n\n아래는 이미지의 강조된 박스 부분이 역할(role)에 해당합니다.",
+        "subProcessNamePattern": "서브프로세스명 패턴",
+        "ruleGenerator": "결정론적 규칙화",
+        "ruleGenerating": "결정론적 규칙화 중...",
+        "generatedRulePreview": "결정론적 규칙 미리보기",
+        "generatedFunction": "결정론적 규칙",
+        "expectedOutput": "예상 출력 결과",
+        "conditionWhen": "조건(When)",
+        "resultThen": "결과(Then)",
+        "mismatch": "부적합",
+        "cancel": "취소",
+        "confirm": "확인",
+        "regenerate": "재생성"
+    },
+    "ParticipantPanel": {
+        "apiUrl": "API URL",
+        "openAPISpec": "Open API 스펙",
+        "system": "시스템 정의에서 불러오기",
+        "systemDefinitionDescriptionTitle": "왼쪽 정의 관리 버튼 중 시스템 정의에 등록된 항목을 불러와 사용",
+        "apiUrlDescriptionTitle": "API 요청을 보낼 때 사용할 메서드(GET, POST, PUT, PATCH)와 요청을 처리할 서버의 엔드포인트 URL을 설정",
+        "apiUrlDescriptionSubTitle1": "1.GET : 서버로부터 데이터를 조회하는 요청 \n2.POST : 서버에 새 데이터를 생성하여 전송하는 요청 \n3.PUT : 기존 데이터를 업데이트하거나 전체를 대체하는 요청 \n4.PATCH : 기존 데이터의 일부를 수정하는 요청 \n5.API URL : 요청이 전송될 서버의 엔드포인트 주소\n"
+    },
+    "LanePanel": {
+        "selectRoleType": "역할 선택",
+        "none": "없음",
+        "IAMScope": "역할명으로 역할 선택",
+        "DirecUser": "직접 사용자 선택",
+        "resolutionRule": "역할 규칙",
+        "scopeName": "역할 명",
+        "userID": "유저 ID",
+        "externalCustomer": "외부 고객",
+        "radioDescriptionTitle": "추가하고 싶은 역할을 선택합니다.",
+        "radioDescriptionSubTitle": "없음 : 이 옵션을 선택하면 해당 작업에 대해 특정 역할이 할당되지 않습니다. 모든 사용자가 이 작업을 수행할 수 있습니다. \n\n역할명으로 역할 선택 : 이 옵션을 선택하면 미리 정의된 역할 목록에서 역할을 선택할 수 있습니다. 선택된 역할에 속한 사용자만 이 작업을 수행할 수 있습니다. \n\n직접 사용자 선택 : 이 옵션을 선택하면 특정 사용자를 직접 지정할 수 있습니다. 지정된 사용자만 이 작업을 수행할 수 있습니다."
+    },
+    "MessageEventDefinitionPanel": {
+        "correlationKey": "관계 키",
+        "servicePath": "서비스 경로",
+        "operationRef": "연산 참조",
+        "return": "Return 값을 저장 할 변수",
+        "methodTypeDescriptionTitle": "API 요청을 보낼 때 사용할 메서드(GET, POST, PUT, PATCH)와 요청을 처리할 서버의 엔드포인트 URL을 설정",
+        "methodTypeDescriptionSubTitle1": "1.GET : 서버로부터 데이터를 조회하는 요청 \n2.POST : 서버에 새 데이터를 생성하여 전송하는 요청 \n3.PUT : 기존 데이터를 업데이트하거나 전체를 대체하는 요청 \n4.PATCH : 기존 데이터의 일부를 수정하는 요청 \n5.API URL : 요청이 전송될 서버의 엔드포인트 주소\n",
+        "returnTitle": "드롭다운 메뉴는 프로세스 변수에서 등록된 변수 이름을 리스트로 출력합니다. \n위 작성된 내용을 저장할 변수를 선택합니다.",
+        "correlationKeyTitle": "관계 키는 특정 메시지를 식별하기 위해 사용하는 고유한 값입니다.",
+        "correlationKeySubTitle": " Message Intermediate Catch Event가 메시지를 수신할 때, 여러 메시지 중에서 올바른 메시지를 식별하고 처리하기 위해 관계 키를 사용합니다. 이 키는 메시지를 송신하는 엔티티와 수신하는 엔티티 간에 공유되어, 메시지가 특정 비즈니스 프로세스 인스턴스에 속하는지 식별할 수 있게 합니다. \n예를 들어, 주문 번호나 고객 ID가 관계 키로 사용될 수 있습니다.",
+        "servicePathTitle": "서비스 경로는 메시지가 전달될 서비스의 위치나 주소를 나타냅니다.",
+        "servicePathSubTitle": "이는 메시지가 어느 서비스 엔드포인트로 보내져야 하는지를 정의하며, 메시지 기반의 통신을 통해 프로세스가 다른 시스템 또는 서비스와 상호작용할 때 사용됩니다. BPMN에서, 서비스 경로는 주로 메시지를 라우팅하거나 특정 서비스로 전달하기 위해 설정됩니다. 서비스 경로를 통해 메시지가 적절한 서비스를 호출하게 됩니다.",
+        "operationReferenceTitle": "연산 참조는 특정 메시지를 처리하기 위한 연산(Operation)을 지정하는 참조입니다.",
+        "operationReferenceSubTitle": "이는 메시지가 도착했을 때 수행될 작업이나 비즈니스 로직을 정의합니다. BPMN에서 연산 참조는 메시지의 내용과 이 메시지가 트리거할 작업을 명확히 하도록 돕습니다. \n예를 들어, 특정 연산 참조는 메시지를 받았을 때 데이터베이스 업데이트 또는 외부 서비스 호출을 수행할 수 있습니다."
+    },
+    "DetailComponent": {
+        "details": "상세보기",
+        "allDetails": "가이드 보기"
+    },
+    "SendTaskPanel": {
+        "generation": "생성",
+        "return": "Return 값을 저장 할 변수",
+        "methodTypeDescriptionTitle": "API 요청을 보낼 때 사용할 메서드(GET, POST, PUT, PATCH)와 요청을 처리할 서버의 엔드포인트 URL을 설정",
+        "methodTypeDescriptionSubTitle1": "1.GET : 서버로부터 데이터를 조회하는 요청 \n2.POST : 서버에 새 데이터를 생성하여 전송하는 요청 \n3.PUT : 기존 데이터를 업데이트하거나 전체를 대체하는 요청 \n4.PATCH : 기존 데이터의 일부를 수정하는 요청 \n5.API URL : 요청이 전송될 서버의 엔드포인트 주소\n",
+        "returnTitle": "드롭다운 메뉴는 프로세스 변수에서 등록된 변수 이름을 리스트로 출력합니다. \n위 작성된 내용을 저장할 변수를 선택합니다.",
+        "message": "이메일 전송",
+        "send": "Rest API 전송"
+    },
+    "ScriptTaskPanel": {
+        "return": "Return 값을 저장 할 변수",
+        "scriptDescriptionTitle": "Script Task 는 Javascript 나 Java 언어를 직접 액티비티에 설정하여 프로세스 설정만으로 처리하기 힘든 마이크로한 설정이나 액션을 실행가능하게 합니다.",
+        "returnTitle": "드롭다운 메뉴는 프로세스 변수에서 등록된 변수 이름을 리스트로 출력합니다. \n위 작성된 내용을 저장할 변수를 선택합니다."
+    },
+    "TimerEventDefinitionPanel": {
+        "cron": "시간 입력(Cron)",
+        "date": "날짜 선택",
+        "time": "시간 선택",
+        "frequency": "빈도 선택",
+        "cronDescriptionTitle": "Cron 표현식을 사용하여 Timer Intermediate Catch Event가 트리거될 시간을 정밀하게 설정할 수 있습니다.",
+        "cronDescriptionSubTitle": "형식: Cron 표현식은 다섯 개의 필드로 구성되며, 각 필드는 분, 시간, 일, 월, 요일을 나타냅니다. \n예시: \n0 0 * * * : 매일 자정 (00:00)에 이벤트가 트리거됩니다. \n15 10 * * * : 매일 10:15 AM에 이벤트가 트리거됩니다. \n0 9 1 * * : 매월 1일 9:00 AM에 이벤트가 트리거됩니다. \n0 0 * * 1 : 매주 월요일 자정 (00:00)에 이벤트가 트리거됩니다. \n*/10 * * * * : 매 10분마다 이벤트가 트리거됩니다.",
+        "ruleGenerator": "결정론적 규칙화",
+        "ruleGenerating": "결정론적 규칙화 중...",
+        "generatedRulePreview": "결정론적 규칙 미리보기",
+        "generatedCron": "생성된 Cron",
+        "cancel": "취소",
+        "confirm": "확인",
+        "regenerate": "재생성"
+    },
+    "GatewayPanel": {
+        "gatewayDescriptionTitle": "Gateway 조건처리를 통해 다음 작업으로 넘어가는 것을 선택할 때 사용함",
+        "gatewayDescriptionSubTitle": "Exclusive Gateway : 나갈 때는 선에 적용된 조건에 맞는 하나의 작업으로 넘어감 들어올 때는 여러 작업 중 하나라도 들어오면 다음 작업으로 넘어가며 기존 작업은 종료됨",
+        "gatewayDescriptionSubTitle1": "Pararell Gateway : 나갈 때는 선에 적용된 조건이 맞기만 하면 전부 병렬로 다음 작업을 진행함 들어올 때는 여러 작업이 있으면 모든 작업이 완료되어야 다음 작업으로 넘어갈 수 있음",
+        "gatewayDescriptionSubTitle2": "Inclusive Gateway : 나갈 때는 선에 적용된 조건에 맞는 하나의 작업으로 넘어감 들어올 때는 여러 작업이 있으면 모든 작업이 완료되어야 다음 작업으로 넘어갈 수 있음",
+        "gatewayDescriptionSubTitle3": "Event-based gateway : 특정 이벤트가 들어왔을 경우에만 다음 작업으로 넘어갈 수 있음",
+        "gatewayDescriptionSubTitle4": "Complex Gateway(미구현) : 사용자가 임의의 조건을 추가하여 다음 작업으로 넘어가는 것을 선택할 수 있음"
+    },
+    "SystemList": {
+        "addDialogTitle": "시스템 추가",
+        "editDialogTitle": "시스템 수정",
+        "name": "이름",
+        "description": "설명",
+        "apiUrl": "API URL",
+        "add": "추가",
+        "edit": "수정"
+    },
+    "System": {
+        "description": "설명",
+        "edit": "수정",
+        "delete": "삭제",
+        "confirmDeleteTitle": "시스템 정의 삭제",
+        "confirmDeleteText": "을/를 삭제하시겠습니까?"
+    },
+    "PaletteProvider": {
+        "undoCmdZ": "되돌리기 (Cmd + Z)",
+        "undoCtrlZ": "되돌리기 (Ctrl + Z)",
+        "RedoCmdShiftZ": "다시 실행 (Cmd + Shift + Z)",
+        "RedoCtrlY": "다시 실행 (Ctrl + Y)",
+        "handTool": "손(이동) 도구 활성화",
+        "lassoTool": "선택영역 지정 도구 활성화",
+        "spaceTool": "공간 생성/제거 도구 활성화",
+        "globalConnectTool": "연결 도구 활성화",
+        "participantCollapsed": "풀/참가자 생성(가로)",
+        "participantExpanded": "풀/참가자 생성(세로)",
+        "StartEvent": "시작 이벤트 생성",
+        "IntermediateThrowEvent": "중간 이벤트 전송",
+        "EndEvent": "종료 이벤트 생성",
+        "ExclusiveGateway": "독점 게이트웨이 생성",
+        "Task": "작업 생성",
+        "SubProcess": "하위 프로세스 생성",
+        "DataStoreReference": "데이터 저장소 생성",
+        "DataObjectReference": "데이터 객체 생성",
+        "Participant": "참가자 생성",
+        "expandedSubProcess": "확장된 하위 프로세스 생성",
+        "dataStore": "데이터 저장소 생성",
+        "dataObject": "데이터 객체 생성",
+        "autoLayout": "자동 레이아웃",
+        "changeOrientation": "레이아웃 방향 전환"
+    },
+    "chatListing": {
+        "title": "채팅방 설정",
+        "search": "검색",
+        "chatRoomName": "채팅방 이름",
+        "selectParticipants": "참여자 선택",
+        "save": "저장",
+        "delete": "삭제",
+        "create": "생성",
+        "cancel": "취소",
+        "setting": "설정",
+        "deleteChatRoom": "채팅방 삭제",
+        "confirmDeleteChatRoom": "채팅방을 삭제하시겠습니까?",
+        "enterChatRoomName": "채팅방 이름을 입력해주세요.",
+        "selectAtLeastOneParticipant": "참여자를 하나 이상 선택해주세요."
+    },
+    "userListing": {
+        "search": "검색",
+        "chat": "채팅"
+    },
+    "ProcessDefinitionChat": {
+        "greetingMessage": "{name}님 안녕하세요! 어떤 업무에 어떤 문제를 겪고 계신가요? 말씀해주시면 도와드리겠습니다!"
+    },
+    "customContextPad": {
+        "endEvent": "종료 이벤트 추가",
+        "gateway": "게이트웨이 추가",
+        "task": "작업 추가",
+        "intermediateEvent": "중간/경계 이벤트 추가",
+        "textAnnotation": "텍스트 주석 추가",
+        "replace": "요소 변경",
+        "delete": "삭제",
+        "connect": "다른 요소에 연결",
+        "lane": "레인 추가",
+        "laneAbove": "위쪽에 레인 추가",
+        "laneToTheLeft": "왼쪽에 레인 추가",
+        "laneBelow": "아래에 레인 추가",
+        "laneToTheRight": "오른쪽에 레인 추가",
+        "laneDivideTwo": "두 개의 레인으로 나누기",
+        "laneDivideThree": "세 개의 레인으로 나누기",
+        "connectionMulti": "메시지 연결",
+        "phase": "페이즈 추가"
+    },
+    "CustomReplaceElement": {
+        "replace-with-call-activity": "호출 활동으로 변경",
+        "replace-with-collapsed-subprocess": "접힌 하위 프로세스로 변경",
+        "replace-with-expanded-subprocess": "확장된 하위 프로세스로 변경",
+        "replace-with-manual-task": "수동 작업으로 변경",
+        "replace-with-receive-task": "수신 작업으로 변경",
+        "replace-with-rule-task": "비즈니스 규칙 작업으로 변경",
+        "replace-with-script-task": "스크립트 작업으로 변경",
+        "replace-with-send-task": "전송 작업으로 변경",
+        "replace-with-service-task": "서비스 작업으로 변경",
+        "replace-with-task": "작업으로 변경",
+        "replace-with-user-task": "사용자 작업으로 변경",
+        "toggle-loop": "반복",
+        "toggle-parallel-mi": "병렬 다중 인스턴스",
+        "toggle-sequential-mi": "순차 다중 인스턴스",
+        "replace-with-compensation-end": "보상 종료 이벤트로 변경",
+        "replace-with-error-end": "오류 종료 이벤트로 변경",
+        "replace-with-escalation-end": "에스컬레이션 종료 이벤트로 변경",
+        "replace-with-message-end": "메시지 종료 이벤트로 변경",
+        "replace-with-none-intermediate-throw": "빈 중간 이벤트로 변경",
+        "replace-with-signal-start": "신호 시작 이벤트로 변경",
+        "replace-with-terminate-end": "종료 이벤트로 변경",
+        "replace-with-signal-end": "신호 종료 이벤트로 변경",
+        "replace-with-conditional-start": "조건부 시작 이벤트로 변경",
+        "replace-with-message-start": "메시지 시작 이벤트로 변경",
+        "replace-with-none-intermediate-throwing": "빈 중간 이벤트로 변경",
+        "replace-with-timer-start": "타이머 시작 이벤트로 변경",
+        "replace-with-compensation-intermediate-throw": "보상 중간 던지기로 변경",
+        "replace-with-conditional-intermediate-catch": "조건부 중간 잡기로 변경",
+        "replace-with-escalation-intermediate-throw": "에스컬레이션 중간 던지기로 변경",
+        "replace-with-link-intermediate-catch": "링크 중간 잡기로 변경",
+        "replace-with-link-intermediate-throw": "링크 중간 던지기로 변경",
+        "replace-with-message-intermediate-catch": "메시지 중간 잡기로 변경",
+        "replace-with-message-intermediate-throw": "메시지 중간 던지기로 변경",
+        "replace-with-none-end": "종료 이벤트로 변경",
+        "replace-with-none-start": "시작 이벤트로 변경",
+        "replace-with-signal-intermediate-catch": "신호 중간 잡기로 변경",
+        "replace-with-signal-intermediate-throw": "신호 중간 던지기로 변경",
+        "replace-with-timer-intermediate-catch": "타이머 중간 잡기로 변경",
+        "replace-with-complex-gateway": "복잡 게이트웨이로 변경",
+        "replace-with-event-based-gateway": "이벤트 기반 게이트웨이로 변경",
+        "replace-with-inclusive-gateway": "포괄적 게이트웨이로 변경",
+        "replace-with-parallel-gateway": "병렬 게이트웨이로 변경",
+        "replace-with-exclusive-gateway": "배타적 게이트웨이로 변경",
+        "replace-with-data-object-reference": "데이터 객체 참조로 변경",
+        "replace-with-event-subprocess": "이벤트 하위 프로세스로 변경",
+        "replace-with-transaction": "트랜잭션으로 변경",
+        "replace-with-data-store-reference": "데이터 저장소 참조로 변경",
+        "toggle-is-collection": "컬렉션 여부 전환",
+        "toggle-adhoc": "애드혹 전환",
+        "replace-with-collapsed-pool": "접힌 풀로 변경",
+        "toggle-participant-multiplicity": "참가자 다중성 전환",
+        "replace-with-compensation-boundary": "보상 경계 이벤트로 변경",
+        "replace-with-conditional-boundary": "조건부 경계 이벤트로 변경",
+        "replace-with-error-boundary": "오류 경계 이벤트로 변경",
+        "replace-with-escalation-boundary": "에스컬레이션 경계 이벤트로 변경",
+        "replace-with-message-boundary": "메시지 경계 이벤트로 변경",
+        "replace-with-non-interrupting-conditional-boundary": "조건부 경계 이벤트 (비중단)로 변경",
+        "replace-with-non-interrupting-escalation-boundary": "에스컬레이션 경계 이벤트 (비중단)로 변경",
+        "replace-with-non-interrupting-message-boundary": "메시지 경계 이벤트 (비중단)로 변경",
+        "replace-with-non-interrupting-signal-boundary": "신호 경계 이벤트 (비중단)로 변경",
+        "replace-with-non-interrupting-timer-boundary": "타이머 경계 이벤트 (비중단)로 변경",
+        "replace-with-signal-boundary": "신호 경계 이벤트로 변경",
+        "replace-with-timer-boundary": "타이머 경계 이벤트로 변경",
+        "replace-with-expanded-pool": "확장된 풀로 변경"
+    },
+    "WorkItem": {
+        "progress": "프로세스",
+        "history": "액티비티",
+        "chatbot": "어시스턴트",
+        "agent": "빠른 초안 생성",
+        "agentMonitor": "에이전트에 맡기기",
+        "agentFeedback": "에이전트 학습",
+        "toggleInputFieldSize": "확대 / 축소",
+        "previous": "이전 단계",
+        "inputForm": "입력 내용",
+        "delegate": "위임하기",
+        "resetContent": "내용 초기화",
+        "generateExample": "예시 재생성",
+        "quickGenerateExample": "빠른 생성",
+        "quickGenerateExampleDescription": "기본 AI 모델을 사용한 빠른 초안 생성. ex) 기본 문서 작성, 간단한 분석 (1~3분 소요)",
+        "resultInput": "현재 작업",
+        "researchMethod": "에이전트에 맡기기",
+        "runningResearchMethod": "진행 중인 연구방식",
+        "delegateMessage": "'{taskName}'업무를 {username}에게 위임하였습니다.",
+        "delegateMessageWithAssignee": "'{taskName}'업무의 담당자를 [{assigneeInfo}]에서 {username}으로 위임하였습니다.",
+        "runAgain": "다시 수행하기",
+        "select": "선택"
+    },
+    "AgentSelectInfo": {
+        "orcation": "에이전트 연구 방식",
+        "agentMode": {
+            "none": {
+                "title": "없음",
+                "description": "AI 에이전트를 사용하지 않습니다"
+            },
+            "draft": {
+                "title": "초안",
+                "description": "초안 작성 모드 — AI가 기본 문서를 작성합니다"
+            },
+            "complete": {
+                "title": "완성",
+                "description": "완성 모드 — AI가 작업을 자동으로 완료합니다"
+            }
+        },
+        "orchestration": {
+            "none": {
+                "title": "없음",
+                "description": "연구 불필요 — 이미 충분한 정보가 있을 때",
+                "detailDesc": {
+                    "title": "추가 연구 없이 바로 작업 시작",
+                    "details": [
+                        {
+                            "title": "💡 이런 경우에 사용하세요:\n• 이미 필요한 정보를 모두 가지고 있음\n• 단순한 작업이나 질문\n• 빠른 답변이 필요함"
+                        },
+                        {
+                            "title": "📝 예시:\n• 문서 요약하기\n• 코드 리팩토링\n• 텍스트 번역"
+                        }
+                    ]
+                }
+            },
+            "crewaiDeepResearch": {
+                "title": "CrewAI 협업 연구",
+                "description": "다중 에이전트가 협업하여 심층적인 연구와 분석을 진행. ex) 문서 분석, 데이터 수집, 보고서 작성 (5~15분 소요)",
+                "detailDesc": {
+                    "title": "여러 AI 전문가가 팀을 이루어 연구",
+                    "details": [
+                        {
+                            "title": "🎯 작동 방식:\n연구원 → 데이터 수집\n분석가 → 심층 분석\n작가 → 보고서 작성"
+                        },
+                        {
+                            "title": "💡 이런 경우에 사용하세요:\n• 다각도 분석이 필요한 복잡한 주제\n• 전문가 수준의 보고서 작성\n• 종합적인 시장 조사"
+                        },
+                        {
+                            "title": "📝 예시:\n• 경쟁사 분석 보고서\n• 시장 트렌드 리서치\n• 전략 기획 문서"
+                        }
+                    ]
+                }
+            },
+            "crewaiAction": {
+                "title": "CrewAI 액션",
+                "description": "최적경로로 다양한 도구를 호출해서 목적을 달성함. ex) MCP, A2A (1~5분 소요)",
+                "detailDesc": {
+                    "title": "API와 외부 도구를 활용한 데이터 수집",
+                    "details": [
+                        {
+                            "title": "🎯 작동 방식:\n→ 특정 API나 도구 호출\n→ 구조화된 데이터 수집\n→ 결과 통합 및 정리"
+                        },
+                        {
+                            "title": "💡 이런 경우에 사용하세요:\n• 특정 소스에서 데이터 필요\n• API 연동이 필요한 작업\n• 정형화된 데이터 수집"
+                        },
+                        {
+                            "title": "📝 예시:\n• 주식 시세 정보 수집\n• 날씨 데이터 조회\n• CRM 시스템 연동\n• 데이터베이스 쿼리"
+                        }
+                    ]
+                }
+            },
+            "openaiDeepResearch": {
+                "title": "OpenAI 고급 분석",
+                "description": "GPT-4 기반의 고급 추론과 체계적 분석을 통한 연구. ex) 논리적 사고, 창의적 문제해결 (3~10분 소요)",
+                "detailDesc": {
+                    "title": "반복적 검증으로 신뢰도 높은 연구",
+                    "details": [
+                        {
+                            "title": "🎯 작동 방식:\n1단계: 초기 연구\n2단계: 결과 평가\n3단계: 재조사 (필요시)\n4단계: 최종 검증"
+                        },
+                        {
+                            "title": "💡 이런 경우에 사용하세요:\n• 불확실한 주제 탐색\n• 신뢰도가 중요한 정보\n• 여러 소스의 교차 검증 필요"
+                        },
+                        {
+                            "title": "📝 예시:\n• 최신 연구 동향 파악\n• 사실 확인(팩트체크)\n• 논쟁적인 주제 분석"
+                        }
+                    ]
+                }
+            },
+            "browserAutomationAgent": {
+                "title": "브라우저 자동화 에이전트",
+                "description": "웹사이트에서 자동으로 데이터를 추출하고 수집. ex) 웹 크롤링, 스크래핑, 폼 자동화 (2~10분 소요)",
+                "detailDesc": {
+                    "title": "웹사이트 방문하여 자동으로 데이터 추출",
+                    "details": [
+                        {
+                            "title": "🎯 작동 방식:\n→ 지정된 웹사이트 접속\n→ 페이지 탐색 및 데이터 수집\n→ 정보 추출 및 정리"
+                        },
+                        {
+                            "title": "💡 이런 경우에 사용하세요:\n• 특정 웹사이트에서 정보 수집\n• 가격 비교나 모니터링\n• 뉴스 기사 수집"
+                        },
+                        {
+                            "title": "📝 예시:\n• 쇼핑몰 가격 비교\n• 부동산 매물 정보 수집\n• 뉴스 헤드라인 모음\n• 경쟁사 웹사이트 모니터링"
+                        },
+                        {
+                            "title": "⚠️ 주의: 웹사이트 접근 권한 필요"
+                        }
+                    ]
+                }
+            },
+            "agentToAgent": {
+                "title": "A2A (에이전트 간 협업)",
+                "description": "실시간으로 여러 에이전트가 협력하여 복잡한 작업 수행. ex) MCP 프로토콜, A2A 통신 (가변적 소요)",
+                "detailDesc": {
+                    "title": "여러 에이전트가 실시간으로 협력",
+                    "details": [
+                        {
+                            "title": "🎯 작동 방식:\n→ 여러 에이전트가 동시 작업\n→ 실시간 정보 공유 및 통합\n→ 동적으로 역할 조정"
+                        },
+                        {
+                            "title": "💡 이런 경우에 사용하세요:\n• 복잡하고 동적인 작업 흐름\n• 지속적인 모니터링 필요\n• 다양한 소스의 실시간 통합"
+                        },
+                        {
+                            "title": "📝 예시:\n• 24시간 시장 모니터링\n• 실시간 뉴스 큐레이션\n• 복합 데이터 대시보드"
+                        },
+                        {
+                            "title": "⚠️ 고급 사용자용 기능입니다"
+                        }
+                    ]
+                }
+            },
+            "langchainReact": {
+                "title": "LangChain 연구",
+                "description": "다양한 도구를 호출해서 목적 달성. ex) 이미지 생성, 코드 실행 및 분석 (3~5분 소요)",
+                "detailDesc": {
+                    "title": "다양한 도구를 호출해서 목적 달성",
+                    "details": [
+                        {
+                            "title": "🎯 작동 방식:\nAI → 도구 선택 및 호출\n도구 → 작업 실행 (이미지 생성, 코드)\nAI → 결과 통합 및 분석"
+                        },
+                        {
+                            "title": "💡 이런 경우에 사용하세요:\n• 이미지 생성 및 편집\n• 코드 실행 및 데이터 분석\n• 수학 계산 및 시각화\n• API 기반 외부 서비스 활용"
+                        },
+                        {
+                            "title": "📝 예시:\n• \"Python으로 CSV 분석해줘\"\n• \"그래프 그려줘\"\n• \"이미지 생성해줘\"\n• \"날씨 API 호출해서 정보 가져와\""
+                        },
+                        {
+                            "title": "📊 결과물: 구조화된 데이터/코드\n✅ 장점: 빠르고 안정적, 자동화 용이\n⚠️ 제약: 웹 UI 직접 조작 불가"
+                        }
+                    ]
+                }
+            },
+            "browserUse": {
+                "title": "브라우저 사용",
+                "description": "실제 브라우저를 조작하여 작업 수행. ex) 검색, 폼 작성, 스크래핑 (2~8분 소요)",
+                "detailDesc": {
+                    "title": "실제 브라우저를 조작하여 작업 수행",
+                    "details": [
+                        {
+                            "title": "🎯 작동 방식:\nAI → 브라우저 실행\n브라우저 → 웹페이지 접속 및 조작\n(클릭, 입력, 스크롤, 스크래핑)\nAI → 수집된 정보 분석 및 정리"
+                        },
+                        {
+                            "title": "💡 이런 경우에 사용하세요:\n• API가 없는 웹사이트 정보 수집\n• 로그인이 필요한 작업\n• 실시간 최신 정보 검색\n• 폼 작성 및 제출 자동화"
+                        },
+                        {
+                            "title": "📝 예시:\n• \"네이버에서 최신 뉴스 검색해줘\"\n• \"쇼핑몰 가격 비교해줘\"\n• \"회원가입 자동화\"\n• \"부동산 매물 정보 스크래핑\""
+                        },
+                        {
+                            "title": "📊 결과물: 실시간 웹 데이터\n✅ 장점: 모든 웹사이트 접근 가능\n⚠️ 제약: 느리고, 사이트 변경에 취약"
+                        }
+                    ]
+                }
+            },
+            "visionParse": {
+                "title": "이미지 분석",
+                "description": "이미지 분석 연구.",
+                "detailDesc": {
+                    "title": "이미지 분석 및 텍스트 추출",
+                    "details": [
+                        {
+                            "title": "🎯 작동 방식:\n→ 이미지 분석\n→ 텍스트 추출 및 정리"
+                        }
+                    ]
+                }
+            }
+        },
+        "cost": {
+            "low": "비용: 낮음",
+            "medium": "비용: 중간",
+            "high": "비용: 높음"
+        },
+        "humanApproval": {
+            "title": "사용자 승인 및 추가 정보 요청",
+            "description": "사용자의 승인 및 추가 정보가 필요합니다. 아래 작업 계획대로 진행해도 괜찮다면 확인을 눌러주세요. 필요한 경우 입력 또는 선택 항목을 작성해 주세요."
+        }
+    },
+    "TestProcess": {
+        "title": "테스트 프로세스",
+        "mainInstanceId": "메인 - 인스턴스 ID - ",
+        "subInstanceId": "서브 - 인스턴스 ID - ",
+        "worklist": "작업 목록",
+        "success": "성공",
+        "taskID": "작업 ID: ",
+        "instanceID": "인스턴스 ID: ",
+        "processRecord": "프로세스 실행 기록",
+        "startRecording": "프로세스 실행 기록 시작",
+        "stopRecording": "프로세스 실행 기록 중지",
+        "recordingSave": "프로세스 실행 기록 저장",
+        "confirm": "확인",
+        "name": "제목"
+    },
+    "TestVariables": {
+        "key": "키값",
+        "value": "밸류",
+        "action": "작업",
+        "noData": "데이터가 없습니다."
+    },
+    "TestVariable": {
+        "start": "실행",
+        "delete": "삭제"
+    },
+    "VerticalSidebar": {
+        "instanceList": "인스턴스",
+        "projectList": "프로젝트",
+        "agentList": "에이전트",
+        "instanceMyGroup": "내 그룹 인스턴스",
+        "saveFileName": "저장될 파일명",
+        "downloadDefinitionList": "정의 내보내기",
+        "save": "저장",
+        "trash": "휴지통",
+        "newProject": "새로운 프로젝트 생성",
+        "addProject": "프로젝트 추가",
+        "showMore": "더보기",
+        "showLess": "접기"
+    },
+    "ProfitExpanse": {
+        "processExecutionPerformance": "프로세스 실행실적",
+        "startDate": "시작일",
+        "endDate": "종료일",
+        "toDo": "예정업무",
+        "inProcess": "진행 중",
+        "done": "완료 됨",
+        "all": "전체",
+        "typeSelection": "유형 선택",
+        "taskId": "작업 ID"
+    },
+    "InstanceCard": {
+        "progress": "프로세스",
+        "workItem": "워크 아이템",
+        "activity": "액티비티",
+        "ganttChart": "스케줄",
+        "chat": "채팅",
+        "kanbanBoard": "칸반보드",
+        "sendEvent": "{event} 이벤트 보내기",
+        "output": "산출물",
+        "source": "소스",
+        "deleteInstance": "인스턴스 삭제",
+        "deleteInstanceMessage": "인스턴스를 삭제하시겠습니까?",
+        "warning": "경고",
+        "warningMessage1": "삭제 요청은 7일 이내 취소할 수 있습니다.",
+        "warningMessage2": "삭제 요청 7일 이후 관련 데이터는 완전히 삭제되며 복구는 불가능합니다.",
+        "warningMessage3": "당사는 삭제된 데이터에 대해 어떠한 책임도 지지 않습니다.",
+        "cancel": "취소",
+        "delete": "삭제",
+        "deleteCancel": "삭제 취소",
+        "starterInfo": "시작자: 정보 불러오는 중",
+        "startDateInfo": "시작일시: 정보 불러오는 중",
+        "starter": "시작자",
+        "startDate": "시작일시",
+        "addTask": "업무 등록"
+    },
+    "ProjectCard": {
+        "managment": "스케줄",
+        "kanbanBoard": "칸반보드",
+        "instanceList": "인스턴스 목록",
+        "projectInfo": "프로젝트 정보",
+        "projectId": "프로젝트ID",
+        "projectName": "프로젝트명",
+        "expectedPeriod": "예상 기간",
+        "projectCreatedDate": "프로젝트 생성일",
+        "noProjectInfo": "프로젝트 정보가 없습니다",
+        "period": "기간",
+        "statusNew": "신규",
+        "statusRunning": "실행중",
+        "statusCompleted": "완료",
+        "statusTodo": "예정업무",
+        "statusInProgress": "진행중",
+        "statusPendingCancelled": "보류/반송",
+        "statusDone": "완료업무",
+        "executeProcess": "프로세스 실행"
+    },
+    "DryRunProcess": {
+        "notFound": "워크아이템을 찾을 수 없습니다."
+    },
+    "CompensateEventDefinitionPanel": {
+        "selectTask": "보상 작업 선택"
+    },
+    "PALUserTaskPanel": {
+        "insertDescription": "태스크 설명을 넣어주세요",
+        "taskLink": "업무 링크",
+        "moveToTask": "업무 화면으로 이동"
+    },
+    "ProcessGPTExecute": {
+        "roleMapping": "역할 지정",
+        "processStart": "프로세스 실행",
+        "processSimulate": "프로세스 시뮬레이션"
+    },
+    "ModelSettings": {
+        "title": "에이전트 모델 설정",
+        "modelName": "모델명",
+        "confirm": "확인",
+        "cancel": "취소"
+    },
+    "Checkpoints": {
+        "checkpoints": "체크포인트"
+    },
+    "auth": {
+        "emailRateLimitExceeded": "연결된 Supabase 의 SMTP 설정을 변경하여 이메일 전송 한도를 변경하거나 잠시 뒤에 다시 시도해주세요.\n\nSMTP 설정은 Supabase 대시보드의 Project Settings > Authentication > SMTP Settings 섹션에서 확인하실 수 있습니다.",
+        "userAlreadyRegistered": "이미 가입된 이메일입니다.",
+        "verificationEmailSent": "계정 인증 메일을 전송해드렸습니다. 이메일 확인 후 다시 로그인하세요.<br>메일이 보이지 않는 경우 스팸함을 확인하세요.",
+        "registrationSuccess": "회원가입에 성공했습니다.",
+        "emailSent": "메일이 발송되었습니다.",
+        "passwordUpdated": "비밀번호가 변경되었습니다."
+    },
+    "StorageBaseSupabase": {
+        "emailNotConfirmed": "계정 인증이 완료되지 않았습니다. 이메일 확인 후 다시 로그인하세요.",
+        "wrongPassword": "아이디 또는 비밀번호가 잘못되었습니다. 로그인 정보를 확인해주시기 바랍니다.",
+        "wrongId": "아이디가 틀렸습니다.",
+        "notRegisteredEmail": "가입된 이메일주소가 아닙니다.",
+        "loginRequired": "로그인이 필요합니다.",
+        "unRegisteredTenant": "가입되지 않은 테넌트입니다."
+    },
+    "TodoTaskItemCard": {
+        "assignee": "담당자",
+        "myTask": "내 업무",
+        "noAssignee": "지정된 담당자가 없습니다"
+    },
+    "ExternalForms": {
+        "submit": "제출",
+        "submitted": "제출 완료",
+        "submittedMessage": "제출되었습니다."
+    },
+    "ProcessDefinitionChatHeader": {
+        "addMarketplace": "마켓플레이스 등록",
+        "processDefinitionName": "프로세스 정의명"
+    },
+    "ProcessDefinitionMarketPlaceDialog": {
+        "title": "마켓플레이스 등록",
+        "processId": "프로세스 아이디",
+        "processName": "프로세스 이름",
+        "description": "설명",
+        "category1": "카테고리1",
+        "category2": "카테고리2",
+        "tags": "태그",
+        "register": "등록",
+        "requiredField": "필수 입력 항목입니다",
+        "duplicateIdError": "이미 동일한 ID로 등록된 프로세스가 있습니다."
+    },
+    "ProcessDefinitionMarketPlace": {
+        "searchPlaceholder": "프로세스 이름, 작성자, 태그 검색",
+        "allCategory": "전체",
+        "searchResultTitle": "검색 결과",
+        "searchingTitle": "검색 중...",
+        "relatedTemplates": "관련 템플릿",
+        "addedButton": "추가됨",
+        "addButton": "추가",
+        "deleteButton": "삭제",
+        "previewButton": "미리보기",
+        "otherCategory": "기타",
+        "deleteDialogTitle": "프로세스 삭제 확인",
+        "deleteDialogMessage": "정말로 \"{name}\" 프로세스를 마켓플레이스에서 삭제하시겠습니까?",
+        "deleteDialogWarning": "이 작업은 되돌릴 수 없습니다.",
+        "deleteDialogConfirmMessage": "계속하려면 프로세스 이름을 정확히 입력해주세요:",
+        "previewDialogTitle": "프로세스 미리보기",
+        "countUnit": "개",
+        "allTemplates": "전체 템플릿"
+    },
+    "ContentEditorField": {
+        "contentEditor": "콘텐츠 편집기",
+        "editContent": "콘텐츠 편집",
+        "mode": "모드"
+    },
+    "PptxExportHelper": {
+        "title": "파워포인트 내보내기",
+        "configureOptions": "파워포인트 내보내기 옵션 설정:",
+        "includeSpeakerNotes": "발표자 노트 포함",
+        "presentationName": "프레젠테이션 이름",
+        "exportButton": "파워포인트로 내보내기",
+        "cancelButton": "취소"
+    },
+    "SlideEditor": {
+        "title": "슬라이드 프레젠테이션 편집기",
+        "addSlide": "슬라이드 추가",
+        "exportMarkdown": "MD 내보내기",
+        "exportPdf": "PDF 내보내기",
+        "exportPptx": "파워포인트 내보내기",
+        "exportWord": "워드 내보내기",
+        "import": "가져오기",
+        "presentation": "프레젠테이션",
+        "preview": "미리보기 입니다."
+    },
+    "WordExportHelper": {
+        "title": "워드 내보내기",
+        "configureOptions": "워드 내보내기 옵션 설정:",
+        "documentName": "문서 이름",
+        "exportButton": "워드로 내보내기",
+        "cancelButton": "취소"
+    },
+    "PdfExportHelper": {
+        "title": "PDF 내보내기",
+        "instructions": "PDF 내보내기 안내",
+        "step1": "아래의 \"PDF 준비하기\" 버튼을 클릭하세요",
+        "step2": "페이지가 다시 로드되면 브라우저에서 CTRL/CMD+P를 누르세요",
+        "step3": "인쇄 대화상자에서 대상을 PDF로 저장으로 설정하세요",
+        "step4": "레이아웃을 가로로 설정하세요",
+        "step5": "여백을 없음으로 설정하세요",
+        "step6": "배경 그래픽 옵션을 활성화하세요",
+        "step7": "저장을 클릭하세요",
+        "includeNotes": "발표자 노트 포함",
+        "overlayNotes": "노트 오버레이",
+        "separatePage": "별도 페이지",
+        "separateFragments": "프래그먼트를 다른 슬라이드로 분리",
+        "prepareButton": "PDF 준비하기",
+        "cancelButton": "취소"
+    },
+    "BSCard": {
+        "title": "전략 맵",
+        "cardTitle": "전략 맵",
+        "addStrategy": "전략 추가",
+        "editStrategy": "전략 수정",
+        "deleteStrategy": "전략 삭제",
+        "addConnection": "연결 추가",
+        "deleteStrategyDialog": "전략 삭제",
+        "selectStrategyToDelete": "삭제할 전략을 선택하세요",
+        "cancel": "취소",
+        "delete": "삭제",
+        "addStrategyDialog": "전략 추가",
+        "perspective": "관점:",
+        "selectUpperStrategy": "상위 전략 선택 (복수 가능)",
+        "strategyName": "전략명:",
+        "description": "조직의 전략 목표를 4가지 관점(재무, 고객, 내부 프로세스, 학습 및 성장)으로 정리하고 시각화된 전략 맵을 생성합니다.",
+        "save": "저장",
+        "editStrategyDialog": "전략 수정",
+        "selectStrategyToEdit": "수정할 전략을 선택하세요",
+        "addConnectionDialog": "전략 연결 추가",
+        "sourceStrategy": "출발 전략",
+        "targetStrategy": "도착 전략",
+        "addConnectionBtn": "연결 추가",
+        "perspectiveFinance": "재무 관점",
+        "perspectiveCustomer": "고객 관점",
+        "finance": "재무",
+        "customer": "고객",
+        "process": "내부 프로세스",
+        "learning": "학습 및 성장",
+        "selectUpperStrategy1": "매출 20% 성장",
+        "selectUpperStrategy2": "고객 만족도 90점 이상 달성",
+        "selectUpperStrategy3": "프로세스 자동화율 50% 달성",
+        "selectUpperStrategy4": "직원 역량 강화 프로그램 운영",
+        "s1description": "전년도 대비 전체 매출을 20% 성장시키는 것이 목표",
+        "s2description": "NPS 기준 고객 만족도를 90점 이상으로 유지",
+        "s3description": "내부 업무 프로세스 중 50% 이상을 자동화 시스템으로 전환",
+        "s4description": "전 직원 대상 연 2회 이상 역량 강화 교육 진행",
+        "aspect": " 관점"
+    },
+    "ProjectCreationForm": {
+        "title": "프로젝트 생성",
+        "projectName": "프로젝트 명",
+        "startDate": "시작일",
+        "dueDate": "마감일",
+        "create": "생성",
+        "yyyy-mm-dd": "연도-월-일"
+    },
+    "AppBaseCard": {
+        "friends": "친구",
+        "progress": "프로세스",
+        "menu": "메뉴",
+        "agentManagement": "에이전트 관리"
+    },
+    "ReportField": {
+        "title": "컨텐츠 에디터",
+        "save": "저장"
+    },
+    "OrganizationAddDialog": {
+        "add": "추가",
+        "addMemberToTeam": "팀에 멤버 추가",
+        "selectTeam": "팀 선택",
+        "selectTeamFirst": "먼저 팀을 선택하세요"
+    },
+    "Header": {
+        "tutorial": "튜토리얼",
+        "works": "핵심 기능",
+        "ai3Steps": "AI 전환의 3단계",
+        "movieGallery": "영상 갤러리",
+        "download": "다운로드",
+        "marketplace": "Marketplace"
+    },
+    "IntroSection": {
+        "title": "Process GPT 소개",
+        "subtitle": "전략만 정의하세요. 실행은 Process GPT가 합니다",
+        "description": "Process GPT는 단순히 질문에 답하는 GPT가 아닙니다. 업무 목표를 입력하면, 자동으로 실행 가능한 워크차트가 생성되고 각 단계를 수행하는 AI Agent 팀이 구성되어 실제로 업무를 수행합니다.",
+        "card1Title": "목표 정의 → 워크차트 생성",
+        "card1Description": "사람이 목표를 정의하면 실행 가능한 워크차트가 자동 생성되고, Agent가 작업을 수행하여 사람은 전략적 의사결정에 집중할 수 있습니다.",
+        "card2Title": "AI Agent가 역할별로 협업",
+        "card2Description": "Agent가 역할별로 문서 생성, 검토, 전달 등 업무를 수행합니다. 반복적 업무는 에이전트가 대신 실행합니다.",
+        "card3Title": "MCP + Agent 기반 실행 중심 프로세스 관리 도구",
+        "card3Description": "ERP, 메일, 협업툴, 문서 등 다양한 채널이 하나의 프로세스로 연결됩니다. 반복적 업무는 에이전트가 대신 실행합니다.",
+        "card4Title": "지식이 쌓이는 프로세스 자동화",
+        "card4Description": "실행 결과는 Ontology 기반 지식으로 구조화되고, 다음 에이전트 실행에 반영되어 업무가 점점 정교해집니다."
+    },
+    "HeroSection": {
+        "title1": "업무 프로세스를 정의하세요.",
+        "title2": "실행은 Process GPT가 맡습니다.",
+        "description1": "전략 목표에 맞춰 AI 에이전트들이 업무 흐름을 구성하고 실행합니다. 사람은 필요한 판단만 개입하고, 프로세스는 자동으로 이어집니다.",
+        "betaTestButton": "베타 테스트하기",
+        "educationButton": "교육과정 보기",
+        "technicalReportLink": "Technical Report 보기"
+    },
+    "NecessitySection": {
+        "title1": "지금까지의 AI 활용은",
+        "title2": "대부분 개인 생산성 도구 수준에 머물렀습니다.",
+        "feature1": "문서 초안 만들기",
+        "feature2": "번역하기",
+        "feature3": "요약하기",
+        "feature4": "검색 자동화",
+        "problemTitle": "이런 기능은 개인에게는 유용하지만, 조직의 전체 업무 흐름(End-to-End Process)에는 영향을 주지 못합니다.",
+        "solutionTitle": "이젠, 업무 전체 흐름을 이해하고 실행하는 Agentic Process AI가",
+        "solutionDescription": "조직의 End-to-End 프로세스 자동화를 위해 필요합니다.",
+        "benefit1": "문서 작성부터 시스템 연동까지 자동 실행",
+        "benefit2": "사람과 AI 에이전트의 혼합 조직 구현",
+        "benefit3": "반복 작업과 지식 기반 판단 자동화",
+        "benefit4": "전략적 의사결정과 맥락 판단에만 집중"
+    },
+    "AI3StepsSection": {
+        "title1": "ProcessGPT는 이러한",
+        "title2": "Agentic Process AI를 구현한 솔루션입니다",
+        "category": "구분",
+        "step1": "1단계: 어시스턴트 활용",
+        "step2": "2단계: 디지털 동료 에이전트",
+        "step3": "3단계: 자율 운영 에이전트 시스템",
+        "role": "인간-에이전트 역할",
+        "scenario": "활용 시나리오",
+        "change": "조직 변화",
+        "behavior": "사용자 행동/리더십",
+        "technology": "기술 요소",
+        "platform": "대표 플랫폼",
+        "role1": "인간 주도 / AI 보조<br>(1인 다수 AI 사용)",
+        "role2": "인간과 AI 협업 / 분업<br>(AI가 과업 담당)",
+        "role3": "인간은 감독자, AI는 실행자<br>(AI 비율 ↑, 인간은 예외 처리)",
+        "scenario1": "문서 요약, 이메일 초안 등 단순 보조",
+        "scenario2": "캠페인 설계, 리서치 자동화 등 작업 위임",
+        "scenario3": "공급망/재무 자동화 등 전체 프로세스 자율 운영",
+        "change1": "기존 조직 유지<br>(개인 생산성 중심)",
+        "change2": "혼합팀, AI 운영 관리자 등장<br>Work Chart 초기 도입",
+        "change3": "완전한 <b>Work Chart</b> 구조<br>모든 직원이 <b>Agent Boss</b> 역할",
+        "behavior1": "도구처럼 사용 단순 질의-응답",
+        "behavior2": "사고 파트너로 협업 프롬프트 숙련도 ↑",
+        "behavior3": "업무 설계자·감독자 역할 의사결정 구조까지 AI 기반 전환",
+        "technology1": "생성형 AI + <b>MCP</b><br>(예: Copilot, ChatGPT)",
+        "technology2": "멀티에이전트, <b>Agentic BPM, A2A</b> 통신<br>(예: AgentSpace, Orchestrate)",
+        "technology3": "자율 에이전트 네트워크 (<b>Agentic Mesh</b>) + 거버넌스<br>(예: Palantir AIP)",
+        "description1": "ProcessGPT는 'Agent Boss' 체계에서 AI가 반복 업무를 실행하고 사람은 전략과 감독에 집중합니다.",
+        "description2": "이를 통해 조직 내 역할 기반 협업과 실행 자동화를 구현하여 업무 효율을 크게 향상시킵니다."
+    },
+    "DemoSection": {
+        "title": "AI 기반 비즈니스 프로세스 혁신",
+        "description1": "Process GPT는 BPMN(Business Process Model and Notation)을 기반으로 하는 혁신적인 오픈소스 시스템입니다. 약 20년 동안 축적된 비즈니스 프로세스 표기법을 활용하여 사용자 중심의 AI 에이전트 시스템을 구현합니다. 복잡한 비즈니스 프로세스를 자연어로 정의하고, 자동화하며, 지속적으로 개선할 수 있습니다.",
+        "description2": "기존 BPM 시스템과 달리, Process GPT는 AI의 힘을 활용하여 비즈니스 프로세스의 정의부터 실행, 최적화까지 모든 단계를 간소화합니다. 이를 통해 기업은 시간과 리소스를 절약하면서도 더 효율적이고 유연한 프로세스 관리를 실현할 수 있습니다.",
+        "diagramImg": "diagram.png"
+    },
+    "HowSection": {
+        "title": "Process GPT의 핵심 기능",
+        "subtitle1": "1. 사람·에이전트 협업형 업무 실행",
+        "subtitle2": "2. 시스템 간 연결(A2A) 자동화",
+        "subtitle3": "3. 프로세스 자동 생성",
+        "subtitle4": "4. 지식 자동 축적 및 재사용",
+        "subtitle5": "5. 멀티모달 인터페이스",
+        "description1-1": "에이전트는 실무를 실행하고, 사람은 승인 및 결정을 담당합니다.",
+        "description1-2": "BPMN 기반으로 업무 흐름을 시각화하고 팀 단위 협업을 자동화합니다.",
+        "description2-1": "ERP, CRM, 그룹웨어 등 주요 시스템을 자동으로 연결합니다.",
+        "description2-2": "데이터 조회, 입력, 문서 첨부 등 반복적인 작업을 자동 처리합니다.",
+        "description2-3": "외부 API 및 MCP 툴과 연동하여 내외부 시스템 화면을 제어합니다.",
+        "description3-1": "자연어로 업무를 설명하면 BPMN 프로세스가 자동으로 모델링됩니다.",
+        "description3-2": "휴먼 승인 및 검토 단계를 자동으로 삽입합니다.",
+        "description3-3": "부서별, 역할별 업무 흐름을 자동으로 구성합니다.",
+        "description4-1": "AI가 업무를 수행하면서 지속적으로 학습합니다.",
+        "description4-2": "규칙, 메타데이터, 온톨로지를 자동으로 보강하여 업무 매뉴얼 및 룰북 생성에 활용합니다.",
+        "description4-3": "사람의 피드백을 통해 프로세스를 지속적으로 개선합니다.",
+        "description5-1": "웹 기반 MCP(브라우저/데스크톱)와 모바일 앱 환경을 모두 지원하여 다양한 사용자의 업무 환경에 대응합니다.",
+        "description5-2": "내근직은 정밀한 프로세스 설계 UI를, 외근·영업직은 음성/이미지 기반 모바일 인터페이스를 제공합니다.",
+        "description5-3": "사용 환경에 따라 선택 가능한 멀티 인터페이스를 제공함으로써, 업무 장소나 기기에 구애받지 않고 일관된 사용자 경험과 작업 연속성을 확보할 수 있습니다."
+    },
+    "ConsultingSection": {
+        "title": "프로세스 컨설팅 AI 및 관리",
+        "subtitle": "AI 기반 프로세스 컨설팅으로 비즈니스 프로세스를 혁신하세요",
+        "tab1Title": "프로세스 컨설팅 AI",
+        "tab1Description": "사용자는 컨설팅 AI 채팅을 통해 필요한 비지니스 프로세스 정의를 생성할 수 있습니다. 채팅창을 통해 원하는 비지니스 프로세스 내용을 입력하고, 개선하거나 추가하고 싶은 내용이 있는 경우 더 자세한 내용을 입력합니다.",
+        "tab1Item1": "자연어 기반 프로세스 정의 생성",
+        "tab1Item2": "대화형 인터페이스로 쉽게 접근",
+        "tab1Item3": "실시간 피드백 및 개선 제안",
+        "tab2Title": "프로세스 정의 및 폼 생성",
+        "tab2Description": "AI는 채팅을 통해 사용자의 입력을 분석하여 비지니스 프로세스 정의를 BPMN 다이어그램으로 자동 생성합니다. 각 단계별로 필요한 폼을 생성할 수 있으며, 사용자 업무와 스크립트 업무를 구분하여 프로세스를 생성할 수 있습니다.",
+        "tab2Item1": "BPMN 다이어그램 자동 생성",
+        "tab2Item2": "단계별 맞춤형 폼 생성",
+        "tab2Item3": "사용자/스크립트 업무 구분",
+        "tab3Title": "조직도 생성",
+        "tab3Description": "채팅을 통해 조직도를 생성할 수 있고 조직도 차트를 통해 확인 및 직접 관리할 수 있습니다. 조직도는 팀(부서), 롤(역할), 직원들을 등록, 수정, 삭제할 수 있습니다.",
+        "tab3Item1": "AI 기반 조직도 자동 생성",
+        "tab3Item2": "팀, 역할, 직원 관리",
+        "tab3Item3": "직관적인 조직도 차트 시각화"
+    },
+    "FeaturesSection": {
+        "title": "Process GPT 주요 기능",
+        "subtitle": "강력한 기능으로 프로세스 관리를 혁신하세요",
+        "tab1Title": "AI 기반 채팅",
+        "tab1Description": "다른 사용자와 채팅 중 AI를 통해 업무 추천을 받고 관련 프로세스 인스턴스를 실행할 수 있습니다. AI 음성 채팅을 통해 사용자는 정의된 프로세스에 대해 다양한 질의 응답을 확인할 수 있습니다.",
+        "tab1Item1": "일반 채팅 및 AI 음성 채팅 지원",
+        "tab1Item2": "정의된 프로세스 정보 확인",
+        "tab1Item3": "진행 중/완료된 프로세스 인스턴스 확인",
+        "tab2Title": "프로세스 인스턴스 실행",
+        "tab2Description": "사용자는 정의된 프로세스 인스턴스를 실행할 수 있습니다. 폼 입력 또는 스크립트 실행을 통해 인스턴스의 워크아이템을 수행할 수 있습니다.",
+        "tab2Item1": "정의된 프로세스 인스턴스 실행",
+        "tab2Item2": "폼 입력을 통한 워크아이템 수행",
+        "tab2Item3": "스크립트 실행 지원",
+        "tab3Title": "할 일 목록",
+        "tab3Description": "사용자는 할 일 목록을 확인하고 추가 및 할 일 상태를 변경할 수 있습니다. 효율적인 업무 관리를 위한 직관적인 인터페이스를 제공합니다.",
+        "tab3Item1": "할 일 목록 확인 및 관리",
+        "tab3Item2": "할 일 상태 변경",
+        "tab3Item3": "우선순위 설정 및 필터링"
+    },
+    "MovieGallerySection": {
+        "movieGalleryTitle": "영상 갤러리",
+        "movieGallerySubtitle1": "- 기능소개 영상 -",
+        "movieGallerySubtitle2": "- 예제 영상 -",
+        "processGptMainTitle": "Process GPT - 나의 친구, 나의 AI 에이전트",
+        "autoKnowledgeManagementTitle": "에이전트 지식의 자동 관리",
+        "autoTeamProcessTitle": "조직 목표를 달성을 위한 자동화된 휴먼-에이전트 팀 프로세스 정의",
+        "agentDraftTitle": "에이전트가 초안 생성",
+        "a2aAgentRegistrationTitle": "A2A 에이전트 등록",
+        "a2aCallServiceTitle": "A2A 호출 & 서비스 노출",
+        "processExample1Title": "ERP 시스템을 연동한 주문처리 프로세스",
+        "processExample2Title": "Browser Use 기능을 활용한 영업제안서 작성 프로세스",
+        "processExample3Title": "VIP 맞춤 뉴스레터 자동화 프로세스",
+        "tabTitle1": "대화로 프로세스 정의",
+        "tabDescription1": "생성형 AI를 통한 프로세스 정의 생성과 함께 가시화가 가능합니다. 생성 후에 관리자가 세부 수정을 할 수 있으며, 세부 수정사항도 자연어로 기술할 수 있습니다.",
+        "tabItem1_1": "생성형 AI를 통한 프로세스 정의",
+        "tabItem1_2": "실시간 가시화",
+        "tabItem1_3": "자연어 기반 세부 수정",
+        "tabTitle2": "대화로 UI 생성",
+        "tabDescription2": "AI를 기반으로 최신 프레임워크 기반의 멀티스크린에 최적화된 업무 화면을 즉시 생성할 수 있고 생성된 화면을 원하는 대로 수정할 수 있습니다.",
+        "tabItem2_1": "대화형 UI 생성",
+        "tabItem2_2": "멀티스크린 최적화",
+        "tabItem2_3": "생성된 UI 커스터마이징",
+        "tabTitle3": "대화로 시스템 연동",
+        "tabDescription3": "AI를 기반으로 내부 시스템들의 Open API Spec을 해석하여 프로세스 데이터 값들과 어떻게 연동하면 될지를 자동으로 생성합니다.",
+        "tabItem3_1": "API 자동 해석",
+        "tabItem3_2": "시스템 연동 자동화",
+        "tabItem3_3": "데이터 매핑 최적화"
+    },
+    "CasesSection": {
+        "title": "성공적인 구축 사례",
+        "kBankTitle": "K은행 - POST 차세대 프로젝트",
+        "kBankDescription": "계정계와 BPR의 원장이 이원화된 AS-IS 시스템 구조에서 원장 및 업무를 통합하기 위해 전행 BPM 시스템을 도입했습니다.",
+        "kBankAchievement1": "프로세스 관리 중심의 시스템 아키텍처 구현",
+        "kBankAchievement2": "프로세스 변경 용이성 확보",
+        "kBankAchievement3": "프로세스에 대한 접근성 향상",
+        "hLifeTitle": "H생명",
+        "hLifeDescription": "복잡하고 난해한 프로세스를 효율적으로 관리하기 위해 BPM 시스템을 도입했습니다.",
+        "hLifeAchievement1": "통합된 하나의 워크리스트를 통한 업무환경 구축",
+        "hLifeAchievement2": "비정형, 동적병렬분기, 이벤트분기 등 복잡한 프로세스 수용",
+        "hLifeAchievement3": "외산벤더보다 유연성과 확장성 입증",
+        "sElectronicsTitle": "S전기 - 차세대 이상 처리 시스템",
+        "sElectronicsDescription": "공정관리 이상 발생 프로세스를 자산화하고 자동화할 수 있는 효율적인 프로세스 관리 시스템을 구축했습니다.",
+        "sElectronicsAchievement1": "BPM 도입을 통한 이상 발생 처리 효율성 확보",
+        "sElectronicsAchievement2": "가변성이 많은 프로세스에 대한 자동화 및 프로세스 자산화",
+        "sElectronicsAchievement3": "시스템 구성원들 간 협업 처리 신속성과 효율성 확보",
+        "majorAchievements": "주요 성과:"
+    },
+    "TechSection": {
+        "title": "활용 기술",
+        "llmFrameworkTitle": "LLM Framework",
+        "llmFrameworkDescription": "LangChain, LangObject (github.com/uengine-oss/langobject)",
+        "modelTitle": "Model",
+        "modelDescription": "Chat-GPT4 (프로세스 실행용), Chat-GPT3.5 (정의 생성 및 에이전트 실행용)",
+        "multiAgentTitle": "Multi-agent",
+        "multiAgentDescription": "Crew AI + LangGraph",
+        "databaseTitle": "Database",
+        "databaseDescription": "Supabase (Postgres) + Neo4J Graph DB"
+    },
+    "ExtensibilitySection": {
+        "title": "외부 시스템 연동 및 확장성",
+        "exportFormatsTitle": "다양한 내보내기 포맷",
+        "exportFormatsDescription": "Process GPT에서 개발된 AI 에이전트는 LangGraph, Crew AI 포맷으로 내보내기가 가능하여 기존 에이전트 시스템과의 호환성을 제공합니다.",
+        "jsonFormat": "JSON 포맷",
+        "pythonModule": "Python 모듈",
+        "apiEndpoint": "API 엔드포인트",
+        "a2aProtocolTitle": "A2A 프로토콜 지원",
+        "a2aProtocolDescription": "구글이 제안한 에이전트 간 통신 프로토콜(Agent to Agent)을 지원하여 다양한 시스템과 원활하게 연동되고 표준화된 커뮤니케이션이 가능합니다.",
+        "standardizedMessaging": "표준화된 메시징",
+        "improvedInteroperability": "상호운용성 향상",
+        "ecosystemExpansion": "에코시스템 확장"
+    },
+    "DownloadSection": {
+        "title": "모바일 앱 다운로드",
+        "subtitle": "언제 어디서나 Process GPT를 모바일에서 사용하세요",
+        "description": "Process GPT 모바일 앱을 통해 이동 중에도 비즈니스 프로세스를 관리하고 모니터링할 수 있습니다. 실시간 알림을 통해 중요한 업데이트를 놓치지 않고, 팀원들과 원활한 커뮤니케이션을 유지하세요.",
+        "downloadButton": "DOWNLOAD",
+        "androidApk": "Android APK",
+        "downloading": "다운로드 중...",
+        "downloadError": "다운로드 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요."
+    },
+    "CTASection": {
+        "title": "지금 바로 Process GPT를 시작하세요",
+        "subtitle": "AI 기반 프로세스 관리의 혁신을 경험해보세요",
+        "betaTestButton": "베타 테스트하기",
+        "contactButton": "문의하기",
+        "name": "이름",
+        "email": "이메일",
+        "company": "회사",
+        "position": "직급",
+        "message": "문의내용",
+        "namePlaceholder": "이름을 입력해 주세요",
+        "emailPlaceholder": "답변받으실 이메일 주소를 입력해 주세요",
+        "companyPlaceholder": "회사명 또는 소속기관을 입력해 주세요",
+        "positionPlaceholder": "직급을 입력해 주세요",
+        "messagePlaceholder": "문의내용을 입력해 주세요",
+        "policyAgreed1": "(필수),",
+        "policyAgreed2": "개인정보 수집 및 이용,",
+        "policyAgreed3": "에 동의합니다.",
+        "policyError": "개인정보 수집 및 이용에 동의해주세요.",
+        "contactSuccess": "문의가 성공적으로 전송되었습니다.",
+        "contactError": "문의 전송 중 오류가 발생했습니다. 다시 시도해주세요.",
+        "privacyPolicyTitle": "개인정보 수집 및 이용 동의",
+        "privacyPolicyDescription1": "유엔진솔루션즈(이하 \"회사\")가 문의하신 내용에 대한 답변을 제공하기 위해 개인정보를 수집·이용하고자 하는 경우에는 ｢개인정보 보호법｣등 관계 법령에 따라 본인의 동의가 필요합니다.",
+        "privacyPolicyDescription2": "회사 제품 구매 및 컨설팅 문의 응답, 회사가 제공하는 서비스 이용과정을 위한 최소한의 개인정보를 수집하고 이용합니다. ",
+        "privacyPolicyDescription3": "수집된 정보는 발송 외 다른 목적으로 이용되지 않으며, 서비스가 종료될 경우 즉시 파기됩니다.",
+        "privacyPolicyClose": "닫기"
+    },
+    "DelegateTask": {
+        "title": "위임 설정",
+        "delegate": "위임하기",
+        "close": "닫기",
+        "noAssignee": "담당자가 없습니다.",
+        "notification": "담당자가 조회 되지 않습니다. 관리자에게 문의 하세요.",
+        "delegateTitle": "위임 대상자",
+        "description": "설명",
+        "startDate": "시작일",
+        "endDate": "종료일",
+        "assignee": "담당자",
+        "selectAssignee": "위임 대상자를 선택하세요.",
+        "equalDelegate": "위임 대상자와 동일한 사용자입니다.",
+        "successMsg": "위임 완료되었습니다.",
+        "searchUser": "이름, 이메일 검색",
+        "profile": "프로필",
+        "userInfo": "대상 정보",
+        "delegateToMyself": "나에게 위임"
+    },
+    "UserInputGenerator": {
+        "inputLabel": "생성하고싶은 에이전트를 입력하세요",
+        "generateButton": "AI로 에이전트 생성"
+    },
+    "subProcessDetail": {
+        "execute": "실행",
+        "simulation": "시뮬레이션",
+        "edit": "수정",
+        "save": "저장",
+        "noProcessModel": "정의된 프로세스 모델이 없습니다.",
+        "editProcess": "프로세스 편집",
+        "processDefinitionSaved": "프로세스 정의가 저장되었습니다."
+    },
+    "completedListPage": {
+        "search": "인스턴스 검색",
+        "title": "완료된 인스턴스",
+        "warning": "모든 항목을 불러왔습니다.",
+        "noSearchResults": "검색 결과가 없습니다."
+    },
+    "filterConfigLabel": {
+        "period": "기간 설정",
+        "startDate": "시작일",
+        "endDate": "종료일",
+        "dueDate": "만기일",
+        "sort": "정렬",
+        "status": "상태 필터"
+    },
+    "filterConfigOptions": {
+        "latest": "최신순",
+        "startDate": "시작일순",
+        "endDate": "종료일순",
+        "dueDate": "만기일순",
+        "scheduled": "예정 업무",
+        "inProgress": "진행중",
+        "pending": "보류",
+        "completed": "완료",
+        "cancelled": "취소"
+    },
+    "InstanceListPage": {
+        "participants": "참여자"
+    },
+    "kanbanColumnCard": {
+        "edit": "수정",
+        "delete": "삭제",
+        "overdue": "기한 임박",
+        "pastDue": "기한 지남",
+        "error": "실행 오류",
+        "agentWorking": "에이전트 작업중",
+        "agentCompleted": "에이전트 작업 완료"
+    },
+    "agentMonitor": {
+        "accept": "채택",
+        "request": "응답 요청",
+        "requestContent": "요청 내용이 전송되었습니다.",
+        "inputAnswer": "답변을 입력하세요",
+        "selectAnswer": "선택하세요",
+        "continue": "계속 진행하시려면 확인을 눌러주세요.",
+        "confirm": "확인",
+        "cancel": "취소",
+        "result": "작업 결과",
+        "presentationMode": "프레젠테이션 모드",
+        "slideHint": "슬라이드를 클릭하여 탐색하세요",
+        "collapse": "접기",
+        "expand": "더보기",
+        "doubleClick": "더블클릭으로도 접기/펼치기가 가능합니다",
+        "workInProgress": "작업을 진행하고 있습니다...",
+        "workQueued": "작업이 대기열에 등록되었습니다",
+        "noWorkInProgress": "진행중인 작업이 없습니다",
+        "workStarted": "작업이 시작되면 여기에 표시됩니다.",
+        "selectResearchMethod": "연구 방식을 선택하세요",
+        "browserUse": "Browser use 기능은 다운로드 후 압축 해제 후 사용 가능합니다. (용량: 114MB)",
+        "download": "다운로드",
+        "start": "시작하기",
+        "stop": "중단",
+        "researchMethod": "연구방식"
+    },
+    "EventTimeline": {
+        "browserAutomationResult": "브라우저 자동화 결과",
+        "completed": "완료",
+        "failed": "실패",
+        "taskSummary": "작업 요약",
+        "completedTime": "완료 시간",
+        "generatedFiles": "생성된 파일",
+        "imageGallery": "이미지 갤러리",
+        "images": "개의 이미지",
+        "doubleClickHint": "더블클릭으로도",
+        "expandCollapse": "접기/펼치기가 가능합니다",
+        "startTime": "시작시간",
+        "requestType": "요청 유형",
+        "toolUsageComplete": "사용 완료",
+        "toolUsageInProgress": "사용 중입니다",
+        "tool": "도구",
+        "parsingDocument": "문서 파싱 중...",
+        "parsingFailed": "파싱 실패",
+        "approved": "승인됨",
+        "rejected": "거절됨",
+        "processed": "처리됨",
+        "inProgress": "진행중",
+        "taskFailed": "작업실패",
+        "allCompleted": "전체완료",
+        "taskCompleted": "작업완료"
+    },
+    "agentFeedback": {
+        "learningInProgress": "에이전트가 피드백을 기반으로 학습중입니다...",
+        "agent": "에이전트",
+        "goal": "피드백을 제공했습니다",
+        "learningCompleted": "학습완료",
+        "feedbackContent": "피드백 내용",
+        "noLearning": "학습 내용이 없습니다",
+        "waitingInProgress": "학습 대기중입니다",
+        "learningInProgressDescription": "에이전트 피드백 학습이 시작되면 여기에 표시됩니다.",
+        "noFeedback": "피드백 내용이 없습니다.",
+        "initialDataLoad": "🔄 [AgentFeedback] 초기 데이터 로드",
+        "taskId": "작업 ID",
+        "taskIdNotFound": "taskId를 찾을 수 없습니다.",
+        "taskIdNotFoundDescription": "taskId를 찾을 수 없습니다. workItem 구조:",
+        "eventDataLoadError": "이벤트 데이터를 불러오는 중 오류가 발생했습니다: ",
+        "eventDataLoadSuccess": "로드된 이벤트 수: ",
+        "eventDataLoadErrorDescription": "이벤트 데이터를 불러오는 중 오류가 발생했습니다: ",
+        "eventSubscriptionStart": "📥 [AgentFeedback] 실시간 이벤트 수신",
+        "eventReceived": "수신된 이벤트:",
+        "eventMatch": "✅ 일치",
+        "eventMismatch": "❌ 불일치",
+        "eventAdded": "✅ 이벤트가 추가되었습니다",
+        "eventTotalCount": "현재 총 이벤트 수:",
+        "eventNotAdded": "❌ 이벤트가 추가되지 않았습니다",
+        "eventTodoId": "이벤트 todo_id:",
+        "eventVsTaskId": "vs 현재 taskId:",
+        "eventAll": "이벤트 전체:",
+        "eventSubscriptionFailed": "실시간 이벤트 구독에 실패했습니다.",
+        "eventSubscriptionError": "실시간 구독 중 오류가 발생했습니다: ",
+        "supabaseSessionError": "Supabase 세션 오류:"
+    },
+    "keditor": {
+        "typeSearch": "타입 검색",
+        "all": "모두"
+    },
+    "statusChip": {
+        "scheduled": "예정 업무",
+        "inProgress": "진행 중",
+        "pending": "보류 중",
+        "cancelled": "취소",
+        "completed": "완료"
+    },
+    "SubProcess": {
+        "execute": "실행"
+    },
+    "ProcessInstanceChat": {
+        "subprocessCreating": "서브프로세스 생성 중입니다...",
+        "feedback": "프로세스 실행이 정상인가요?",
+        "feedbackDescription": "프로세스 피드백을 반영하시겠습니까?"
+    },
+    "ProcessInstanceLog": {
+        "headers": {
+            "time": "시간",
+            "role": "역할",
+            "sender": "작성자",
+            "message": "메시지"
+        },
+        "noData": "아직 기록된 메시지가 없습니다.",
+        "streaming": "실시간 로그 수신 중...",
+        "unknownSender": "알 수 없음",
+        "systemSender": "시스템"
+    },
+    "ActivityInputData": {
+        "previousInput": "이전 작업 입력 내역",
+        "previousInputDescription": "이전 작업에 입력한 내용입니다. 참고하여 현재 작업을 진행하세요.",
+        "previousInputDetailTitle": "이전 작업 입력 내역이란?",
+        "previousInputDetail": "BPM 프로세스에서 이전 단계의 작업자가 입력한 폼 데이터를 보여줍니다.\n\n이 정보를 참고하여 현재 작업을 수행하면 프로세스 흐름을 더 명확하게 파악할 수 있습니다.\n\n예시: 결재 요청 → 검토 → 승인 프로세스에서 '검토' 단계라면,\n'결재 요청' 단계에서 입력한 내용이 표시됩니다."
+    },
+    "MCPServer": {
+        "searchMCPServers": "MCP 서버 검색"
+    },
+    "MCPEnvSecret": {
+        "mcpEnvironments": "MCP 환경변수",
+        "mcpSecrets": "MCP 시크릿",
+        "browserUseSecrets": "Browser Use 시크릿",
+        "type": "유형",
+        "environmentName": "환경변수 이름",
+        "secretName": "시크릿 이름",
+        "browserUseSecretName": "Browser Use 시크릿 이름",
+        "nameRequired": "이름을 입력해주세요",
+        "loadingEnvironments": "환경변수 로딩 중...",
+        "loadingSecrets": "시크릿 로딩 중...",
+        "loadingBrowserUseSecrets": "Browser Use 시크릿 로딩 중...",
+        "environment": "환경변수",
+        "secret": "시크릿",
+        "browserUse": "Browser Use",
+        "name": "이름",
+        "data": "데이터",
+        "actions": "작업",
+        "environmentCreated": "환경변수가 생성되었습니다",
+        "environmentUpdated": "환경변수가 수정되었습니다",
+        "secretCreated": "시크릿이 생성되었습니다",
+        "secretUpdated": "시크릿이 수정되었습니다",
+        "browserUseSecretCreated": "Browser Use 시크릿이 생성되었습니다",
+        "browserUseSecretUpdated": "Browser Use 시크릿이 수정되었습니다",
+        "environmentDeleted": "환경변수가 삭제되었습니다",
+        "secretDeleted": "시크릿이 삭제되었습니다",
+        "browserUseSecretDeleted": "Browser Use 시크릿이 삭제되었습니다",
+        "errorSavingEnvironment": "환경변수 저장 중 오류가 발생했습니다",
+        "errorSavingSecret": "시크릿 저장 중 오류가 발생했습니다",
+        "errorSavingBrowserUseSecret": "Browser Use 시크릿 저장 중 오류가 발생했습니다",
+        "errorDeletingEnvironment": "환경변수 삭제 중 오류가 발생했습니다",
+        "errorDeletingSecret": "시크릿 삭제 중 오류가 발생했습니다",
+        "errorDeletingBrowserUseSecret": "Browser Use 시크릿 삭제 중 오류가 발생했습니다",
+        "confirmDeleteEnvironment": "환경변수 \"{name}\"을(를) 삭제하시겠습니까?",
+        "confirmDeleteSecret": "시크릿 \"{name}\"을(를) 삭제하시겠습니까?",
+        "confirmDeleteBrowserUseSecret": "Browser Use 시크릿 \"{name}\"을(를) 삭제하시겠습니까?",
+        "noBrowserUseConfig": "Browser Use 설정이 없습니다. 편집 버튼을 클릭하여 설정을 추가하세요."
+    },
+    "footer": {
+        "BusinessNumber": "사업자등록번호",
+        "CEO": "대표 : 장진영",
+        "Address1": "서울특별시 서초구 사임당로 31",
+        "Address2": "301호(서초동, 궁현빌딩)",
+        "tel": "고객센터",
+        "serviceTerms": "서비스 이용약관",
+        "privacyPolicy": "개인정보처리방침"
+    },
+    "OrganizationChart": {
+        "searchByName": "이름으로 검색"
+    },
+    "ProcessDefinitionVersionManager": {
+        "noVersionsAvailable": "저장된 버전이 없습니다",
+        "versionManagement": "버전 관리",
+        "description": "설명:",
+        "versionList": "버전 목록",
+        "changeToSelectedVersion": "{version} 버전으로 편집",
+        "versionLabel": "버전 목록",
+        "versionWithColon": "버전: {version}",
+        "versionSummary": "버전 {version} · 최종 수정: {time}",
+        "versionItemTitle": "버전 {version}",
+        "download": "다운로드",
+        "downloadVersionXML": "{version}버전 XML 다운로드",
+        "changeToVersion": "버전으로 변경",
+        "noXmlData": "선택된 버전의 XML 데이터가 없습니다.",
+        "copiedToClipboard": "클립보드에 복사되었습니다.",
+        "relativeJustNow": "방금",
+        "relativeMinutesAgo": "{minutes}분 전",
+        "relativeHoursAgo": "{hours}시간 전"
+    },
+    "BpmnUengineField": {
+        "newProcess": "신규",
+        "processSelectLabel": "Process",
+        "versionSelectLabel": "Version"
+    },
+    "AgentList": {
+        "title": "에이전트 목록",
+        "loading": "에이전트 로딩 중...",
+        "empty": "등록된 에이전트가 없습니다",
+        "loadFailed": "에이전트 목록 로딩 실패"
+    },
+    "AgentChatInfo": {
+        "expand": "더보기",
+        "collapse": "접기",
+        "defaultAgentName": "에이전트",
+        "labels": {
+            "goal": "목표",
+            "persona": "페르소나",
+            "tools": "도구 목록",
+            "description": "설명",
+            "endpoint": "엔드포인트",
+            "model": "모델",
+            "alias": "별칭"
+        },
+        "fallback": {
+            "goal": "에이전트의 목표가 설정되지 않았습니다."
+        },
+        "tabs": {
+            "learning": "학습 모드",
+            "question": "질의 모드",
+            "actions": "액션 모드",
+            "knowledge": "지식 관리"
+        },
+        "businessRuleTabs": {
+            "learning": "규칙 학습",
+            "inference": "규칙 추론",
+            "management": "룰 관리"
+        },
+        "businessRule": "비즈니스 규칙"
+    },
+    "FormWorkItem": {
+        "previous": "이전 단계",
+        "save": "중간 저장",
+        "submitComplete": "제출 완료",
+        "noFormData": "등록된 폼 정보가 없습니다",
+        "noFormDataDescription": "현재 작업에 대한 폼 데이터를 찾을 수 없습니다.",
+        "previousStep": "이전 단계",
+        "intermediateSave": "중간 저장",
+        "delegateMessage": "'{taskName}'업무를 {email}({username})에게 위임하였습니다.",
+        "delegateMessageWithAssignee": "'{taskName}'업무의 담당자를 [{assigneeInfo}]에서 {email}({username})으로 위임하였습니다."
+    },
+    "InstanceSource": {
+        "addFile": "파일 추가",
+        "dragAndDrop": "클릭하거나 파일을 드래그하세요",
+        "download": "다운로드",
+        "delete": "삭제",
+        "uploadComplete": "업로드 완료",
+        "uploading": "업로드 중",
+        "close": "닫기",
+        "uploadSuccess": "파일이 업로드되었습니다.",
+        "unsupportedFileType": "은 지원되지 않는 파일 형식입니다.",
+        "fileTooLarge": "파일이 너무 큽니다. (최대 50MB)",
+        "fileDeleted": "파일이 삭제되었습니다."
+    },
+    "processDialog": {
+        "editProcess": "프로세스 수정",
+        "processDefinition": "프로세스 정의",
+        "newProcessDefinition": "새로운 프로세스 정의 추가",
+        "processName": "프로세스명",
+        "save": "저장",
+        "close": "닫기"
+    },
+    "ProcessMenu": {
+        "setPermission": "권한 설정",
+        "editProcess": "프로세스 편집",
+        "edit": "수정",
+        "delete": "삭제"
+    },
+    "agentChat": {
+        "learningModeInfo": "학습 모드: 에이전트가 사용자의 지침을 학습하여 이후 작업에 반영합니다. \n 예를 들어, \n ‘제안서 작성 시 각 회사의 CI에 맞는 컬러를 사용해.’ \n ‘정부·공공기관 대상 제안서는 반드시 한글(HWP) 형식으로 작성해.’ \n ‘B2C 제안서는 고객 이해를 돕기 위해 시각 자료를 우선 활용해.’ \n 와 같은 가이드를 학습시킬 수 있습니다.",
+        "questionModeInfo": "질의 모드: 에이전트가 학습한 내용을 기반으로 질의응답을 수행하고, 필요한 정보를 선별해 제공합니다. \n 예를 들어, \n ‘지난주 학습한 보험 심사 기준 중 지역 평가 항목만 알려줘.’ \n ‘제안서 작성 지침에서 CI 컬러 관련 규칙만 요약해.’ \n ‘학습된 매뉴얼 중 품질검사 절차 부분만 설명해.’ \n 와 같은 질문을 통해 학습 내용을 검증하거나 필요한 부분만 확인할 수 있습니다.",
+        "actionsModeInfo": "액션 모드: 에이전트가 실제 작업을 수행하고 결과를 확인할 수 있습니다. \n 예를 들어, \n ‘입력된 고객 데이터를 기반으로 보험료를 산출해.’ \n ‘최근 분기 영업 실적을 요약하고 그래프로 시각화해.’ \n ‘지정된 서식에 따라 제안서를 자동으로 작성해.’ \n 와 같은 명령을 실행할 수 있습니다.",
+        "ruleInferenceModeInfo": "비즈니스 규칙 추론 모드: 학습한 비즈니스 규칙을 조회하고 특정 조건에 대한 결과를 추론할 수 있습니다. \n 예를 들어, \n '신용점수 750점, 연소득 6천만원인 고객의 대출 가능 여부는?' \n '구매 금액이 100만원인 VIP 고객에게 적용되는 최종 가격은?' \n '경력 7년에 자격증 2개를 보유한 지원자의 심사 결과는?' \n 와 같이 규칙을 검증하고 결과를 미리 확인할 수 있습니다.",
+        "mainChatInfo": "프로세스 생성, 실행, 실행결과 또는 여러 질의응답을 수행할 수 있습니다. \n 예를 들어, \n '휴가 신청 프로세스를 생성/실행해줘', \n '가장 최근에 신청한 휴가 결과를 조회해줘'"
+    },
+    "ReworkDialog": {
+        "title": "재작업 범위 설정",
+        "warning": "완료된 항목만 재작업 가능합니다.",
+        "currentOnly": "현재 단계만",
+        "currentOnlyDesc": "선택된 작업 항목의 현재 단계만 다시 수행합니다. 다른 단계에는 영향을 주지 않습니다.",
+        "includeReference": "현재 단계를 참조하는 다음 단계 포함",
+        "includeReferenceDesc": "현재 단계와 이를 참조하는 다음 단계들을 함께 다시 수행합니다. 연관된 작업들만 영향을 받습니다.",
+        "includeAll": "모든 다음 단계 포함",
+        "includeAllDesc": "현재 단계부터 시작하여 모든 후속 단계들을 다시 수행합니다.",
+        "submit": "제출",
+        "close": "닫기"
+    },
+    "AgentKnowledgeManagement": {
+        "title": "지식 관리",
+        "description": "에이전트의 지식과 학습 데이터를 관리할 수 있습니다.",
+        "noMemory": "메모리가 없습니다",
+        "addFirstMemory": "첫 번째 메모리를 추가해보세요.",
+        "deleteDialogTitle": "학습 내용 삭제",
+        "deleteButton": "삭제"
+    },
+    "BpmnUengineViewer": {
+        "viewParticipants": "참여자 보기"
+    },
+    "ProcessWorkResult": {
+        "completedActivities": "완료된 작업",
+        "loadingCompletedUserInfo": "완료자 정보 로딩 중...",
+        "activity": "활동",
+        "noCompletedActivities": "완료된 작업이 없습니다.",
+        "pendingActivities": "보류/반송된 작업",
+        "loadingPendingUserInfo": "보류/반송자 정보 로딩 중...",
+        "nextActivities": "다음 작업",
+        "loadingAssigneeInfo": "담당자 정보 로딩 중...",
+        "noNextActivities": "다음 작업이 없습니다.",
+        "referenceInfo": "참조 정보"
+    },
+    "AgentBadgesDiagram": {
+        "chatWithAgent": "에이전트와 채팅",
+        "trainAgent": "학습 시키기",
+        "persona": "페르소나",
+        "tools": "툴 & 스킬",
+        "knowledge": "지식 온톨로지",
+        "achievements": "성과 & 뱃지",
+        "settings": "설정"
+    },
+    "Gantt": {
+        "description": "설명",
+        "delete": "업무 삭제",
+        "moveInstance": "인스턴스로 이동",
+        "moveWorkItem": "워크아이템으로 이동",
+        "inProgress": "진행중",
+        "pending": "보류/반송",
+        "scheduled": "예정업무",
+        "done": "완료업무",
+        "taskName": "업무명",
+        "startDate": "시작일",
+        "endDate": "만료일",
+        "duration": "기간",
+        "assignees": "담당자"
+    },
+    "Common": {
+        "cancel": "취소",
+        "delete": "삭제",
+        "save": "저장",
+        "submit": "제출",
+        "role": "역할"
+    },
+    "AgentSkillEdit": {
+        "deleteDialogTitle": "스킬 파일 삭제",
+        "deleteDialogMessage": "스킬 파일을 삭제하시겠습니까? 삭제된 스킬 파일은 복구할 수 없습니다."
+    },
+    "AgentSkills": {
+        "skills": "스킬",
+        "skillUpload": "스킬 파일(.zip) 업로드"
+    },
+    "ConditionExampleField": {
+        "generateExamples": "예시 생성",
+        "generatingExamples": "예시 생성 중...",
+        "when": "조건 (When)",
+        "then": "결과 (Then)"
+    },
+    "ExampleTable": {
+        "operation": "작업",
+        "addNewExample": "새 예시 추가",
+        "validPeriodSetting": "유효 기간 설정",
+        "validStartDate": "유효 시작일",
+        "validEndDate": "유효 종료일",
+        "cancel": "취소",
+        "save": "저장",
+        "goodExamples": "좋은 예시",
+        "badExamples": "나쁜 예시"
+    },
+    "mainChat": {
+        "placeholder": "무엇을 도와드릴까요? 프로세스 생성, 실행, 조회 등을 요청해보세요.",
+        "examples": {
+            "createProcess": "휴가 신청 프로세스를 만들어줘",
+            "executeProcess": "출장 신청서 작성해줘",
+            "checkResult": "내 휴가 신청 현황 알려줘",
+            "askQuestion": "우리 회사 조직도 알려줘"
+        },
+        "intentAnalysis": "요청을 분석하고 있습니다...",
+        "createMode": {
+            "title": "프로세스 생성",
+            "description": "AI와 대화하며 새로운 프로세스를 설계합니다."
+        },
+        "executeMode": {
+            "title": "프로세스 실행",
+            "description": "선택한 프로세스를 실행합니다."
+        },
+        "queryMode": {
+            "title": "정보 조회",
+            "description": "요청하신 정보를 조회합니다."
+        },
+        "history": {
+            "title": "대화 히스토리",
+            "loading": "불러오는 중...",
+            "empty": "이전 대화가 없습니다",
+            "showMore": "더보기"
+        }
+    },
+    "fullScreenChat": {
+        "title": "AI 어시스턴트",
+        "newChat": "새 대화",
+        "close": "닫기",
+        "analyzing": "분석 중...",
+        "executeProcess": "프로세스 실행",
+        "goToDefinition": "프로세스 편집으로 이동"
+    },
+    "ProcessFeedback": {
+        "applyTitle": "피드백 반영",
+        "inputTitle": "피드백을 입력해주세요",
+        "columnApply": "반영 여부",
+        "columnProperty": "속성",
+        "columnBefore": "피드백 반영 전",
+        "columnAfter": "피드백 반영 후",
+        "noChanges": "반영 할 내용이 없습니다.",
+        "noContent": "내용 없음",
+        "goodExample": "좋은 예시",
+        "badExample": "나쁜 예시",
+        "applyButton": "반영",
+        "feedbackLabel": "피드백 입력",
+        "autoGenerate": "자동 생성",
+        "generating": "자동으로 피드백을 생성 중입니다...",
+        "inputData": "입력 데이터",
+        "checkpoints": "체크포인트",
+        "description": "설명",
+        "instruction": "지시사항",
+        "conditionExamples": "조건 예시"
+    }
+}

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway-prod
+  labels:
+    app: gateway-prd
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gateway-prod
+  template:
+    metadata:
+      labels:
+        app: gateway-prod
+    spec:
+      containers:
+        - name: gateway
+          # image: ghcr.io/uengine-oss/process-gpt-gateway:v0.0.7
+          image: asia-northeast3-docker.pkg.dev/process-gpt-419207/process-gpt-prod/process-gpt-gateway-prod:v0.0.1
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: my-secrets
+                  key: JWT_SECRET

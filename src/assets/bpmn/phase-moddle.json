@@ -1,0 +1,35 @@
+{
+  "name": "PhaseModdle",
+  "uri": "http://example.com/phase",
+  "prefix": "phase",
+  "types": [
+    {
+      "name": "PhaseContainer",
+      "superClass": ["bpmn:Participant"],
+      "properties": [
+        {
+          "name": "numPhases",
+          "type": "Integer",
+          "isAttr": true,
+          "default": 0
+        },
+        {
+          "name": "isHorizontal",
+          "type": "Boolean",
+          "isAttr": true,
+          "default": false
+        },
+        {
+          "name": "laneSets",
+          "type": "bpmn:LaneSet",
+          "isMany": true
+        }
+      ]
+    },
+    {
+      "name": "Phase",
+      "superClass": ["bpmn:Lane"],
+      "properties": []
+    }
+  ]
+}

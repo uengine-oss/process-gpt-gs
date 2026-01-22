@@ -1,0 +1,16 @@
+{
+  "defaultProcesses": [
+    {
+      "id": "customer_complaint_handling_process",
+      "name": "고객 불만 조치",
+      "author_uid": "217a3566-0a39-4e75-a04d-ae57625c1a2b"
+    },
+    {
+      "id": "contract_management_process",
+      "name": "계약관리 프로세스",
+      "author_uid": "217a3566-0a39-4e75-a04d-ae57625c1a2b"
+    }
+  ],
+  "description": "새 테넌트 생성 시 기본으로 추가될 프로세스 목록",
+  "version": "1.0.0"
+} 

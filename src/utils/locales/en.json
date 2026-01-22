@@ -1,0 +1,2356 @@
+{
+    "message": "en",
+    "changePath": "You have unsaved changes. Are you sure you want to leave?",
+    "successMsg": {
+        "simulatedProcess": "Simulated process completed",
+        "runningTheProcess": "Running the process",
+        "formGenerationCompleted": "Form generation completed",
+        "processGenerationCompleted": "Process generation completed",
+        "processExecutionCompleted": "Process execution completed",
+        "workCompleted": "Completion of work",
+        "save": "Saved successfully.",
+        "intermediate": "Intermediate save completed",
+        "delete": "Deleted successfully.",
+        "instanceDelete": "The instance has been deleted.",
+        "completed": "Completed",
+        "savedMarketplace": "Saved to marketplace.",
+        "reworkRequested": "Rework has been requested."
+    },
+    "errorMsg": {
+        "isBackendConnected": "Failed to connect to the backend server for AI communication. Please check if the backend is operational.",
+        "languageChangeFailed": "Failed to change language settings."
+    },
+    "App": {
+        "view": "Read more"
+    },
+    "mainPage": {
+        "login": "login",
+        "logout": "logout",
+        "demo": "demos",
+        "pricing": "pricing",
+        "documentation": "documentation",
+        "support": "Support",
+        "start": "Start",
+        "title": "Easily initiate from AI-based process management to execution.",
+        "subTitle": "Process definition, organizational chart management, To-Do management, process execution, process monitoring, process analysis."
+    },
+    "headerMenu": {
+        "sidebar" : "Collapse/Expand Sidebar",
+        "dashboard": "Dashboard",
+        "todoList": "My Task List",
+        "schedule": "Scheduler",
+        "calendar": "Calendar",
+        "layoutSetting": "Layout Setting",
+        "admin": "Admin Page",
+        "setting": "Setting",
+        "search": "Search",
+        "searchResult": "Search Result",
+        "searchKeyword": "Enter the keyword you want to search for and press enter.",
+        "searching": "Searching",
+        "noSearchResult": "No search results found.",
+        "agent": "Agent",
+        "pricing": "Pricing Information"
+    },
+    "DashboardTodoList": {
+        "todo": "My Task List",
+        "inProgress": "In Progess",
+        "done": "Done"
+    },
+    "DashboardUpcomingScheduls": {
+        "title": "Upcoming Schedules",
+        "schedule": "Schedule",
+        "dateAndTime": "Date and Time",
+        "category": "Category"
+    },
+    "DefaultWorkItem": {
+        "intermediateSave": "Intermediate Save",
+        "complete": "Complete"
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "startProcess": "Start Process",
+        "startProcessDescription": "Click the Start Process button to start the process.",
+        "welcome": "Welcome"
+    },
+    "todoList": {
+        "title": "Task List",
+        "todo": "Upcoming Tasks",
+        "inProgress": "In Progress",
+        "pending": "Pending/Returned",
+        "done": "Done",
+        "addTask": "Add Task",
+        "sort": "Sort",
+        "sortByDueDate": "Due Date (Nearest)",
+        "sortByStartDate": "Start Date (Recent)",
+        "endOfList": "All tasks have been reviewed"
+    },
+    "TodoDialog": {
+        "editTask": "Edit Task",
+        "addTask": "Add Task",
+        "taskName": "Task Name",
+        "startDate": "Start Date",
+        "dueDate": "Due Date",
+        "description": "Description",
+        "save": "Save",
+        "todo": "Todo",
+        "title": "Title",
+        "status": "Status",
+        "close": "Close"
+    },
+    "calendar": {
+        "title": "Calendar",
+        "evnet": "Event Details",
+        "scheduleTitle": "Title",
+        "start": "Start",
+        "end": "End",
+        "description": "Description",
+        "color": "Color",
+        "save": "Save",
+        "delete": "Delete",
+        "newEventTitle": "Please enter a new title for your event"
+    },
+    "chats": {
+        "title": "Chats",
+        "document": "Work Instructions",
+        "assignTask": "Assign Task",
+        "requestCancelled": "{name}'s request has been cancelled.",
+        "startProcess": "Starting the {title} process.",
+        "todoAdded": "Todo {activityId} has been added.",
+        "scheduleAdded": "Schedule {title} has been added.",
+        "processDefinitionCreated": "Process definition has been created.",
+        "processDefinitionModificationStarted": "Process definition modification has started.",
+        "userRequestedAction": "{name} requested {action}",
+        "processExecutionFailed": "Failed to start the {title} process. Please try again.",
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "thisYear": "{dayName}, {month}/{day}",
+        "otherYear": "{dayName}, {month}/{day}/{year}",
+        "sunday": "Sunday",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday"
+    },
+    "AssistantChats": {
+        "document": "Enter the task details you want to assign. When you provide information about the task, a preview of the task that the recipient will see is displayed on the left. Review the preview and improve any lacking areas. Once the improvements are complete, use 'Assign Task' to give the task."
+    },
+    "proposals": {
+        "title": "Proposal"
+    },
+    "instance": {
+        "title": "Instance"
+    },
+    "processExecution": {
+        "title": "Process Execution",
+        "cardTitle": "Process Execution",
+        "processDefinitionExplanation": "Execute the process interactively. For example, you can issue commands like: \n'I'd like to apply for a vacation:\n 1. Reason: Personal matter\n 2. Start date of leave: Today\n 3. Return date from leave: Friday'",
+        "agent": "Use the Agent feature to draft your proposal.",
+        "search": "Search",
+        "newChat": "New Chat",
+        "recentChats": "Recent Chats",
+        "sortByTime": "Sort by Time",
+        "sortByCompleted": "Sort by Completed"
+    },
+    "runningInstance": {
+        "title": "Running Instance",
+        "running": "Starting..."
+    },
+    "ProcessInstanceRunning": {
+        "generating": "Generating"
+    },
+    "admin": {
+        "title": "Administrator Menu",
+        "viewDetails": "View Details",
+        "instanceList": "Instance List",
+        "instanceId": "Instance ID",
+        "name": "Name",
+        "status": "Status",
+        "startedDate": "Started Date",
+        "finishedDate": "Finished Date",
+        "initiator": "Initiator",
+        "subProcess": "SubProcess",
+        "actions": "Actions",
+        "search": "Search",
+        "itemsPerPageText": "Items per page",
+        "noSearch": "No search results found."
+    },
+    "adminDetail": {
+        "processVariables": "Process Variables",
+        "properties": "Properties",
+        "noProcessDefinition": "No Process Definition",
+        "key": "Key",
+        "value": "Value",
+        "tools": "Tools",
+        "edit": "Edit",
+        "save": "Save",
+        "rollback": "Rollback",
+        "rollbackMessage": "Do you want to roll back to this point?",
+        "start": "Start",
+        "success": "Execution completed",
+        "send": "Send",
+        "goBack": "Go back"
+    },
+    "completeInstance": {
+        "title": "Complete Instance"
+    },
+    "definitionManagement": {
+        "title": "Process",
+        "upload": "Upload definition list",
+        "release": "Definition Export",
+        "defaultForm": "Default Form Management",
+        "completedList": "View completed instance list"
+    },
+    "systemDefinition": {
+        "title": "System Definition"
+    },
+    "organizationChartDefinition": {
+        "title": "Add and Manage Organization Chart",
+        "cardTitle": "Org Chart Management",
+        "organizationChartExplanation": "Manage the organization chart interactively.\nYou can register, modify, and delete teams (departments), roles, and employees.\nFor example, you can issue commands like: 'Register the development and management teams, and add Mr. Hong Gil-dong as a new employee to the management team. His role is a developer. The team leader of the management team is Team Leader Amuge.'",
+        "addTeam": "Add Team",
+        "deleteTeam": "Delete Team",
+        "editTeam": "Edit Team",
+        "teamId": "Team ID",
+        "teamName": "Team Name",
+        "team": "Team",
+        "teamMember": "Team Member",
+        "role": "Role",
+        "selectTeamMember": "Select Team Member",
+        "deleteMessage": "Do you want to delete?",
+        "deleteMessage1": "Do you want to delete?",
+        "from": "From",
+        "add": "Add",
+        "edit": "Edit",
+        "save": "Save",
+        "delete": "Delete",
+        "close": "Close",
+        "addNewUser": "Add New User(Team Member)",
+        "addNewAgent": "Add New Agent",
+        "addNewA2A": "Add A2A Agent",
+        "addNewPGAgent": "Add ProcessGPT Agent",
+        "userName": "Name",
+        "userEmail": "Email",
+        "idRequired": "Please enter your ID.",
+        "nameRequired": "Please enter your name.",
+        "emailRequired": "Please enter your email.",
+        "emailInvalid": "Invalid email format.",
+        "emailAlreadyExists": "Email already exists.",
+        "addUserSuccess": "User added successfully.",
+        "addUserFailed": "Failed to add user.",
+        "addNewTeam": "Add New Team",
+        "addTeamSuccess": "Team added successfully.",
+        "addTeamFailed": "Failed to add team.",
+        "addNewUserExplanation": "To add a new user, please enter their name and email address. An account will be automatically created using the provided email, and the initial password will be set to 000000.",
+        "agent": "Agent",
+        "deleteAgentExplanation": "This is a permanent deletion. Deleted agents cannot be recovered. If you want to delete a team member, please use the + button in the team to modify the team member.",
+        "oauth": "OAuth Settings",
+        "aliasRequired": "Please enter your alias.",
+        "aliasAlreadyExists": "Alias already exists."
+    },
+    "agentField": {
+        "agentId": "Agent ID",
+        "agentName": "Name",
+        "agentRole": "Role",
+        "agentGoal": "Goal",
+        "agentPersona": "Persona",
+        "agentEndpoint": "Endpoint",
+        "agentDescription": "Description",
+        "agentTools": "Tools",
+        "agentSkills": "Skills",
+        "aiProvider": "AI Provider",
+        "aiModel": "AI Model",
+        "alias": "Alias"
+    },
+    "processDefinitionMap": {
+        "title": "Process Definition Map",
+        "mobileTitle": "Get Started",
+        "lock": "Click the save icon to save.",
+        "unlock": "Click the pencil icon to edit.",
+        "addMega": "Mega Process",
+        "addMajor": "Major Process",
+        "addSub": "Sub Process",
+        "save": "Save",
+        "downloadImage": "Download definition diagram as an image",
+        "consultingAI": "Process Consulting AI",
+        "consultingButton": "Start Process Consulting",
+        "analyzeAndImproveProcessWithAI": "Start process consulting with AI",
+        "usageGuide": {
+            "title": "Process Definition Map Usage Guide",
+            "details": [
+                {
+                    "icon": "pencil",
+                    "title": "Pencil Icon\nEdit button to modify the process definition map."
+                },
+                {
+                    "icon": "image-download",
+                    "title": "Image Download Icon\nDownload the generated diagram as an image."
+                },
+                {
+                    "icon": "magic",
+                    "title": "Process Consulting\nCreate initial processes using AI.\nExample: Enter 'Create a leave request process' to automatically generate it."
+                },
+                {
+                    "icon": "market",
+                    "title": "Marketplace\nTest and operate example processes registered by other users."
+                }
+            ]
+        },
+        "editingUser": "is editing.",
+        "checkIn": "Check In",
+        "checkOut": "Check Out",
+        "saveCheckIn": "Save",
+        "cancelCheckIn": "Do not save",
+        "confirm": "Confirm",
+        "close": "Close",
+        "cancel": "Cancel",
+        "download": "Download",
+        "uncategorized": "Uncategorized",
+        "closeConsulting": "Are you sure you want to end the consultation without saving?",
+        "closeConsultingInPreview": "Are you sure you want to end the consultation without saving?\nYou can save by clicking the lock button on the right.\n\nDo you want to end the consultation?",
+        "checkInDBError": "DB connection is lost. Download the modified data and save it, then contact the administrator.",
+        "checkOutDBError": "DB connection is lost. Contact the administrator.",
+        "checkInMessage": "Are you sure you want to exit editing? \nIf you do not save, the modified content will not be applied.",
+        "checkOutMessage": "Do you want to modify the process definition map?",
+        "forcedCheckOutMessage": "Currently, {name} is editing. If you proceed with editing, the content modified by {name} will be damaged and not saved. \nDo you want to proceed with editing?",
+        "settingPermission": "Setting Permission",
+        "isReadable": "Readable",
+        "isWritable": "Writable",
+        "isDeployable": "Deployable",
+        "marketplace": "Marketplace",
+        "marketplaceExplanation": "Find a business process template",
+        "treeView": "View as Tree",
+        "treeViewExplanation": "View and edit processes in a tree structure"
+    },
+    "processDefinitionTree": {
+        "search": "Search",
+        "uploadExcel": "Upload Excel",
+        "createMap": "Create Map"
+    },
+    "uiDefinition": {
+        "title": "Screen Definition",
+        "cardTitle": "Screen Definition Management",
+        "uiDefinitionExplanation": "Manage screens interactively.\n For example, you can issue commands like 'I want to create a form to receive user information. The user information should include username, email, gender, and user profile image.'",
+        "add": "Add",
+        "edit": "Edit",
+        "delete": "Delete",
+        "cancel": "Cancel",
+        "save": "Save Screen",
+        "deleteForm": "Delete Form",
+        "deleteFormMessage": "Are you sure you want to delete the form?",
+        "redaction": "Edit",
+        "preview": "Preview"
+    },
+    "dmn": {
+        "title": "Business Rules",
+        "cardTitle": "DMN Management",
+        "explanation": "Manage business rules interactively.",
+        "add": "Add",
+        "edit": "Edit",
+        "delete": "Delete",
+        "cancel": "Cancel",
+        "save": "Save DMN",
+        "deleteDmn": "Delete DMN",
+        "deleteDmnMessage": "Are you sure you want to delete the DMN?",
+        "editMode": "Edit Mode",
+        "viewMode": "View Mode",
+        "creation": "Creation",
+        "inference": "Inference"
+    },
+    "processDefinition": {
+        "title": "Process Definition",
+        "cardTitle": "Process Definition Management",
+        "processDefinitionExplanation": "Manage the process interactively. For example, you can issue commands like: \n'Register the sales management process as follows:\n1. Register sales opportunities including customer name, estimated business size, key person, requirements\n2. Proposal preparation: proposal contents, pricing\n3. Winning or losing an order\n4. If the order is won, proceed with contract execution'",
+        "name": "Name",
+        "type": "Type",
+        "form": "Form",
+        "description": "Description",
+        "dataSource": "DataSource",
+        "query": "Query",
+        "actions": "Actions",
+        "itemsPerPage": "Items per page",
+        "processVariables": "Process Variables",
+        "editProcessData": "Edit Process Data",
+        "instanceNamePattern": "Instance Name Pattern",
+        "edit": "Edit",
+        "delete": "Delete",
+        "zoom": "Canvas Zoom in/Zoom out",
+        "execution": "Start Process",
+        "deleteProcess": "Delete Process",
+        "showXML": "Show XML",
+        "showModeling": "Show Modeling",
+        "deleteProcessMessage": "Are you sure you want to delete this process?",
+        "cancel": "Cancel",
+        "simulate": "Simulate",
+        "preview": "Preview",
+        "capture": "Download process image",
+        "savePDF": "Save PDF",
+        "restoreProcess": "Restore",
+        "restore": "Restore",
+        "restoreProcessMessage": "Do you want to restore the process?",
+        "webFormUrl": "Web Form URL",
+        "isReadOnlyMode": "Read-only mode.",
+        "isReadOnlyModeWarningMsg": "This is read-only mode. Click the pencil icon to edit."
+    },
+    "ProcessVariable": {
+        "name": "Name",
+        "type": "Type",
+        "key": "Key",
+        "defaultValue": "Form",
+        "description": "Description",
+        "dataSource": "DataSource",
+        "add": "Add",
+        "edit": "Edit"
+    },
+    "processList": {
+        "title": "Process List"
+    },
+    "chat": {
+        "inputMessage": "Type a Message",
+        "definitionMapInputMessage": "e.g. Create vacation request process / Run vacation request process / Check approval status of running vacation request",
+        "lock": "Click the save icon to save.",
+        "unlock": "Click the pencil icon to edit.",
+        "processDefinitionSave": "Save",
+        "history": "history button",
+        "historyDisabled": "history button : Available in edit mode.",
+        "import": "Import BPMN File",
+        "addImage": "Add Image",
+        "fileUpLoad": "File Up Load",
+        "isEnableProcessGPT": "Enable Process GPT",
+        "isDisableProcessGPT": "Disable Process GPT",
+        "userReply": "Reply to {name}",
+        "systemReply": "Reply to the system",
+        "headset": "Speaking/Listening",
+        "document": "Work Instruction",
+        "camera": "Camera",
+        "user": "User",
+        "chatRoom": "Chat List",
+        "viewDetails": "View Details",
+        "executeProcess": "Execute Process",
+        "participants": "Participants",
+        "moveTop": "Move to Top",
+        "moveBottom": "Move to Bottom",
+        "helpTitle": "Chat Help",
+        "helpIntro": "This chat is an AI assistant that provides answers based on various information.\n\nMain Features:",
+        "helpScheduleRegistration": "• Schedule Registration: Automatically registers schedules when requested during conversation\n  e.g., \"Schedule a team meeting at 10 AM tomorrow\"",
+        "helpScheduleQuery": "• Schedule Inquiry: Answers questions about registered schedules\n  e.g., \"Tell me this week's schedule\", \"What's on next Monday?\"",
+        "helpProcessStart": "• Process Start: Automatically starts processes when requested\n  e.g., \"Start the vacation request process\"",
+        "helpDocumentQuery": "• Document Inquiry: Answers questions about company documents or information\n  e.g., \"Find last month's sales report\"",
+        "helpDocumentGeneration": "• Document Generation: Automatically generates documents when requested\n  e.g., \"Create a quarterly performance report\"",
+        "helpTodoRegistration": "• To-Do List Registration: Automatically adds tasks when requested\n  e.g., \"Add customer meeting preparation to my to-do list\"",
+        "helpNote": "※ Note: This chat does not support process definition map generation"
+    },
+    "accountTab": {
+        "accountSetting": "Account Settings",
+        "profileImageChange": "Change Profile Image",
+        "imageSelect": "Select Profile Image",
+        "selectImageExplanation": "JPG, GIF, or PNG files are allowed. Maximum size 800KB.",
+        "changePassword": "Change Password",
+        "changePasswordExplanation": "Check here to change your password.",
+        "currentPassword": "Current Password",
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm Password",
+        "personalDetails": "Personal Information",
+        "personalDetailsExplanation": "Edit and save your personal details here.",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "address": "Address",
+        "changeTenant": "Tenant Settings",
+        "save": "Save",
+        "manageAccess": "Manage Users",
+        "addUser": "Invite User",
+        "drive": "Google Drive Settings",
+        "clientId": "Client ID",
+        "clientSecret": "Client Secret",
+        "folderId": "Folder ID",
+        "edit": "Edit",
+        "cancel": "Cancel",
+        "close": "Close",
+        "dataSource": "DataSource",
+        "dataSourceConnection": "DataSource Connection",
+        "experimentalFeature": "Experimental Feature",
+        "experimentalFeatureExplanationOn": "Automatically connect external DataSource when scanning forms",
+        "experimentalFeatureExplanationOff": "Do not use DataSource connection when scanning forms",
+        "experimentalFeatureWarning": "This feature is currently in testing and may not work as expected. Please provide feedback to the development team.",
+        "addDataSource": "Add dataSource",
+        "editDataSource": "Edit dataSource",
+        "addConnectionInfo": "Add Connection Info",
+        "dataSourceConnectionOn": "DataSource connection is enabled.",
+        "dataSourceConnectionOff": "DataSource connection is disabled.",
+        "tenantManage": "Tenant Management",
+        "url": "URL",
+        "key": "Key",
+        "value": "Value",
+        "description": "Description",
+        "delete": "Delete",
+        "deleteUserSuccess": "User '{name}' has been deleted successfully.",
+        "deleteUserFailed": "Failed to delete user '{name}'.",
+        "confirmDeleteTitle": "Confirm User Deletion",
+        "confirmDeleteMessage": "Are you sure you want to delete '{name}'?",
+        "confirmDeleteInstruction": "Please type the user name to confirm:",
+        "addHeader": "Add Header",
+        "parameters": "Parameters",
+        "addParameter": "Add Parameter",
+        "authentication": "Authentication",
+        "addAuthentication": "Add Authentication",
+        "method": "Method",
+        "endpoint": "Endpoint",
+        "headers": "Headers",
+        "username": "Username",
+        "password": "Password",
+        "search": "Search User",
+        "noSearchResults": "No search results found",
+        "inviteUser": "Invite User",
+        "inviteUserMessage": "Invite your colleagues to join the company",
+        "inviteUserMessage2": "*Emails will be sent to the invited users",
+        "skipAndStart": "Skip and Start",
+        "sendInvitation": "Send Invitation",
+        "emailAddress": "Email Address",
+        "role": "Role",
+        "user": "User",
+        "admin": "Admin",
+        "add": "Add",
+        "addMCPServer": "Add New MCP Server",
+        "addEnvironment": "Add",
+        "editEnvironment": "Edit",
+        "addSecret": "Add",
+        "editSecret": "Edit",
+        "addBrowserUseSecret": "Add",
+        "editBrowserUseSecret": "Edit",
+        "mcpServers": "MCP Servers",
+        "mcpEnvironments": "MCP Environments",
+        "environments": "Environments",
+        "showSecretData": "Show Secret Data",
+        "indicatesRequiredField": "*Environment variable configuration is required.",
+        "billing": "Billing",
+        "confirmDeleteConnectionTitle": "Delete Connection Info",
+        "confirmDeleteConnectionText": "Are you sure you want to delete \"{name}\"?",
+        "skills": "Skills",
+        "affiliatedTeam": "Affiliated Team"
+    },
+    "loginPage": {
+        "title": "Welcome to Process-GPT",
+        "google": "Sign in with Google",
+        "or": "or sign in with",
+        "userName": "Email",
+        "password": "Password",
+        "remeber": "Remeber this Device",
+        "login": "Sign In",
+        "create": "Create an account",
+        "forgotPassword": "Forgot password?"
+    },
+    "createAccount": {
+        "title": "Welcome to Process-GPT",
+        "already": "Already have an Account?",
+        "login": "Sign In",
+        "userName": "User Name",
+        "password": "Password",
+        "email": "Email",
+        "google": "Sign in with Google",
+        "or": "or sign in with",
+        "normalRegister": "Create a User",
+        "tenantRegister": "Create a Company",
+        "confirmPassword": "Confirm Password",
+        "enterPassword": "Please enter your password",
+        "enterEmail": "Please enter your email",
+        "invalidEmailFormat": "Invalid email format",
+        "enterName": "Please enter your name",
+        "enterConfirmPassword": "Please confirm your password",
+        "passwordMismatch": "Passwords do not match",
+        "signUp": "Sign In",
+        "checkEmailMessage": "Your registration is complete. Please check your email to activate your account.",
+        "registrationFailed": "There was an error during the registration process. Please check your information and try again."
+    },
+    "createAdminAccount": {
+        "createAccountHeader": "Admin Info",
+        "tenantID": "Company ID *",
+        "supabaseConnectionInfo": "Supabase Connection Information"
+    },
+    "tenantManagePage": {
+        "title": "Company Management",
+        "subTitle1": "Create a new company or go to a page managed by the selected company.",
+        "subTitle2": "(* Sign-up is not possible on mobile devices.)",
+        "subTitle3": "Select a company to go to the page managed by the selected company.",
+        "createCompany": "Create a company"
+    },
+    "tenantInfoField": {
+        "step1": "STEP 1. Create an Account",
+        "step1-text": "(*The password must contain all of these : Uppercase and Lowercase letters, Number and Special characters.)<br>1. <a href='https://supabase.com/dashboard/sign-up' target='_blank'>Go to the Supabase registration page</a>and create an account.",
+        "step2-1": "STEP 2. Create a Project or Organization",
+        "step2-1-text": "1. Select “New Project” or “New Organization” from the page after creating an account.<br>2. Click “New Project”.",
+        "step2-2": "STEP 2. Create a New Organization",
+        "step2-2-text": "(*If you already have an organization, skip this step.)<br>1. Enter the name of the new organization you want to create in the “Name” field.<br>2. Click “Create organization” button.",
+        "step2-3": "STEP 2. Create a New Project",
+        "step2-3-text": "1. Select “organization” and enter the name of the project you want to create in “Project name” field.<br>2. Enter the password of the database that you will use.<br>(*Paste the password you entered into the “Database Password” field below.<br>3. Select “Seoul” for the “Region” as the screenshot above.<br>4. Click “Create new project” button.",
+        "step3-1": "STEP 3. Project URL Connection",
+        "step3-1-text": "1. If the project creation is done, click the gear icon at the bottom left.<br>2. Select “API Menu” from the menu list of “Settings”.<br>3. (*Copy the URL from “Project URL” section and paste it into the box below.)",
+        "step3-2": "STEP 3. Secret API Key Connection",
+        "step3-2-text": "1. You can check the “Secret Key” by clicking the “Reveal” button from the “Project API Keys” section.<br>(*Copy the “Secret Key” and paste it into the box below.”",
+        "step3-3": "STEP 3. DataBase Connection",
+        "step3-3-text": "1. Select “Database” from the menu list of “Settings”.<br>2. Copy “Host”, “Database name”, “Port”, “User” from the “Connection parameters” section and paste it into the each box below.",
+        "step4": "STEP 1. Enter the Company Name to Use",
+        "step4-text": "1. Enter the name of the company in the box below and click “Create” button to create a company.<br>The name of the company will be used as a sub-domain.<br>e.g. {Company Name}.process-gpt.io",
+        "step5": "STEP 5. Setting up Supabase Site URL",
+        "step5-text": "1. Select lock icon(Authentication) from the left menu.<br>2. Click “URL Configuration”.<br>3. Click copy button to copy the “Site URL” including the company name you entered from Step4 and paste it into the “Site URL” box.<br>4. Click “Save” button."
+    },
+    "forgotPassword": {
+        "title": "Forgot your password?",
+        "email": "Email Address",
+        "sendEmail": "Send Email",
+        "sendEmailExplanation": "Please enter the email address associated with your account and We will email you a link to reset your password.",
+        "login": "Back to Login",
+        "resetPassword": "Reset Password",
+        "password": "Password",
+        "passwordExplanation": "Enter the password you want to reset.",
+        "updatePassword": "Update Password"
+    },
+    "ExtraBox": {
+        "logOut": "log out"
+    },
+    "BpmnPropertyPanel": {
+        "name": "Name",
+        "subProcessNamePattern": "Sub-Process Name Pattern",
+        "condition": "Condition",
+        "priority": "Priority",
+        "description": "Overview",
+        "inputData": "Input Data",
+        "outputData": "Output Data",
+        "checkPoints": "Checkpoints",
+        "script": "Script",
+        "generateScript": "Generate Script",
+        "scriptPrompt": "Script Prompt",
+        "scriptType": "Script Type",
+        "add": "Add",
+        "role": "Role",
+        "methodTypeUrl": "Method Type",
+        "apiUrl": "API URL",
+        "mapperDescriptionTitle": "Data mapping is a function that passes variables to the next task",
+        "mapperDescriptionSubTitle1": "1. Variables: Values added to the variable section \n2. Roles: Roles (names) registered in the swimlane \n3. Instance: Stores the end date of the next task to be executed \n4. Activities: Roles (names) registered in the task \n5. Arguments: Names (values) registered in the attributes",
+        "mapperDescriptionSubTitle2": "How to use \n- Drag and drop while holding the mouse to connect\n- Click the line to delete",
+        "printDocument": "Download PDF",
+        "pdfPreview": "PDF Preview",
+        "ruleGenerator": "Deterministic Rule Generation",
+        "ruleGenerating": "Deterministic Rule Generation...",
+        "view": "View",
+        "copyInputJson": "Copy Input JSON",
+        "clearExamples": "Clear Examples",
+        "exampleDetail": "Example Detail",
+        "result": "Result",
+        "inputPreview": "Input Preview",
+        "ioExamples": "IO Examples",
+        "close": "Close",
+        "mismatch": "Mismatch",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "regenerate": "Regenerate",
+        "generatedFunction": "Deterministic Rule",
+        "generatedRulePreview": "Deterministic Rule Preview",
+        "expectedOutput": "Expected Output",
+        "conditionWhen": "Condition(When)",
+        "resultThen": "Result(Then)",
+        "setting": "Setting",
+        "referenceInfo": "Reference Information",
+        "edit": "Edit",
+        "preview": "Preview",
+        "duration": "Duration",
+        "attachments": "Attachments",
+        "agentMode": "Agent Mode",
+        "orchestration": "Orchestration",
+        "days": "days",
+        "selectForm": "Select Form to Reference",
+        "noFormSelected": "Sel  ect a form to reference",
+        "instruction": "Instruction",
+        "scriptVariable": "Variables used in the script must be defined in the process variables.",
+        "customProperties": "Custom Properties"
+    },
+    "KeyValueField": {
+        "add": "Add",
+        "key": "Key",
+        "value": "Value",
+        "noItems": "No items registered.",
+        "duplicateKey": "Duplicate Key."
+    },
+    "PDFPreviewer": {
+        "saveDocument": "Save PDF",
+        "close": "Close",
+        "title": "PDF Save Preview",
+        "splitBPMN": "Split BPMN",
+        "savingPDF": "Saving PDF..."
+    },
+    "EscalationEventDefinitionPanel": {
+        "expression": "Event Key"
+    },
+    "SignalEventDefinitionPanel": {
+        "eventKey": "Event Key"
+    },
+    "NotificationDD": {
+        "notification": "Notifications"
+    },
+    "Customizer": {
+        "settings": "Layout settings",
+        "themeColor": "Theme Color",
+        "containerOption": "Container Option",
+        "boxed": "Boxed",
+        "full": "Full"
+    },
+    "Mashup": {
+        "hoverText": "Drag a layout (Container) here to start editing the form."
+    },
+    "ProcessDefinitionVersionDialog": {
+        "title": "Save Process",
+        "title2": "Version Up",
+        "minorUpdate": "Minor Update",
+        "majorUpdate": "Major Update",
+        "update": "Update",
+        "release": "Release",
+        "releaseName": "Release Name",
+        "id": "ID",
+        "name": "Name",
+        "message": "Description",
+        "versionTag": "Version Tag",
+        "save": "Save",
+        "versionDescriptionTitle": "Save Help Guide",
+        "idRequired": "ID is required.",
+        "idRules": "Use lowercase letters, numbers, and underscores only (e.g., new_process_id)",
+        "nameRequired": "Name is required.",
+        "optimize": "Use Process Definition Optimization",
+        "generatingName": "Generating recommended name...",
+        "generatingId": "Generating recommended ID...",
+        "duplicateWarning": "This ID is already in use. To overwrite the existing process, check the box and save.",
+        "regenerateNameTooltip": "Get New Name Suggestion",
+        "regenerateIdTooltip": "Get New ID Suggestion",
+        "helpIntro": "In this dialog, you can save the process while configuring the version, description, and optimization options.\n\nEach save is recorded as a separate version; existing versions remain unchanged.",
+        "helpVersionToggle": "• Version Tag (minor / major):\n  - minor: Increases the decimal part of the current version by 1. e.g., 1.3 → 1.4\n    * Typically used as an \"intermediate\" or working save before promoting to a major version, while you are still iterating on the process.\n  - major: Increases the integer part by 1 and resets the decimal to 0. e.g., 1.3 → 2.0\n    * Used for versions that are actually applied/released to users and treated as the main production version.\n  The next version number is automatically calculated from the selected tag and used when saving.",
+        "helpOptimize": "• Process Definition Optimization: When enabled, AI analyzes the process definition at save time and automatically refines the input data (reference information) and data flow for each activity.\n  - Checks and connects data flow between activities\n  - Recommends missing or unnecessary fields to improve definition quality\n  - Automates repetitive manual tuning so you can model faster.",
+        "generatingDiff": "Analyzing process changes..."
+    },
+    "FormDefinitionPanel": {
+        "editForm": "Edit Form Attribute",
+        "id": "ID",
+        "name": "Name",
+        "type": "Type",
+        "readOnly": "Read-Only Mode",
+        "save": "Save",
+        "fixed": "Fixed Options",
+        "dataBinding": "Data Binding",
+        "urlBinding": "URL Binding"
+    },
+    "ContainerSettingPanel": {
+        "title": "Edit Container Attribute",
+        "id": "ID",
+        "name": "Name",
+        "save": "Save",
+        "multDataMode": "Multi-Data Mode"
+    },
+    "CodeField": {
+        "eventType": "Event Type",
+        "nameToWatch": "Name to Watch"
+    },
+    "BpmnParameterContexts": {
+        "addArgument": "Add Argument",
+        "calleeVariable": "Callee Variable",
+        "argument": "Argument",
+        "transformation": "Transformation",
+        "direction": "Connection Direction"
+    },
+    "BpmnRoleParameterContexts": {
+        "addMapping": "Add Mapping"
+    },
+    "DefaultArguments": {
+        "parameterContext": "Parameter Context"
+    },
+    "CallActivityPanel": {
+        "parameterContext": "Parameter Context",
+        "selectDefinition": "Select Definition",
+        "noDefinitionSelected": "No definition selected.",
+        "roleMapping": "Role Mapping",
+        "move": "Move"
+    },
+    "ReceiveTaskPanel": {
+        "dataMapping": "Data Mapping",
+        "inputData": "Input Data",
+        "selectService": "Select Service",
+        "callUri": "Call URI Pattern",
+        "noValidationForSSL": "Don't validate the certificate",
+        "skipIfNotFound": "Skip if not found (404 error handling)",
+        "title": "Title",
+        "content": "Content",
+        "to": "To",
+        "from": "From",
+        "toRole": "To Role",
+        "fromRole": "From Role",
+        "descriptionTitle": "Write Title",
+        "descriptionContent": "Write Content",
+        "descriptionTo": "Write To",
+        "descriptionFrom": "Write From",
+        "descriptionToRole": "Write To Role",
+        "descriptionFromRole": "Write From Role",
+        "emailActivity": "Email Activity"
+    },
+    "ServiceTaskPanel": {
+        "dataMapping": "Data Mapping",
+        "generation": "Generation",
+        "methodTypeDescriptionTitle": "Set the method (GET, POST, PUT, PATCH) to use when sending an API request and the server's endpoint URL to process the request.",
+        "methodTypeDescriptionSubTitle1": "1. GET: A request to retrieve data from the server \n2. POST: A request to create and send new data to the server \n3. PUT: A request to update or replace existing data entirely \n4. PATCH: A request to partially modify existing data \n5. API URL: The endpoint URL of the server where the request will be sent\n"
+    },
+    "EventSynchronizationForm": {
+        "edit": "Edit",
+        "delete": "Delete",
+        "url": "URL",
+        "eventType": "Event Type",
+        "dataMapping": "Data Mapping",
+        "eventAttributes": "Event Attributes",
+        "primaryKey": "Primary Key",
+        "correlationKey": "Correlation Key",
+        "attributeType": "Attribute Type",
+        "name": "Name",
+        "save": "Save",
+        "add": "Add",
+        "typeDescriptionTitle": "Attribute: Defines the data to be stored for the corresponding item",
+        "typeDescriptionSubTitle1": "1. Unique Key: A key that uniquely identifies each record and does not allow duplicates within the database. \n2. Correlation Key: A key used to establish and track relationships between different data, maintaining data correlations."
+    },
+    "UserTaskPanel": {
+        "default": "Default",
+        "defaultInfo": "All users assigned to this task role can view this task. The first user to select the task will be assigned as the assignee.",
+        "sharedGroupInfo": "All users in the selected shared group can view this task. The first user to select the task becomes the assignee. e.g., Author, Reviewer",
+        "assigneeInfo": "This task is assigned only to the specified user. Other users cannot view it.",
+        "loadBalancingInfo": "Tasks are automatically distributed among users in the designated group. You can select a distribution strategy.",
+        "expressionInfo": "The assignee is dynamically determined at runtime based on an expression. e.g., ${initiatorManager}",
+        "form": "Form",
+        "external": "External Application",
+        "formCreateDialog": "Would you like to create a form?",
+        "yes": "Yes",
+        "no": "No",
+        "radioSelectDescriptionTitle": "Select data processing method: basic data processing, custom screen creation, or external system integration.",
+        "radioSelectDescriptionSubTitle1": "1. Basic: Use default data\n2. Form: Use a screen created in the screen definition\n3. External Application: Create a field to enter the business screen URL",
+        "assignmentType": "Assignment Method",
+        "assignee": "Assign User",
+        "sharedGroup": "Shared Group",
+        "expression": "Expression-based",
+        "loadBalancing": "Load Balancing",
+        "taskType": "Task Type",
+        "descriptionTo": "Assignee",
+        "descriptionToTitle": "Enter Assignee",
+        "direction": "Connection Direction",
+        "inputForm": "Reference Form",
+        "outputForm": "Edit Form",
+        "addFormParameter": "Add Form",
+        "removeFormParameter": "Remove Form",
+        "loadBalancingGroup": "Load Balancing Group",
+        "loadBalancingStrategy": "Assignment Strategy",
+        "roundRobin": "Round Robin (Sequential Assignment)",
+        "leastTasks": "Least Tasks First",
+        "idle": "Longest Idle First"
+    },
+    "Mapper": {
+        "mapper": "Mapper"
+    },
+    "TaskPanel": {
+        "inputData": "Input Data (JSON/XML)",
+        "resultInputVariable": "Result Input Variable"
+    },
+    "ManualTaskPanel": {
+        "inputData": "Input Data (JSON/XML)",
+        "resultInputVariable": "Result Input Variable"
+    },
+    "SubProcessPanel": {
+        "forEachRole": "Role-based Multiple Creation",
+        "role": "Create multiple sub-processes based on roles",
+        "forEachVariable": "Variable-based Multiple Creation",
+        "variable": "Create multiple sub-processes based on variables",
+        "forEachVariableDescriptionTitle": "When multi-data is inserted by data mapping with the data registered in the process variables, multiple sub-processes are created based on the generated data during process execution.",
+        "forEachVariableDescriptionSubTitle1": "1. Check multi-data mode through edit mode in screen definition management",
+        "forEachVariableDescriptionSubTitle2": "2. Perform data mapping in the panel of the previous task to be executed",
+        "forEachRoleDescriptionTitle": "Create a Sub Process for every person with the selected role",
+        "forEachRoleDescriptionSubTitle1": "Use Case: \nWhen multiple team members need to perform the same task, you can assign Sub Processes individually to each team member through role-based multi-instance generation. \nThis allows each team member to work independently while the overall process is centrally managed. \n\nBelow, the box in the image corresponds to the role field.",
+        "subProcessNamePattern": "Sub-Process Name Pattern",
+        "ruleGenerator": "Deterministic Rule Generation",
+        "ruleGenerating": "Deterministic Rule Generation...",
+        "generatedRulePreview": "Deterministic Rule Preview",
+        "generatedFunction": "Deterministic Rule",
+        "expectedOutput": "Expected Output",
+        "conditionWhen": "Condition(When)",
+        "resultThen": "Result(Then)",
+        "mismatch": "Mismatch",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "regenerate": "Regenerate"
+    },
+    "ParticipantPanel": {
+        "apiUrl": "API URL",
+        "openAPISpec": "Open API Spec",
+        "system": "Load from system definition",
+        "systemDefinitionDescriptionTitle": "Load and apply items registered in the system definition from the left-side management button",
+        "apiUrlDescriptionTitle": "Set the method (GET, POST, PUT, PATCH) to be used when sending API requests and the endpoint URL of the server that will process the request.",
+        "apiUrlDescriptionSubTitle1": "1.GET: A request to retrieve data from the server \n2.POST: A request to create and send new data to the server \n3.PUT: A request to update or replace the entire existing data \n4.PATCH: A request to partially modify existing data \n5.API URL: The endpoint address of the server where the request will be sent\n"
+    },
+    "LanePanel": {
+        "selectRoleType": "Select Role Type",
+        "none": "None",
+        "IAMScope": "Role Resolution By IAM Scope",
+        "DirecUser": "Role Resolution By Direct user",
+        "resolutionRule": "Resolution Rule",
+        "scopeName": "Scope Name",
+        "userID": "User ID",
+        "externalCustomer": "External Customer",
+        "radioDescriptionTitle": "Select the role you want to add.",
+        "radioDescriptionSubTitle": "None: Selecting this option does not assign a specific role to the task. All users can perform this task.\nSelect by Role Name: Selecting this option allows you to choose from a predefined list of roles. Only users belonging to the selected role can perform this task.\nSelect Users Directly: Selecting this option allows you to designate specific users. Only designated users can perform this task."
+    },
+    "MessageEventDefinitionPanel": {
+        "correlationKey": "Correlation Key",
+        "servicePath": "Service Path",
+        "operationRef": "Operation Ref",
+        "return": "Variable to store the return value",
+        "methodTypeDescriptionTitle": "Set the method (GET, POST, PUT, PATCH) to use for the API request and the endpoint URL of the server to handle the request",
+        "methodTypeDescriptionSubTitle1": "1. GET: Request to retrieve data from the server \n2. POST: Request to create and send new data to the server \n3. PUT: Request to update or replace existing data entirely \n4. PATCH: Request to partially modify existing data \n5. API URL: The endpoint address of the server to which the request will be sent",
+        "returnTitle": "The dropdown menu displays a list of variable names registered in the process variables. \nSelect the variable to store the content written above.",
+        "correlationKeyTitle": "A correlation key is a unique value used to identify a specific message.",
+        "correlationKeySubTitle": "When a Message Intermediate Catch Event receives a message, the correlation key is used to identify and process the correct message among many. This key is shared between the entity sending the message and the entity receiving it, allowing the message to be associated with a specific business process instance. \nFor example, an order number or customer ID can be used as a correlation key.",
+        "servicePathTitle": "The service path represents the location or address of the service where the message will be delivered.",
+        "servicePathSubTitle": "It defines where the message should be sent within the service endpoint, and is used to enable communication between the process and other systems or services through message-based interactions. In BPMN, the service path is primarily configured to route messages or direct them to a specific service. Through the service path, the message is routed to the appropriate service.",
+        "operationReferenceTitle": "An operation reference is a reference that designates the operation to be performed to process a specific message.",
+        "operationReferenceSubTitle": "It defines the actions or business logic that should be executed when the message arrives. In BPMN, an operation reference helps clarify the content of the message and the task it triggers. \nFor example, a specific operation reference may perform a database update or call an external service upon receiving the message."
+    },
+    "DetailComponent": {
+        "details": "Details",
+        "allDetails": "View full description"
+    },
+    "SendTaskPanel": {
+        "generation": "Generation",
+        "return": "Variable to store the return value",
+        "methodTypeDescriptionTitle": "Set the method (GET, POST, PUT, PATCH) to use when sending an API request and the server's endpoint URL to process the request.",
+        "methodTypeDescriptionSubTitle1": "1.GET: A request to retrieve data from the server \n2.POST: A request to create and send new data to the server \n3.PUT: A request to update or replace existing data entirely \n4.PATCH: A request to partially modify existing data \n5.API URL: The endpoint URL of the server where the request will be sent",
+        "returnTitle": "The dropdown menu displays a list of variable names registered in the process variables. \nUsers can select the desired variable from this list.",
+        "message": "Send Email",
+        "send": "Send Rest API"
+    },
+    "ScriptTaskPanel": {
+        "return": "Variable to store the return value",
+        "scriptDescriptionTitle": "Script Task enables the execution of micro-level configurations or actions that are difficult to handle solely through process configuration by directly setting activities using JavaScript or Java.",
+        "returnTitle": "The dropdown menu displays a list of variable names registered in the process variables. \nUsers can select the desired variable from this list."
+    },
+    "TimerEventDefinitionPanel": {
+        "cron": "Time Input (Cron)",
+        "date": "Select Date",
+        "time": "Select Time",
+        "frequency": "Select Frequency",
+        "cronDescriptionTitle": "You can use a Cron expression to precisely set the time at which the Timer Intermediate Catch Event will be triggered.",
+        "cronDescriptionSubTitle": "Format: A Cron expression consists of five fields, each representing minutes, hours, day of the month, month, and day of the week. \nExamples: \n0 0 * * * : Triggers the event every day at midnight (00:00). \n15 10 * * * : Triggers the event every day at 10:15 AM. \n0 9 1 * * : Triggers the event on the 1st of every month at 9:00 AM. \n0 0 * * 1 : Triggers the event every Monday at midnight (00:00). \n*/10 * * * * : Triggers the event every 10 minutes.",
+        "ruleGenerator": "Deterministic Rule Generation",
+        "ruleGenerating": "Deterministic Rule Generation...",
+        "generatedRulePreview": "Deterministic Rule Preview",
+        "generatedCron": "Generated Cron",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "regenerate": "Regenerate"
+    },
+    "GatewayPanel": {
+        "gatewayDescriptionTitle": "Used when selecting to proceed to the next task through Gateway condition processing.",
+        "gatewayDescriptionSubTitle": "Exclusive Gateway: When exiting, it moves to one task that matches the condition applied to the line. When entering, it proceeds to the next task if any of the multiple tasks are completed, and the existing task is terminated.",
+        "gatewayDescriptionSubTitle1": "Parallel Gateway: When exiting, it proceeds to all subsequent tasks in parallel if the condition applied to the line is met. When entering, it proceeds to the next task only when all tasks are completed.",
+        "gatewayDescriptionSubTitle2": "Inclusive Gateway: When exiting, it moves to one task that matches the condition applied to the line. When entering, it proceeds to the next task only when all tasks are completed.",
+        "gatewayDescriptionSubTitle3": "Event-based gateway: It can only proceed to the next task when a specific event occurs.",
+        "gatewayDescriptionSubTitle4": "Complex Gateway (Not Implemented): Users can add arbitrary conditions to select the next task."
+    },
+    "SystemList": {
+        "addDialogTitle": "Add System",
+        "editDialogTitle": "Edit System",
+        "name": "Name",
+        "description": "Description",
+        "apiUrl": "API URL",
+        "add": "Add",
+        "edit": "Edit"
+    },
+    "System": {
+        "description": "Description",
+        "edit": "Edit",
+        "delete": "Delete",
+        "confirmDeleteTitle": "Delete System Definition",
+        "confirmDeleteText": "Are you sure you want to delete?"
+    },
+    "PaletteProvider": {
+        "undoCmdZ": "Undo (Cmd + Z)",
+        "undoCtrlZ": "Undo (Ctrl + Z)",
+        "RedoCmdShiftZ": "Redo (Cmd + Shift + Z)",
+        "RedoCtrlY": "Redo (Ctrl + Y)",
+        "handTool": "Activate the hand tool",
+        "lassoTool": "Activate the lasso tool",
+        "spaceTool": "Activate the create/remove space tool",
+        "globalConnectTool": "Activate the global connect tool",
+        "participantCollapsed": "Create Pool/Participant",
+        "participantExpanded": "Create Pool/Participant",
+        "StartEvent": "Create Start Event",
+        "IntermediateThrowEvent": "Create Intermediate Throw Event",
+        "EndEvent": "Create End Event",
+        "ExclusiveGateway": "Create Exclusive Gateway",
+        "Task": "Create Task",
+        "SubProcess": "Create Sub Process",
+        "DataStoreReference": "Create Data Store",
+        "DataObjectReference": "Create Data Object",
+        "Participant": "Create Participant",
+        "expandedSubProcess": "Create expanded SubProcess",
+        "dataStore": "Create Data Store",
+        "dataObject": "Create Data Object",
+        "autoLayout": "Auto Layout",
+        "changeOrientation": "Change layout orientation"
+    },
+    "chatListing": {
+        "title": "Chat Room Settings",
+        "search": "Search",
+        "chatRoomName": "Chat Room Name",
+        "selectParticipants": "Select Participants",
+        "save": "Save",
+        "delete": "Delete",
+        "create": "Create",
+        "cancel": "Cancel",
+        "setting": "Setting",
+        "deleteChatRoom": "Delete Chat Room",
+        "confirmDeleteChatRoom": "Are you sure you want to delete this chat room?",
+        "enterChatRoomName": "Please enter a chat room name.",
+        "selectAtLeastOneParticipant": "Please select at least one participant."
+    },
+    "userListing": {
+        "search": "User search",
+        "chat": "Chat"
+    },
+    "ProcessDefinitionChat": {
+        "greetingMessage": "Hello {name}! What tasks and issues are you experiencing? Please let me know and I'll help you!"
+    },
+    "customContextPad": {
+        "endEvent": "Append End Event",
+        "gateway": "Append gateway",
+        "task": "Append task",
+        "intermediateEvent": "Append intermediate/boundary event",
+        "textAnnotation": "Add text annotation",
+        "replace": "Change element",
+        "delete": "Delete",
+        "connect": "Connect to other element",
+        "lane": "Add Lane",
+        "laneAbove": "Add Lane Above",
+        "laneToTheLeft": "Add Lane to the Left",
+        "laneBelow": "Add Lane Below",
+        "laneToTheRight": "Add Lane to the Right",
+        "laneDivideTwo": "Divide into Two Lanes",
+        "laneDivideThree": "Divide into Three Lanes",
+        "connectionMulti": "Connect using Message Flow",
+        "phase": "Add Phase"
+    },
+    "CustomReplaceElement": {
+        "replace-with-call-activity": "Replace with call activity",
+        "replace-with-collapsed-subprocess": "Replace with collapsed subprocess",
+        "replace-with-expanded-subprocess": "Replace with expanded subprocess",
+        "replace-with-manual-task": "Replace with manual task",
+        "replace-with-receive-task": "Replace with receive task",
+        "replace-with-rule-task": "Replace with business rule task",
+        "replace-with-script-task": "Replace with script task",
+        "replace-with-send-task": "Replace with send task",
+        "replace-with-service-task": "Replace with service task",
+        "replace-with-task": "Replace with task",
+        "replace-with-user-task": "Replace with user task",
+        "toggle-loop": "Toggle loop",
+        "toggle-parallel-mi": "Parallel multi-instance",
+        "toggle-sequential-mi": "Sequential multi-instance",
+        "replace-with-compensation-end": "Replace with compensation end event",
+        "replace-with-error-end": "Replace with error end event",
+        "replace-with-escalation-end": "Replace with escalation end event",
+        "replace-with-message-end": "Replace with message end event",
+        "replace-with-none-intermediate-throw": "Replace with none intermediate throw event",
+        "replace-with-signal-start": "Replace with signal start event",
+        "replace-with-terminate-end": "Replace with terminate end event",
+        "replace-with-signal-end": "Replace with signal end event",
+        "replace-with-conditional-start": "Replace with conditional start event",
+        "replace-with-message-start": "Replace with message start event",
+        "replace-with-none-intermediate-throwing": "Replace with none intermediate throwing event",
+        "replace-with-timer-start": "Replace with timer start event",
+        "replace-with-compensation-intermediate-throw": "Replace with compensation intermediate throw",
+        "replace-with-conditional-intermediate-catch": "Replace with conditional intermediate catch",
+        "replace-with-escalation-intermediate-throw": "Replace with escalation intermediate throw",
+        "replace-with-link-intermediate-catch": "Replace with link intermediate catch",
+        "replace-with-link-intermediate-throw": "Replace with link intermediate throw",
+        "replace-with-message-intermediate-catch": "Replace with message intermediate catch",
+        "replace-with-message-intermediate-throw": "Replace with message intermediate throw",
+        "replace-with-none-end": "Replace with none end",
+        "replace-with-none-start": "Replace with none start",
+        "replace-with-signal-intermediate-catch": "Replace with signal intermediate catch",
+        "replace-with-signal-intermediate-throw": "Replace with signal intermediate throw",
+        "replace-with-timer-intermediate-catch": "Replace with timer intermediate catch",
+        "replace-with-complex-gateway": "Replace with complex gateway",
+        "replace-with-event-based-gateway": "Replace with event-based gateway",
+        "replace-with-inclusive-gateway": "Replace with inclusive gateway",
+        "replace-with-parallel-gateway": "Replace with parallel gateway",
+        "replace-with-exclusive-gateway": "Replace with exclusive gateway",
+        "replace-with-data-object-reference": "Replace With Data Object Reference",
+        "replace-with-event-subprocess": "Replace with event subprocess",
+        "replace-with-transaction": "Replace with transaction",
+        "replace-with-data-store-reference": "Replace with data store reference",
+        "toggle-is-collection": "Toggle Is Collection",
+        "toggle-adhoc": "Toggle Adhoc",
+        "replace-with-collapsed-pool": "Replace With Collapsed Pool",
+        "toggle-participant-multiplicity": "Toggle participant multiplicity",
+        "replace-with-compensation-boundary": "Replace with compensation boundary event",
+        "replace-with-conditional-boundary": "Replace with conditional boundary event",
+        "replace-with-error-boundary": "Replace with error boundary event",
+        "replace-with-escalation-boundary": "Replace with escalation boundary event",
+        "replace-with-message-boundary": "Replace with message boundary event",
+        "replace-with-non-interrupting-conditional-boundary": "Replace with non-interrupting conditional boundary event",
+        "replace-with-non-interrupting-escalation-boundary": "Replace with non-interrupting escalation boundary event",
+        "replace-with-non-interrupting-message-boundary": "Replace with non-interrupting message boundary event",
+        "replace-with-non-interrupting-signal-boundary": "Replace with non-interrupting signal boundary event",
+        "replace-with-non-interrupting-timer-boundary": "Replace with non-interrupting timer boundary event",
+        "replace-with-signal-boundary": "Replace with signal boundary event",
+        "replace-with-timer-boundary": "Replace with timer boundary event",
+        "replace-with-expanded-pool": "Replace with expanded pool"
+    },
+    "WorkItem": {
+        "progress": "Progress",
+        "history": "Work History",
+        "chatbot": "Assistant",
+        "agent": "Quick Draft Generation",
+        "agentMonitor": "Agent Delegation",
+        "agentFeedback": "Agent Learning",
+        "toggleInputFieldSize": "Toggle Input Field Size",
+        "previous": "Previous Step",
+        "inputForm": "Input",
+        "delegate": "Delegate",
+        "resetContent": "Reset Content",
+        "generateExample": "Generate Example",
+        "quickGenerateExample": "Quick Generation",
+        "quickGenerateExampleDescription": "Quick draft generation using the default AI model. ex) Basic document writing, simple analysis (1~3 minutes)",
+        "resultInput": "Current Task",
+        "researchMethod": "Agent Delegation",
+        "runningResearchMethod": "Running Research Method",
+        "delegateMessage": "Task '{taskName}' has been delegated to {username}.",
+        "delegateMessageWithAssignee": "Task '{taskName}' assignee has been changed from [{assigneeInfo}] to {username}.",
+        "runAgain": "Run Again",
+        "select": "Select"
+    },
+    "AgentSelectInfo": {
+        "orcation": "Agent Research Method",
+        "agentMode": {
+            "none": {
+                "title": "None",
+                "description": "Do not use AI agent"
+            },
+            "draft": {
+                "title": "Draft",
+                "description": "Draft mode — AI creates basic documents"
+            },
+            "complete": {
+                "title": "Complete",
+                "description": "Complete mode — AI automatically completes the task"
+            }
+        },
+        "orchestration": {
+            "none": {
+                "title": "None",
+                "description": "No research needed — when you already have sufficient information",
+                "detailDesc": {
+                    "title": "Start working immediately without additional research",
+                    "details": [
+                        {
+                            "title": "💡 Use this when:\n• You already have all the information you need\n• Simple task or question\n• Quick answer needed"
+                        },
+                        {
+                            "title": "📝 Examples:\n• Summarize documents\n• Code refactoring\n• Text translation"
+                        }
+                    ]
+                }
+            },
+            "crewaiDeepResearch": {
+                "title": "CrewAI Collaborative Research",
+                "description": "Multi-agent collaboration for deep research and analysis. ex) Document analysis, data collection, report writing (5~15 minutes)",
+                "detailDesc": {
+                    "title": "Multiple AI experts work together as a team",
+                    "details": [
+                        {
+                            "title": "🎯 How it works:\nResearcher → Data collection\nAnalyst → Deep analysis\nWriter → Report writing"
+                        },
+                        {
+                            "title": "💡 Use this when:\n• Complex topics requiring multi-angle analysis\n• Expert-level report writing\n• Comprehensive market research"
+                        },
+                        {
+                            "title": "📝 Examples:\n• Competitor analysis report\n• Market trend research\n• Strategic planning document"
+                        }
+                    ]
+                }
+            },
+            "crewaiAction": {
+                "title": "CrewAI Action",
+                "description": "Optimal path call various tools to achieve the goal. ex) MCP, A2A (1~5 minutes)",
+                "detailDesc": {
+                    "title": "Data collection using APIs and external tools",
+                    "details": [
+                        {
+                            "title": "🎯 How it works:\n→ Call specific APIs or tools\n→ Collect structured data\n→ Integrate and organize results"
+                        },
+                        {
+                            "title": "💡 Use this when:\n• Need data from specific sources\n• Tasks requiring API integration\n• Structured data collection"
+                        },
+                        {
+                            "title": "📝 Examples:\n• Collect stock market data\n• Query weather information\n• CRM system integration\n• Database queries"
+                        }
+                    ]
+                }
+            },
+            "openaiDeepResearch": {
+                "title": "OpenAI Advanced Analysis",
+                "description": "Advanced reasoning and systematic analysis based on GPT-4. ex) Logical thinking, creative problem solving (3~10 minutes)",
+                "detailDesc": {
+                    "title": "Highly reliable research through iterative verification",
+                    "details": [
+                        {
+                            "title": "🎯 How it works:\nStage 1: Initial research\nStage 2: Result evaluation\nStage 3: Re-investigation (if needed)\nStage 4: Final verification"
+                        },
+                        {
+                            "title": "💡 Use this when:\n• Exploring uncertain topics\n• Information where reliability is critical\n• Cross-verification from multiple sources needed"
+                        },
+                        {
+                            "title": "📝 Examples:\n• Identify latest research trends\n• Fact-checking\n• Analysis of controversial topics"
+                        }
+                    ]
+                }
+            },
+            "browserAutomationAgent": {
+                "title": "Browser Automation Agent",
+                "description": "Automatically extract and collect data from websites. ex) Web crawling, scraping, form automation (2~10 minutes)",
+                "detailDesc": {
+                    "title": "Visit websites and automatically extract data",
+                    "details": [
+                        {
+                            "title": "🎯 How it works:\n→ Access specified websites\n→ Navigate pages and collect data\n→ Extract and organize information"
+                        },
+                        {
+                            "title": "💡 Use this when:\n• Collecting information from specific websites\n• Price comparison or monitoring\n• News article collection"
+                        },
+                        {
+                            "title": "📝 Examples:\n• Shopping mall price comparison\n• Real estate listing collection\n• News headline compilation\n• Competitor website monitoring"
+                        },
+                        {
+                            "title": "⚠️ Note: Website access permission required"
+                        }
+                    ]
+                }
+            },
+            "agentToAgent": {
+                "title": "Agent to Agent",
+                "description": "Real-time multi-agent collaboration for complex tasks. ex) MCP protocol, A2A communication (variable time)",
+                "detailDesc": {
+                    "title": "Multiple agents collaborate in real-time",
+                    "details": [
+                        {
+                            "title": "🎯 How it works:\n→ Multiple agents work simultaneously\n→ Real-time information sharing and integration\n→ Dynamic role adjustment"
+                        },
+                        {
+                            "title": "💡 Use this when:\n• Complex and dynamic work flows\n• Continuous monitoring needed\n• Real-time integration from various sources"
+                        },
+                        {
+                            "title": "📝 Examples:\n• 24/7 market monitoring\n• Real-time news curation\n• Complex data dashboard"
+                        },
+                        {
+                            "title": "⚠️ Advanced user feature"
+                        }
+                    ]
+                }
+            },
+            "langchainReact": {
+                "title": "LangChain Research",
+                "description": "Call various tools to achieve goals. ex) Image generation, code execution and analysis (3~5 minutes)",
+                "detailDesc": {
+                    "title": "Call various tools to achieve goals",
+                    "details": [
+                        {
+                            "title": "🎯 How it works:\nAI → Select and call tools\nTools → Execute tasks (image generation, code)\nAI → Integrate and analyze results"
+                        },
+                        {
+                            "title": "💡 Use this when:\n• Image generation and editing\n• Code execution and data analysis\n• Math calculation and visualization\n• API-based external service utilization"
+                        },
+                        {
+                            "title": "📝 Examples:\n• \"Analyze CSV with Python\"\n• \"Draw a graph\"\n• \"Generate an image\"\n• \"Call weather API and get info\""
+                        },
+                        {
+                            "title": "📊 Output: Structured data/code\n✅ Pros: Fast, stable, easy automation\n⚠️ Limits: Cannot directly manipulate web UI"
+                        }
+                    ]
+                }
+            },
+            "browserUse": {
+                "title": "Browser Use",
+                "description": "Perform tasks by manipulating actual browser. ex) Search, form filling, scraping (2~8 minutes)",
+                "detailDesc": {
+                    "title": "Perform tasks by manipulating actual browser",
+                    "details": [
+                        {
+                            "title": "🎯 How it works:\nAI → Launch browser\nBrowser → Access and manipulate webpages\n(Click, input, scroll, scrape)\nAI → Analyze and organize collected info"
+                        },
+                        {
+                            "title": "💡 Use this when:\n• Collect info from websites without API\n• Tasks requiring login\n• Real-time latest info search\n• Form filling and submission automation"
+                        },
+                        {
+                            "title": "📝 Examples:\n• \"Search latest news on Naver\"\n• \"Compare shopping mall prices\"\n• \"Automate registration\"\n• \"Scrape real estate listings\""
+                        },
+                        {
+                            "title": "📊 Output: Real-time web data\n✅ Pros: Access all websites\n⚠️ Limits: Slow, vulnerable to site changes"
+                        }
+                    ]
+                }
+            },
+            "visionParse": {
+                "title": "Vision Parse",
+                "description": "Vision Parse research.",
+                "detailDesc": {
+                    "title": "Image analysis and text extraction",
+                    "details": [
+                        {
+                            "title": "🎯 How it works:\n→ Image analysis\n→ Text extraction and organization"
+                        }
+                    ]
+                }
+            }
+        },
+        "cost": {
+            "low": "Cost: Low",
+            "medium": "Cost: Medium",
+            "high": "Cost: High"
+        },
+        "humanApproval": {
+            "title": "User approval and additional information request",
+            "description": "User approval and additional information are required. If you approve the following work plan, please click the check button. If needed, please enter or select the item."
+        }
+    },
+    "TestProcess": {
+        "title": "Testing Process",
+        "mainInstanceId": "Main - InstanceId - ",
+        "subInstanceId": "Sub - InstanceId - ",
+        "worklist": "Worklist",
+        "success": "Success",
+        "taskID": "Task ID: ",
+        "instanceID": "Instance ID: ",
+        "processRecord": "Process Execution Record",
+        "startRecording": "Start Recording Process Execution",
+        "stopRecording": "Stop Recording Process Execution",
+        "recordingSave": "Save Process Execution Recording",
+        "confirm": "Confirm",
+        "name": "Title"
+    },
+    "TestVariables": {
+        "key": "Key",
+        "value": "Value",
+        "action": "Action",
+        "noData": "No Data"
+    },
+    "TestVariable": {
+        "start": "Start",
+        "delete": "Delete"
+    },
+    "VerticalSidebar": {
+        "instanceList": "Instance",
+        "projectList": "Project",
+        "agentList": "Agent",
+        "instanceMyGroup": "My Group Instance",
+        "saveFileName": "File name to be saved",
+        "downloadDefinitionList": "Definition Export",
+        "save": "Save",
+        "trash": "Trash",
+        "newProject": "Create New Project",
+        "addProject": "Add Project",
+        "showMore": "Show More",
+        "showLess": "Show Less"
+    },
+    "ProfitExpanse": {
+        "processExecutionPerformance": "Process Execution Performance",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "toDo": "Upcoming Tasks",
+        "inProcess": "In Progress",
+        "done": "Completed",
+        "all": "All",
+        "typeSelection": "Type Selection",
+        "taskId": "Task ID"
+    },
+    "InstanceCard": {
+        "progress": "Progress",
+        "workItem": "Work Item",
+        "activity": "Activity",
+        "ganttChart": "Schedule",
+        "chat": "Chat",
+        "kanbanBoard": "Kanban Board",
+        "sendEvent": "Send {event} event",
+        "output": "Output",
+        "source": "Source",
+        "deleteInstance": "Instance Delete",
+        "deleteInstanceMessage": "Are you sure you want to delete this instance?",
+        "warning": "Warning",
+        "warningMessage1": "The deletion request can be canceled within 7 days.",
+        "warningMessage2": "The related data will be completely deleted after 7 days, and recovery is not possible.",
+        "warningMessage3": "We are not responsible for any data deletion.",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "deleteCancel": "Delete Cancel",
+        "starterInfo": "Starter: Loading information...",
+        "startDateInfo": "Start Date: Loading information...",
+        "starter": "Starter",
+        "startDate": "Start Date",
+        "addTask": "Add Task"
+    },
+    "ProjectCard": {
+        "managment": "Schedule",
+        "kanbanBoard": "Kanban Board",
+        "instanceList": "Instance List",
+        "projectInfo": "Project Information",
+        "projectId": "Project ID",
+        "projectName": "Project Name",
+        "expectedPeriod": "Expected Period",
+        "projectCreatedDate": "Project Created Date",
+        "noProjectInfo": "No project information available",
+        "period": "Period",
+        "statusNew": "New",
+        "statusRunning": "Running",
+        "statusCompleted": "Completed",
+        "statusTodo": "Scheduled",
+        "statusInProgress": "In Progress",
+        "statusPendingCancelled": "Pending/Cancelled",
+        "statusDone": "Done",
+        "executeProcess": "Execute Process"
+    },
+    "DryRunProcess": {
+        "notFound": "Work item not found."
+    },
+    "CompensateEventDefinitionPanel": {
+        "selectTask": "Select Task to Compensate"
+    },
+    "PALUserTaskPanel": {
+        "insertDescription": "Please enter the task description",
+        "taskLink": "Task Link",
+        "moveToTask": "Move to Task"
+    },
+    "ProcessGPTExecute": {
+        "roleMapping": "Role Mapping",
+        "processStart": "Process Start",
+        "processSimulate": "Process Simulation"
+    },
+    "ModelSettings": {
+        "title": "Agent Model Settings",
+        "modelName": "Model Name",
+        "confirm": "Confirm",
+        "cancel": "Cancel"
+    },
+    "Checkpoints": {
+        "checkpoints": "Checkpoints"
+    },
+    "auth": {
+        "emailRateLimitExceeded": "Please change the SMTP settings of the connected Supabase to adjust the email sending limit or try again later.\n\nYou can find the SMTP settings in the Supabase dashboard under Project Settings > Authentication > SMTP Settings.",
+        "userAlreadyRegistered": "This email is already registered.",
+        "verificationEmailSent": "A verification email has been sent. Please check your email and log in again.<br>If you do not see the email, please check your spam folder.",
+        "registrationSuccess": "Registration successful.",
+        "emailSent": "An email has been sent.",
+        "passwordUpdated": "Your password has been updated."
+    },
+    "StorageBaseSupabase": {
+        "emailNotConfirmed": "Email verification is not complete. Please check your email and log in again.",
+        "wrongPassword": "The password is incorrect.",
+        "wrongId": "The ID is incorrect.",
+        "notRegisteredEmail": "This email address is not registered.",
+        "loginRequired": "Login is required.",
+        "unRegisteredTenant": "This tenant is not registered."
+    },
+    "TodoTaskItemCard": {
+        "assignee": "Assignee",
+        "myTask": "My task",
+        "noAssignee": "No assignee specified"
+    },
+    "ExternalForms": {
+        "submit": "Submit",
+        "submitted": "Submitted",
+        "submittedMessage": "Submitted successfully."
+    },
+    "ProcessDefinitionChatHeader": {
+        "addMarketplace": "Register to Marketplace",
+        "processDefinitionName": "Process Definition Name"
+    },
+    "ProcessDefinitionMarketPlaceDialog": {
+        "title": "Register to Marketplace",
+        "processId": "Process ID",
+        "processName": "Process Name",
+        "description": "Description",
+        "category1": "Category 1",
+        "category2": "Category 2",
+        "tags": "Tags",
+        "register": "Register",
+        "requiredField": "This field is required",
+        "duplicateIdError": "A process with the same ID already exists in the marketplace."
+    },
+    "ProcessDefinitionMarketPlace": {
+        "searchPlaceholder": "Search by process name, author, or tag",
+        "allCategory": "All",
+        "searchResultTitle": "Search Results",
+        "searchingTitle": "Searching...",
+        "relatedTemplates": "Related Templates",
+        "addedButton": "Added",
+        "addButton": "Add",
+        "deleteButton": "Delete",
+        "previewButton": "Preview",
+        "otherCategory": "Other",
+        "countUnit": "items",
+        "allTemplates": "All Templates",
+        "deleteDialogTitle": "Confirm Process Deletion",
+        "deleteDialogMessage": "Are you sure you want to delete the \"{name}\" process from the marketplace?",
+        "deleteDialogWarning": "This action cannot be undone.",
+        "deleteDialogConfirmMessage": "Please type the process name exactly to continue:",
+        "previewDialogTitle": "Process Preview"
+    },
+    "ContentEditorField": {
+        "contentEditor": "Content Editor",
+        "editContent": "Edit Content",
+        "mode": "Mode"
+    },
+    "PptxExportHelper": {
+        "title": "Export to PowerPoint",
+        "configureOptions": "Set PowerPoint export options:",
+        "includeSpeakerNotes": "Include speaker notes",
+        "presentationName": "Presentation name",
+        "exportButton": "Export as PowerPoint",
+        "cancelButton": "Cancel"
+    },
+    "SlideEditor": {
+        "title": "Slide Presentation Editor",
+        "addSlide": "Add Slide",
+        "exportMarkdown": "Export as MD",
+        "exportPdf": "Export as PDF",
+        "exportPptx": "Export as PowerPoint",
+        "exportWord": "Export as Word",
+        "import": "Import",
+        "presentation": "Presentation",
+        "preview": "This is a preview."
+    },
+    "WordExportHelper": {
+        "title": "Export to Word",
+        "configureOptions": "Set Word export options:",
+        "documentName": "Document name",
+        "exportButton": "Export as Word",
+        "cancelButton": "Cancel"
+    },
+    "PdfExportHelper": {
+        "title": "Export to PDF",
+        "instructions": "PDF Export Instructions",
+        "step1": "Click the \"Prepare PDF\" button below.",
+        "step2": "When the page reloads, press CTRL/CMD+P in your browser.",
+        "step3": "In the print dialog, set the destination to Save as PDF.",
+        "step4": "Set the layout to Landscape.",
+        "step5": "Set the margins to None.",
+        "step6": "Enable the background graphics option.",
+        "step7": "Click Save.",
+        "includeNotes": "Include speaker notes",
+        "overlayNotes": "Overlay notes",
+        "separatePage": "Separate page",
+        "separateFragments": "Split fragments into separate slides",
+        "prepareButton": "Prepare PDF",
+        "cancelButton": "Cancel"
+    },
+    "BSCard": {
+        "title": "Strategy Map",
+        "cardTitle": "Strategy Map",
+        "addStrategy": "Add Strategy",
+        "editStrategy": "Edit Strategy",
+        "deleteStrategy": "Delete Strategy",
+        "addConnection": "Add Connection",
+        "deleteStrategyDialog": "Delete Strategy",
+        "selectStrategyToDelete": "Select a strategy to delete",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "addStrategyDialog": "Add Strategy",
+        "perspective": "Perspective:",
+        "selectUpperStrategy": "Select upper strategies (multiple allowed)",
+        "strategyName": "Strategy Name:",
+        "description": "Organize and visualize your organization's strategic goals from four perspectives: Finance, Customer, Internal Process, and Learning & Growth.",
+        "save": "Save",
+        "editStrategyDialog": "Edit Strategy",
+        "selectStrategyToEdit": "Select a strategy to edit",
+        "addConnectionDialog": "Add Strategy Connection",
+        "sourceStrategy": "Source Strategy",
+        "targetStrategy": "Target Strategy",
+        "addConnectionBtn": "Add Connection",
+        "perspectiveFinance": "Finance Perspective",
+        "perspectiveCustomer": "Customer Perspective",
+        "finance": "Finance",
+        "customer": "Customer",
+        "process": "Internal Process",
+        "learning": "Learning & Growth",
+        "selectUpperStrategy1": "Sales Growth 20%",
+        "selectUpperStrategy2": "Customer Satisfaction 90 points or higher",
+        "selectUpperStrategy3": "Process Efficiency 50%",
+        "selectUpperStrategy4": "Employee Capability Enhancement Program",
+        "s1description": "Increase total sales by 20% compared to last year",
+        "s2description": "Maintain customer satisfaction at 90 points or higher based on NPS",
+        "s3description": "Convert 50% or more of internal business processes to automated systems",
+        "s4description": "Conduct capability enhancement training for all employees twice a year or more",
+        "aspect": " Aspect"
+    },
+    "ProjectCreationForm": {
+        "title": "Create Project",
+        "projectName": "Project Name",
+        "startDate": "Start Date",
+        "dueDate": "Due Date",
+        "create": "Create",
+        "yyyy-mm-dd": "YYYY-MM-DD"
+    },
+    "AppBaseCard": {
+        "friends": "Friends",
+        "progress": "Progress",
+        "menu": "Menu",
+        "agentManagement": "Agent Management"
+    },
+    "ReportField": {
+        "title": "Content Editor",
+        "save": "Save"
+    },
+    "OrganizationAddDialog": {
+        "add": "Add",
+        "addMemberToTeam": "Add Member to Team",
+        "selectTeam": "Select Team",
+        "selectTeamFirst": "Please select a team first"
+    },
+    "Header": {
+        "tutorial": "Tutorial",
+        "works": "Features",
+        "ai3Steps": "3 Stages of AI Transformation",
+        "movieGallery": "Video Gallery",
+        "download": "Download",
+        "marketplace": "Marketplace"
+    },
+    "IntroSection": {
+        "title": "Introduction to Process GPT",
+        "subtitle": "Just define your goal, and Process GPT will execute it.",
+        "description": "Process GPT is not just a simple GPT that answers questions. When you enter your goal, an executable work chart is automatically generated, and an AI Agent team is configured to actually perform the tasks.",
+        "card1Title": "Natural Language-based Process Understanding",
+        "card1Description": "Automatically generates business processes by analyzing user input through AI chat.",
+        "card2Title": "Customized Process Recommendations",
+        "card2Description": "Recommends optimal processes tailored to user requirements and suggests improvement strategies.",
+        "card3Title": "Enhanced Collaboration",
+        "card3Description": "Improves process management efficiency and strengthens collaboration between teams.",
+        "card4Title": "Process Automation with Knowledge",
+        "card4Description": "The results of execution are structured as knowledge based on Ontology, and applied to the next agent execution, making the process more refined."
+    },
+    "HeroSection": {
+        "title1": "Define your business processes.",
+        "title2": "Process GPT handles the execution.",
+        "description1": "AI agents organize and execute workflows aligned with your strategic goals. Humans intervene only for necessary decisions, and the process continues automatically.",
+        "betaTestButton": "Start Beta Test",
+        "educationButton": "View Training Courses",
+        "technicalReportLink": "View Technical Report"
+    },
+    "NecessitySection": {
+        "title1": "Until now, AI utilization has mostly been limited",
+        "title2": "to individual productivity tools.",
+        "feature1": "Draft Documents",
+        "feature2": "Translate",
+        "feature3": "Summarize",
+        "feature4": "Search Automation",
+        "problemTitle": "These functions are useful for individuals, but they have little impact on the organization's overall End-to-End Process.",
+        "solutionTitle": "Now, Agentic Process AI that understands and executes the entire workflow is",
+        "solutionDescription": "necessary for the automation of an organization's End-to-End processes.",
+        "benefit1": "Automated execution from document creation to system integration",
+        "benefit2": "Implementation of a hybrid organization with humans and AI agents",
+        "benefit3": "Automation of repetitive tasks and knowledge-based judgments",
+        "benefit4": "Focus only on strategic decision-making and contextual judgment"
+    },
+    "AI3StepsSection": {
+        "title1": "ProcessGPT is the solution",
+        "title2": "that implements this Agentic Process AI",
+        "category": "Category",
+        "step1": "Stage 1: Assistant Utilization",
+        "step2": "Stage 2: Digital Colleague Agent",
+        "step3": "Stage 3: Autonomous Operating Agent System",
+        "role": "Human-Agent Role",
+        "scenario": "Use Scenario",
+        "change": "Organizational Change",
+        "behavior": "User Behavior/Leadership",
+        "technology": "Technology Elements",
+        "platform": "Representative Platform",
+        "role1": "Human-led / AI assistance<br>(1 person, multiple AI usage)",
+        "role2": "Human and AI collaboration / Division of labor<br>(AI performs the task)",
+        "role3": "Human is the supervisor, AI is the executor<br>(AI ratio ↑, human is exception handling)",
+        "scenario1": "Document summarization, email drafts, etc. Simple assistance",
+        "scenario2": "Campaign design, research automation, etc. Task delegation",
+        "scenario3": "Supply chain/finance automation, etc. Full process autonomous operation",
+        "change1": "Maintain existing organization<br>(Individual productivity-centered)",
+        "change2": "Mixed team, AI operation manager appearance<br>Work Chart initial introduction",
+        "change3": "Complete <b>Work Chart</b> structure<br>All employees as Agent Boss",
+        "behavior1": "Use as a tool, simple question-response",
+        "behavior2": "Collaborate as a thinking partner, prompt proficiency ↑",
+        "behavior3": "AI-based transition to task planner/supervisor role",
+        "technology1": "Generative AI + <b>MCP</b><br>(e.g. Copilot, ChatGPT)",
+        "technology2": "Multi-agent, <b>Agentic BPM, A2A</b> communication<br>(e.g. AgentSpace, Orchestrate)",
+        "technology3": "Autonomous agent network (<b>Agentic Mesh</b>) + governance<br>(e.g. Palantir AIP)",
+        "description1": "It corresponds to the final stage of the 3-stage AI transformation presented by Microsoft, where AI executes repetitive tasks in the 'Agent Boss' system and humans focus on strategy and supervision.",
+        "description2": "This implements role-based collaboration and execution automation within the organization, greatly improving work efficiency."
+    },
+    "DemoSection": {
+        "title": "AI-based Business Process Innovation",
+        "description1": "Process GPT is an innovative open-source system based on BPMN (Business Process Model and Notation). It implements a user-centric AI agent system utilizing business process notation accumulated over about 20 years. You can define, automate, and continuously improve complex business processes in natural language.",
+        "description2": "Unlike traditional BPM systems, Process GPT leverages the power of AI to simplify all stages from business process definition to execution and optimization. This enables companies to achieve more efficient and flexible process management while saving time and resources.",
+        "diagramImg": "diagram-en.png"
+    },
+    "HowSection": {
+        "title": "Process GPT's Core Features",
+        "subtitle1": "1. Human-Agent Collaborative Task Execution",
+        "subtitle2": "2. System-to-System (A2A) Automation",
+        "subtitle3": "3. Automated Process Creation",
+        "subtitle4": "4. Automated Knowledge Accumulation and Reuse",
+        "subtitle5": "5. Multimodal Interface",
+        "description1-1": "Agents execute operational tasks, while humans handle approvals and decisions.",
+        "description1-2": "Visualizes workflows based on BPMN and automates team-level collaboration.",
+        "description2-1": "Automatically connects major systems like ERP, CRM, and Groupware.",
+        "description2-2": "Automates repetitive tasks such as data querying, input, and document attachment.",
+        "description2-3": "Integrates with external APIs and MCP tools to control internal and external system screens.",
+        "description3-1": "BPMN processes are automatically modeled when tasks are described in natural language.",
+        "description3-2": "Automatically inserts human approval and review steps.",
+        "description3-3": "Automatically configures workflows by department and role.",
+        "description4-1": "AI continuously learns while performing tasks.",
+        "description4-2": "Automatically enhances rules, metadata, and ontologies for use in generating work manuals and rulebooks.",
+        "description4-3": "Continuously improves processes through human feedback.",
+        "description5-1": "Supports both web-based MCP (browser/desktop) and mobile app environments to accommodate diverse user work settings.",
+        "description5-2": "Provides precision process design UI for office workers, and voice/image-based mobile interface for field and sales personnel.",
+        "description5-3": "By providing multi-interface options based on work environment, it ensures consistent user experience and work continuity regardless of location or device."
+    },
+    "ConsultingSection": {
+        "title": "Process Consulting AI and Management",
+        "subtitle": "Innovate your business processes with AI-based process consulting",
+        "tab1Title": "Process Consulting AI",
+        "tab1Description": "Users can generate the necessary business process definitions through consulting AI chat. Enter the desired business process content through the chat window, and if there are areas you want to improve or add, input more detailed information.",
+        "tab1Item1": "Natural language-based process definition generation",
+        "tab1Item2": "Easy access through conversational interface",
+        "tab1Item3": "Real-time feedback and improvement suggestions",
+        "tab2Title": "Process Definition and Form Generation",
+        "tab2Description": "AI analyzes user input through chat and automatically generates business process definitions as BPMN diagrams. Forms required for each step can be generated, and processes can be created by distinguishing between user tasks and script tasks.",
+        "tab2Item1": "Automatic BPMN diagram generation",
+        "tab2Item2": "Step-by-step customized form generation",
+        "tab2Item3": "Distinction between user/script tasks",
+        "tab3Title": "Organization Chart Generation",
+        "tab3Description": "Organization charts can be generated through chat and confirmed and directly managed through organization chart charts. Organization charts allow registration, modification, and deletion of teams (departments), roles, and employees.",
+        "tab3Item1": "AI-based automatic organization chart generation",
+        "tab3Item2": "Team, role, and employee management",
+        "tab3Item3": "Intuitive organization chart visualization"
+    },
+    "FeaturesSection": {
+        "title": "Process GPT Key Features",
+        "subtitle": "Innovate process management with powerful features",
+        "tab1Title": "AI-based Chat",
+        "tab1Description": "While chatting with other users, you can receive task recommendations through AI and execute related process instances. Through AI voice chat, users can check various Q&A about defined processes.",
+        "tab1Item1": "General chat and AI voice chat support",
+        "tab1Item2": "Check defined process information",
+        "tab1Item3": "Check in-progress/completed process instances",
+        "tab2Title": "Process Instance Execution",
+        "tab2Description": "Users can execute defined process instances. Work items of instances can be performed through form input or script execution.",
+        "tab2Item1": "Execute defined process instances",
+        "tab2Item2": "Perform work items through form input",
+        "tab2Item3": "Script execution support",
+        "tab3Title": "Task List",
+        "tab3Description": "Users can check the task list, add tasks, and change task status. Provides an intuitive interface for efficient task management.",
+        "tab3Item1": "Check and manage task list",
+        "tab3Item2": "Change task status",
+        "tab3Item3": "Priority setting and filtering"
+    },
+    "MovieGallerySection": {
+        "movieGalleryTitle": "Video Gallery",
+        "movieGallerySubtitle1": "- Function Introduction Video -",
+        "movieGallerySubtitle2": "- Example Video -",
+        "processGptMainTitle": "Process GPT - My Friend, My AI Agent",
+        "autoKnowledgeManagementTitle": "Automatic Management of Agent Knowledge",
+        "autoTeamProcessTitle": "Automated Human-Agent Team Process Definition for Achieving Organizational Goals",
+        "agentDraftTitle": "Agent Draft Generation",
+        "a2aAgentRegistrationTitle": "A2A Agent Registration",
+        "a2aCallServiceTitle": "A2A Call & Service Exposure",
+        "processExample1Title": "Order Processing Process with ERP System Integration",
+        "processExample2Title": "Sales Proposal Writing Process Using Browser Use Function",
+        "processExample3Title": "VIP Customized Newsletter Automation Process",
+        "tabTitle1": "Define Processes through Conversation",
+        "tabDescription1": "Process definition generation and visualization through generative AI are possible. After generation, administrators can make detailed modifications, and detailed modifications can also be described in natural language.",
+        "tabItem1_1": "Process definition through generative AI",
+        "tabItem1_2": "Real-time visualization",
+        "tabItem1_3": "Natural language-based detailed modifications",
+        "tabTitle2": "Generate UI through Conversation",
+        "tabDescription2": "Based on AI, work screens optimized for multi-screen based on the latest frameworks can be instantly generated, and generated screens can be modified as desired.",
+        "tabItem2_1": "Conversational UI generation",
+        "tabItem2_2": "Multi-screen optimization",
+        "tabItem2_3": "Generated UI customization",
+        "tabTitle3": "System Integration through Conversation",
+        "tabDescription3": "Based on AI, it interprets Open API Specs of internal systems and automatically generates how to integrate with process data values.",
+        "tabItem3_1": "Automatic API interpretation",
+        "tabItem3_2": "System integration automation",
+        "tabItem3_3": "Data mapping optimization"
+    },
+    "CasesSection": {
+        "title": "Successful Implementation Cases",
+        "kBankTitle": "K Bank - POST Next-Generation Project",
+        "kBankDescription": "Introduced a bank-wide BPM system to integrate ledgers and operations from the AS-IS system structure where account systems and BPR ledgers were dualized.",
+        "kBankAchievement1": "Implementation of process management-centered system architecture",
+        "kBankAchievement2": "Secured ease of process changes",
+        "kBankAchievement3": "Improved accessibility to processes",
+        "hLifeTitle": "H Life Insurance",
+        "hLifeDescription": "Introduced a BPM system to efficiently manage complex and difficult processes.",
+        "hLifeAchievement1": "Built work environment through integrated single worklist",
+        "hLifeAchievement2": "Accommodated complex processes such as irregular, dynamic parallel branching, event branching",
+        "hLifeAchievement3": "Proved flexibility and scalability over foreign vendors",
+        "sElectronicsTitle": "S Electronics - Next-Generation Anomaly Processing System",
+        "sElectronicsDescription": "Built an efficient process management system that can capitalize and automate process management anomaly occurrence processes.",
+        "sElectronicsAchievement1": "Secured efficiency in anomaly occurrence processing through BPM introduction",
+        "sElectronicsAchievement2": "Automation and process capitalization for highly variable processes",
+        "sElectronicsAchievement3": "Secured speed and efficiency in collaborative processing among system constituents",
+        "majorAchievements": "Major Achievements:"
+    },
+    "TechSection": {
+        "title": "Technology Stack",
+        "llmFrameworkTitle": "LLM Framework",
+        "llmFrameworkDescription": "LangChain, LangObject (github.com/uengine-oss/langobject)",
+        "modelTitle": "Model",
+        "modelDescription": "Chat-GPT4 (for process execution), Chat-GPT3.5 (for definition generation and agent execution)",
+        "multiAgentTitle": "Multi-agent",
+        "multiAgentDescription": "Crew AI + LangGraph",
+        "databaseTitle": "Database",
+        "databaseDescription": "Supabase (Postgres) + Neo4J Graph DB"
+    },
+    "ExtensibilitySection": {
+        "title": "External System Integration and Extensibility",
+        "exportFormatsTitle": "Various Export Formats",
+        "exportFormatsDescription": "AI agents developed in Process GPT can be exported in LangGraph and Crew AI formats, providing compatibility with existing agent systems.",
+        "jsonFormat": "JSON Format",
+        "pythonModule": "Python Module",
+        "apiEndpoint": "API Endpoint",
+        "a2aProtocolTitle": "A2A Protocol Support",
+        "a2aProtocolDescription": "Supports Agent to Agent communication protocol proposed by Google, enabling smooth integration with various systems and standardized communication.",
+        "standardizedMessaging": "Standardized Messaging",
+        "improvedInteroperability": "Improved Interoperability",
+        "ecosystemExpansion": "Ecosystem Expansion"
+    },
+    "DownloadSection": {
+        "title": "Mobile App Download",
+        "subtitle": "Use Process GPT on mobile anytime, anywhere",
+        "description": "With the Process GPT mobile app, you can manage and monitor business processes on the go. Stay updated with important updates through real-time notifications and maintain smooth communication with team members.",
+        "downloadButton": "DOWNLOAD",
+        "androidApk": "Android APK",
+        "downloading": "Downloading...",
+        "downloadError": "An error occurred during download. Please try again later."
+    },
+    "CTASection": {
+        "title": "Start Process GPT Right Now",
+        "subtitle": "Experience the innovation of AI-based process management",
+        "betaTestButton": "Try Beta Test",
+        "contactButton": "Contact Us",
+        "name": "Name",
+        "email": "Email",
+        "company": "Company",
+        "position": "Position",
+        "message": "Message",
+        "namePlaceholder": "Enter your name",
+        "emailPlaceholder": "Enter your email address",
+        "companyPlaceholder": "Enter your company name or organization",
+        "positionPlaceholder": "Enter your position",
+        "messagePlaceholder": "Enter your message",
+        "policyAgreed1": "(Required),",
+        "policyAgreed2": "Agree to the Privacy Policy and Use.",
+        "policyAgreed3": "",
+        "policyError": "Please agree to the privacy policy and use.",
+        "contactSuccess": "Contact has been sent successfully.",
+        "contactError": "An error occurred during contact. Please try again later.",
+        "privacyPolicyTitle": "Privacy Policy and Use Agreement",
+        "privacyPolicyDescription1": "In order to provide a response to your inquiry, uEngine Solutions (hereinafter referred to as the \"Company\") may need to collect and use personal information in accordance with relevant laws, including the \"Personal Information Protection Act\" and your consent is required.",
+        "privacyPolicyDescription2": "The Company collects and uses only the minimum necessary personal information for purposes such as responding to product purchase or consulting inquiries, and for the use of services provided by the Company.",
+        "privacyPolicyDescription3": "The collected information will not be used for any purpose other than the delivery of services, and will be immediately destroyed once the service is completed.",
+        "privacyPolicyClose": "Close"
+    },
+    "DelegateTask": {
+        "title": "Delegate Task",
+        "delegate": "Delegate",
+        "close": "Close",
+        "noAssignee": "No assignee",
+        "notification": "Assignee not found. Please contact the administrator.",
+        "delegateTitle": "Delegatee",
+        "description": "Description",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "assignee": "Assignee",
+        "selectAssignee": "Select Delegatee",
+        "equalDelegate": "Delegatee is the same as the assignee.",
+        "successMsg": "Delegated successfully.",
+        "searchUser": "Search by name, email",
+        "profile": "Profile",
+        "userInfo": "User info",
+        "delegateToMyself": "Delegate to myself"
+    },
+    "UserInputGenerator": {
+        "inputLabel": "Enter the agent you want to generate",
+        "generateButton": "Generate Agent with AI"
+    },
+    "subProcessDetail": {
+        "execute": "Execute",
+        "simulation": "Simulation",
+        "edit": "Edit",
+        "save": "Save",
+        "noProcessModel": "No defined process model.",
+        "editProcess": "Edit Process",
+        "processDefinitionSaved": "Process definition has been saved."
+    },
+    "completedListPage": {
+        "search": "Instance Search",
+        "title": "Completed Instances",
+        "warning": "All items have been loaded.",
+        "noSearchResults": "No search results found."
+    },
+    "filterConfigLabel": {
+        "period": "Period Setting",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "dueDate": "Due Date",
+        "sort": "Sort",
+        "status": "Status Filter"
+    },
+    "filterConfigOptions": {
+        "latest": "Latest",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "dueDate": "Due Date",
+        "scheduled": "Scheduled",
+        "inProgress": "In Progress",
+        "pending": "Pending",
+        "completed": "Completed",
+        "cancelled": "Cancelled"
+    },
+    "InstanceListPage": {
+        "participants": "Participants"
+    },
+    "kanbanColumnCard": {
+        "edit": "Edit",
+        "delete": "Delete",
+        "overdue": "Overdue",
+        "pastDue": "Past Due",
+        "error": "Execution Error",
+        "agentWorking": "Agent Working",
+        "agentCompleted": "Agent Completed"
+    },
+    "agentMonitor": {
+        "accept": "Accept",
+        "request": "Request",
+        "requestContent": "Request content has been sent.",
+        "inputAnswer": "Enter your answer",
+        "selectAnswer": "Select",
+        "continue": "Please click the check button to continue.",
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "result": "Result",
+        "presentationMode": "Presentation Mode",
+        "slideHint": "Click the slide to navigate.",
+        "collapse": "Collapse",
+        "expand": "Expand",
+        "doubleClick": "Double-click to collapse/expand",
+        "workInProgress": "Working...",
+        "workQueued": "Work has been registered in the queue.",
+        "noWorkInProgress": "No work in progress.",
+        "workStarted": "The work will be displayed here once it starts.",
+        "selectResearchMethod": "Select research method",
+        "browserUse": "Browser use feature is available after downloading and decompressing. (Size: 114MB)",
+        "download": "Download",
+        "start": "Start",
+        "stop": "Stop",
+        "researchMethod": "Research Method"
+    },
+    "EventTimeline": {
+        "browserAutomationResult": "Browser Automation Result",
+        "completed": "Completed",
+        "failed": "Failed",
+        "taskSummary": "Task Summary",
+        "completedTime": "Completed Time",
+        "generatedFiles": "Generated Files",
+        "imageGallery": "Image Gallery",
+        "images": "images",
+        "doubleClickHint": "Double-click to",
+        "expandCollapse": "expand/collapse",
+        "startTime": "Start Time",
+        "requestType": "Request Type",
+        "toolUsageComplete": "completed",
+        "toolUsageInProgress": "in progress",
+        "tool": "tool",
+        "parsingDocument": "Document parsing in progress...",
+        "parsingFailed": "Parsing failed",
+        "approved": "Approved",
+        "rejected": "Rejected",
+        "processed": "Processed",
+        "inProgress": "In Progress",
+        "taskFailed": "Task Failed",
+        "allCompleted": "All Completed",
+        "taskCompleted": "Task Completed"
+    },
+    "agentFeedback": {
+        "learningInProgress": "Agent is learning from feedback...",
+        "agent": "Agent",
+        "goal": "Feedback has been provided",
+        "learningCompleted": "Learning Completed",
+        "feedbackContent": "Feedback Content",
+        "noLearning": "No learning data available",
+        "waitingInProgress": "Waiting for learning to begin",
+        "learningInProgressDescription": "Learning from feedback will be displayed here once it starts.",
+        "noFeedback": "No feedback content available.",
+        "initialDataLoad": "🔄 [AgentFeedback] Initial data load",
+        "taskId": "Task ID",
+        "taskIdNotFound": "Task ID not found.",
+        "taskIdNotFoundDescription": "Task ID could not be found. WorkItem structure:",
+        "eventDataLoadError": "Error occurred while loading event data: ",
+        "eventDataLoadSuccess": "Number of events loaded: ",
+        "eventDataLoadErrorDescription": "Error occurred while loading event data: ",
+        "eventSubscriptionStart": "📥 [AgentFeedback] Subscribing to real-time events",
+        "eventReceived": "Event received:",
+        "eventMatch": "✅ Match",
+        "eventMismatch": "❌ Mismatch",
+        "eventAdded": "✅ Event added",
+        "eventTotalCount": "Current total events:",
+        "eventNotAdded": "❌ Event not added",
+        "eventTodoId": "Event todo_id:",
+        "eventVsTaskId": "vs current Task ID:",
+        "eventAll": "All events:",
+        "eventSubscriptionFailed": "Failed to subscribe to real-time events.",
+        "eventSubscriptionError": "Error occurred during real-time subscription: ",
+        "supabaseSessionError": "Supabase session error:"
+    },
+    "keditor": {
+        "typeSearch": "Type Search",
+        "all": "All"
+    },
+    "statusChip": {
+        "scheduled": "Scheduled",
+        "inProgress": "In Progress",
+        "pending": "Pending",
+        "cancelled": "Cancelled",
+        "completed": "Completed"
+    },
+    "SubProcess": {
+        "execute": "Execute"
+    },
+    "ProcessInstanceChat": {
+        "subprocessCreating": "Subprocess creating...",
+        "feedback": "Is the process execution normal?",
+        "feedbackDescription": "Do you want to apply the process feedback?"
+    },
+    "ProcessInstanceLog": {
+        "headers": {
+            "time": "Time",
+            "role": "Role",
+            "sender": "Sender",
+            "message": "Message"
+        },
+        "noData": "No messages yet.",
+        "streaming": "Streaming log...",
+        "unknownSender": "Unknown",
+        "systemSender": "System"
+    },
+    "ActivityInputData": {
+        "previousInput": "Previous Activity Input",
+        "previousInputDescription": "This shows the input provided for the previous activity. Please refer to it as you proceed with the current work.",
+        "previousInputDetailTitle": "What is the previous activity input history?",
+        "previousInputDetail": "In a BPM process, this displays the form data entered by the worker in the previous step.\n\nBy referring to this information, you can more clearly understand the progress of the current process.\n\nExample: In an approval request → review → approval process, if you are at the 'review' step,\nthe data that was entered during the 'approval request' step will be shown."
+    },
+    "MCPServer": {
+        "searchMCPServers": "Search MCP Servers"
+    },
+    "MCPEnvSecret": {
+        "mcpEnvironments": "MCP Environments",
+        "mcpSecrets": "MCP Secrets",
+        "browserUseSecrets": "Browser Use Secrets",
+        "type": "Type",
+        "environmentName": "Environment Name",
+        "secretName": "Secret Name",
+        "browserUseSecretName": "Browser Use Secret Name",
+        "nameRequired": "Name is required",
+        "loadingEnvironments": "Loading Environments...",
+        "loadingSecrets": "Loading Secrets...",
+        "loadingBrowserUseSecrets": "Loading Browser Use Secrets...",
+        "environment": "Environment",
+        "secret": "Secret",
+        "browserUse": "Browser Use",
+        "name": "Name",
+        "data": "Data",
+        "actions": "Actions",
+        "environmentCreated": "Environment created successfully",
+        "environmentUpdated": "Environment updated successfully",
+        "secretCreated": "Secret created successfully",
+        "secretUpdated": "Secret updated successfully",
+        "browserUseSecretCreated": "Browser Use secret created successfully",
+        "browserUseSecretUpdated": "Browser Use secret updated successfully",
+        "environmentDeleted": "Environment deleted successfully",
+        "secretDeleted": "Secret deleted successfully",
+        "browserUseSecretDeleted": "Browser Use secret deleted successfully",
+        "errorSavingEnvironment": "Error saving environment",
+        "errorSavingSecret": "Error saving secret",
+        "errorSavingBrowserUseSecret": "Error saving Browser Use secret",
+        "errorDeletingEnvironment": "Error deleting environment",
+        "errorDeletingSecret": "Error deleting secret",
+        "errorDeletingBrowserUseSecret": "Error deleting Browser Use secret",
+        "confirmDeleteEnvironment": "Are you sure you want to delete environment \"{name}\"?",
+        "confirmDeleteSecret": "Are you sure you want to delete secret \"{name}\"?",
+        "confirmDeleteBrowserUseSecret": "Are you sure you want to delete Browser Use secret \"{name}\"?",
+        "noBrowserUseConfig": "Browser Use configuration is not set. Click the edit button to add the configuration."
+    },
+    "BpmnUengineField": {
+        "newProcess": "New",
+        "processSelectLabel": "Process",
+        "versionSelectLabel": "Version"
+    },
+    "footer": {
+        "BusinessNumber": "BusinessRegistration<br>No.",
+        "CEO": "CEO : Jin-young Jang",
+        "Address1": "301-ho, 31 Saimdang-ro, Seocho-gu,",
+        "Address2": "Seoul, 06650, Republic of Korea",
+        "tel": "Customer Center",
+        "serviceTerms": "Service Terms",
+        "privacyPolicy": "Privacy Policy"
+    },
+    "OrganizationChart": {
+        "searchByName": "Search by Name"
+    },
+    "ProcessDefinitionVersionManager": {
+        "noVersionsAvailable": "No other saved versions available",
+        "versionManagement": "Version Management",
+        "description": "Description:",
+        "versionList": "Version List",
+        "changeToSelectedVersion": "Change to version {version}",
+        "versionLabel": "Version List",
+        "versionWithColon": "Version: {version}",
+        "versionSummary": "Version {version} · Last modified: {time}",
+        "versionItemTitle": "Version {version}",
+        "download": "Download",
+        "downloadVersionXML": "Download Version {version} XML",
+        "changeToVersion": "Change to Version",
+        "noXmlData": "No XML data available for the selected version.",
+        "copiedToClipboard": "Copied to clipboard.",
+        "relativeJustNow": "just now",
+        "relativeMinutesAgo": "{minutes} minutes ago",
+        "relativeHoursAgo": "{hours} hours ago"
+    },
+    "AgentList": {
+        "title": "Agent List",
+        "loading": "Loading agents...",
+        "empty": "No registered agents",
+        "loadFailed": "Failed to load agent list"
+    },
+    "AgentChatInfo": {
+        "expand": "Show more",
+        "collapse": "Show less",
+        "defaultAgentName": "Agent",
+        "labels": {
+            "goal": "Goal",
+            "persona": "Persona",
+            "tools": "Tools",
+            "description": "Description",
+            "endpoint": "Endpoint",
+            "model": "Model",
+            "alias": "Alias"
+        },
+        "fallback": {
+            "goal": "Agent goal is not configured yet."
+        },
+        "tabs": {
+            "learning": "Learning Mode",
+            "question": "Question Mode",
+            "actions": "Action Mode",
+            "knowledge": "Knowledge Management"
+        },
+        "businessRuleTabs": {
+            "learning": "Rule Learning",
+            "inference": "Rule Inference",
+            "management": "Rule Management"
+        },
+        "businessRule": "Business Rule"
+    },
+    "FormWorkItem": {
+        "previous": "Previous Step",
+        "save": "Save Draft",
+        "submitComplete": "Submit Complete",
+        "noFormData": "No form data registered",
+        "noFormDataDescription": "No form data found for the current work.",
+        "previousStep": "Previous Step",
+        "intermediateSave": "Intermediate Save",
+        "delegateMessage": "Task '{taskName}' has been delegated to {email}({username}).",
+        "delegateMessageWithAssignee": "Task '{taskName}' assignee has been changed from [{assigneeInfo}] to {email}({username})."
+    },
+    "InstanceSource": {
+        "addFile": "Add File",
+        "dragAndDrop": "Click or drag and drop files",
+        "download": "Download",
+        "delete": "Delete",
+        "uploadComplete": "Upload Complete",
+        "uploading": "Uploading",
+        "close": "Close",
+        "uploadSuccess": "File uploaded successfully.",
+        "unsupportedFileType": " is an unsupported file type.",
+        "fileTooLarge": "File is too large. (Maximum 50MB)",
+        "fileDeleted": "File deleted successfully."
+    },
+    "processDialog": {
+        "editProcess": "Edit Process",
+        "processDefinition": "Process Definition",
+        "newProcessDefinition": "New Process Definition",
+        "processName": "Process Name",
+        "save": "Save",
+        "close": "Close"
+    },
+    "ProcessMenu": {
+        "setPermission": "Set Permission",
+        "editProcess": "Edit Process",
+        "edit": "Edit",
+        "delete": "Delete"
+    },
+    "agentChat": {
+        "learningModeInfo": "Learning Mode: The agent learns and accumulates knowledge through conversations. \n For example, \n 'Use the color that matches each company's CI when writing a proposal.' \n 'Proposals for government and public institutions must be written in Korean (HWP) format.' \n 'For B2C proposals, prioritize visual materials to help customers understand.' \n You can train such guides.",
+        "questionModeInfo": "Question Mode: You can ask questions to the agent and receive answers. \n For example, \n 'Show me only the assessment items for regional evaluation from last week's learning.' \n 'Summarize the rules related to CI color in the proposal writing guidelines.' \n 'Explain only the procedure for quality inspection in the learned manual.' \n You can verify learning content or check only the necessary parts through such questions.",
+        "actionsModeInfo": "Actions Mode: The agent performs actual tasks and you can check the results. \n For example, \n 'Calculate the premium based on the input customer data.' \n 'Summarize the recent quarterly sales results and visualize them as a graph.' \n 'Automatically write a proposal according to the specified format.' \n You can execute such commands.",
+        "ruleInferenceModeInfo": "Business Rule Inference Mode: Infer results for specific conditions based on learned business rules. \n For example, \n 'Is a customer with a credit score of 750 and annual income of 60M KRW eligible for a loan?' \n 'What is the final price for a VIP customer with a purchase amount of 1M KRW?' \n 'What is the screening result for an applicant with 7 years of experience and 2 certifications?' \n You can verify rules and infer results in advance."
+    },
+    "ReworkDialog": {
+        "title": "Rework Scope Setting",
+        "warning": "Only completed items can be reworked.",
+        "currentOnly": "Current Stage Only",
+        "currentOnlyDesc": "Re-executes only the current stage of the selected task. Does not affect other stages.",
+        "includeReference": "Include Next Stages Referencing Current",
+        "includeReferenceDesc": "Re-executes the current stage and all subsequent stages that reference it. Only related tasks will be affected.",
+        "includeAll": "Include All Next Stages",
+        "includeAllDesc": "Re-executes all subsequent stages starting from the current stage.",
+        "submit": "Submit",
+        "close": "Close"
+    },
+    "AgentKnowledgeManagement": {
+        "title": "Knowledge Management",
+        "description": "You can manage the agent's knowledge and learning data.",
+        "noMemory": "No memories available",
+        "addFirstMemory": "Add your first memory.",
+        "deleteDialogTitle": "Delete Learning Content",
+        "deleteButton": "Delete"
+    },
+    "BpmnUengineViewer": {
+        "viewParticipants": "View Participants"
+    },
+    "ProcessWorkResult": {
+        "completedActivities": "Completed Activities",
+        "loadingCompletedUserInfo": "Loading completed user information...",
+        "activity": "Activity",
+        "noCompletedActivities": "No completed activities.",
+        "pendingActivities": "Pending Activities",
+        "loadingPendingUserInfo": "Loading pending user information...",
+        "nextActivities": "Next Activities",
+        "loadingAssigneeInfo": "Loading assignee information...",
+        "noNextActivities": "No next activities.",
+        "referenceInfo": "Reference Information"
+    },
+    "AgentBadgesDiagram": {
+        "chatWithAgent": "Chat with Agent",
+        "trainAgent": "Train Agent",
+        "persona": "Persona",
+        "tools": "Tools & Skills",
+        "knowledge": "Knowledge Ontology",
+        "achievements": "Achievements & Badges",
+        "settings": "Settings"
+    },
+    "Gantt": {
+        "description": "Description",
+        "delete": "Task Delete",
+        "moveInstance": "Move to Instance",
+        "moveWorkItem": "Move to Work Item",
+        "inProgress": "In Progress",
+        "pending": "Pending",
+        "scheduled": "Scheduled",
+        "done": "Done",
+        "taskName": "Task Name",
+        "startDate": "Start Date",
+        "endDate": "End Date",
+        "duration": "Duration",
+        "assignees": "Assignees"
+    },
+    "Common": {
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "save": "Save",
+        "submit": "Submit",
+        "role": "Role"
+    },
+    "AgentSkillEdit": {
+        "deleteDialogTitle": "Delete Skill File",
+        "deleteDialogMessage": "Are you sure you want to delete this skill file? Deleted skill files cannot be recovered."
+    },
+    "AgentSkills": {
+        "skills": "Skills",
+        "skillUpload": "Upload Skill File (.zip)"
+    },
+    "ConditionExampleField": {
+        "generateExamples": "Generate Examples",
+        "generatingExamples": "Generating Examples...",
+        "when": "Condition (When)",
+        "then": "Result (Then)"
+    },
+    "ExampleTable": {
+        "operation": "Operation",
+        "addNewExample": "Add New Example",
+        "validPeriodSetting": "Valid Period Setting",
+        "validStartDate": "Valid Start Date",
+        "validEndDate": "Valid End Date",
+        "cancel": "Cancel",
+        "save": "Save",
+        "goodExamples": "Good Examples",
+        "badExamples": "Bad Examples"
+    },
+    "mainChat": {
+        "placeholder": "How can I help you? Try asking to create, execute, or search processes.",
+        "examples": {
+            "createProcess": "Create a vacation request process",
+            "executeProcess": "Create a business trip request",
+            "checkResult": "Show my vacation request status",
+            "askQuestion": "Show me our company's organization chart"
+        },
+        "intentAnalysis": "Analyzing your request...",
+        "createMode": {
+            "title": "Process Creation",
+            "description": "Design new processes through AI conversation."
+        },
+        "executeMode": {
+            "title": "Process Execution",
+            "description": "Execute the selected process."
+        },
+        "queryMode": {
+            "title": "Information Query",
+            "description": "Searching for the requested information."
+        },
+        "history": {
+            "title": "Chat History",
+            "loading": "Loading...",
+            "empty": "No previous conversations",
+            "showMore": "Show more"
+        }
+    },
+    "fullScreenChat": {
+        "title": "AI Assistant",
+        "newChat": "New Chat",
+        "close": "Close",
+        "analyzing": "Analyzing...",
+        "executeProcess": "Execute Process",
+        "goToDefinition": "Go to Process Editor"
+    },
+    "ProcessFeedback": {
+        "applyTitle": "Apply Feedback",
+        "inputTitle": "Please enter your feedback",
+        "columnApply": "Apply",
+        "columnProperty": "Property",
+        "columnBefore": "Before Feedback",
+        "columnAfter": "After Feedback",
+        "noChanges": "There is no change to apply.",
+        "noContent": "No content",
+        "goodExample": "Good Examples",
+        "badExample": "Bad Examples",
+        "applyButton": "Apply",
+        "feedbackLabel": "Feedback",
+        "autoGenerate": "Auto-generate",
+        "generating": "Generating feedback automatically...",
+        "inputData": "Input Data",
+        "checkpoints": "Checkpoints",
+        "description": "Description",
+        "instruction": "Instruction",
+        "conditionExamples": "Condition Examples"
+    }
+}

@@ -1,0 +1,339 @@
+---
+paths:
+  '/todolist/{id}//todolist/{id}':
+    put:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                activityId:
+                  description: activityId of this UpdateTodolist
+                  type: string
+                activityName:
+                  description: activityName of this UpdateTodolist
+                  type: string
+                startDate:
+                  description: startDate of this UpdateTodolist
+                  type: string
+                endDate:
+                  description: endDate of this UpdateTodolist
+                  type: string
+                dueDate:
+                  description: dueDate of this UpdateTodolist
+                  type: string
+                processDefinitionId:
+                  description: processDefinitionId of this UpdateTodolist
+                  type: string
+                processInstanceId:
+                  description: processInstanceId of this UpdateTodolist
+                  type: string
+                userId:
+                  description: userId of this UpdateTodolist
+                  type: string
+            examples: null
+      parameters:
+        - name: id
+          description: UpdateTodolist name
+          schema:
+            type: string
+          in: path
+          required: true
+          examples: null
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todolist'
+              examples:
+                '1':
+                  value:
+                    id: A string
+                    activityId: A string
+                    activityName: A string
+                    startDate: value
+                    endDate: value
+                    dueDate: value
+                    processDefinitionId: A string
+                    processInstanceId: A string
+                    userId: A string
+          description: UpdateTodolist Operation
+      operationId: UpdateTodolist
+      summary: UpdateTodolist
+      description: UpdateTodolist
+    summary: DeleteTodolist operation on todolist
+  '/todolist/{id}//todolist':
+    summary: CreateTodolist operation on todolist
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                activityId:
+                  description: activityId of this CreateTodolist
+                  type: string
+                activityName:
+                  description: activityName of this CreateTodolist
+                  type: string
+                startDate:
+                  description: startDate of this CreateTodolist
+                  type: string
+                endDate:
+                  description: endDate of this CreateTodolist
+                  type: string
+                dueDate:
+                  description: dueDate of this CreateTodolist
+                  type: string
+                processDefinitionId:
+                  description: processDefinitionId of this CreateTodolist
+                  type: string
+                processInstanceId:
+                  description: processInstanceId of this CreateTodolist
+                  type: string
+                userId:
+                  description: userId of this CreateTodolist
+                  type: string
+            examples: null
+      parameters:
+        - name: id
+          description: CreateTodolist name
+          schema:
+            type: string
+          in: path
+          required: true
+          examples: null
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todolist'
+              examples:
+                '1':
+                  value:
+                    id: A string
+                    activityId: A string
+                    activityName: A string
+                    startDate: value
+                    endDate: value
+                    dueDate: value
+                    processDefinitionId: A string
+                    processInstanceId: A string
+                    userId: A string
+          description: CreateTodolist Operation
+      operationId: CreateTodolist
+      summary: CreateTodolist
+      description: CreateTodolist
+  /todolist:
+    summary: Global operations on todolist
+    get:
+      tags:
+        - todolist
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Todolist'
+              examples:
+                todolist_json:
+                  value:
+                    - id: A string
+                      activityId: A string
+                      activityName: A string
+                      startDate: value
+                      endDate: value
+                      dueDate: value
+                      processDefinitionId: A string
+                      processInstanceId: A string
+                      userId: A string
+          description: Get list of todolist
+      operationId: GetTodolist
+      summary: Get list of todolist
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Todolist'
+            examples:
+              '1':
+                value:
+                  id: A string
+                  activityId: A string
+                  activityName: A string
+                  startDate: value
+                  endDate: value
+                  dueDate: value
+                  processDefinitionId: A string
+                  processInstanceId: A string
+                  userId: A string
+        required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todolist'
+              examples:
+                '1':
+                  value:
+                    id: A string
+                    activityId: A string
+                    activityName: A string
+                    startDate: value
+                    endDate: value
+                    dueDate: value
+                    processDefinitionId: A string
+                    processInstanceId: A string
+                    userId: A string
+          description: Changed Todolist
+      operationId: Post Todolist
+      summary: Post Todolist
+  '/todolist/{id}':
+    summary: Specific operation on todolist
+    get:
+      parameters:
+        - examples:
+            A string:
+              value: A string
+          name: id
+          description: Todolist name
+          schema:
+            type: string
+          in: path
+          required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todolist'
+              examples:
+                '1':
+                  value:
+                    id: A string
+                    activityId: A string
+                    activityName: A string
+                    startDate: value
+                    endDate: value
+                    dueDate: value
+                    processDefinitionId: A string
+                    processInstanceId: A string
+                    userId: A string
+          description: todolist with specified id
+      operationId: GetTodolistById
+      summary: Get Todolist by id
+      description: Get Todolist by id
+    patch:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Todolist'
+            examples:
+              '1':
+                value:
+                  id: A string
+                  activityId: A string
+                  activityName: A string
+                  startDate: value
+                  endDate: value
+                  dueDate: value
+                  processDefinitionId: A string
+                  processInstanceId: A string
+                  userId: A string
+        required: true
+      parameters:
+        - examples:
+            '1':
+              value: 1
+          name: id
+          description: Todolist name
+          schema:
+            type: string
+          in: path
+          required: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Todolist'
+              examples:
+                '1':
+                  value:
+                    id: A string
+                    activityId: A string
+                    activityName: A string
+                    startDate: value
+                    endDate: value
+                    dueDate: value
+                    processDefinitionId: A string
+                    processInstanceId: A string
+                    userId: A string
+          description: Changed Todolist
+      operationId: PatchTodolist
+      summary: Patch existing Todolist
+    parameters:
+      - name: id
+        description: Todolist id
+        schema:
+          type: string
+        in: path
+        required: true
+openapi: 3.0.2
+info:
+  title: Todolist
+  version: 0.0.1
+  description: API definition of todolist
+  contact:
+    name: creator's name
+    url: 'http://creator.homepage.address'
+    email: creator@creator.com
+  license:
+    name: MIT License
+    url: 'https://opensource.org/licenses/MIT'
+components:
+  schemas:
+    Todolist:
+      title: Root Type for Todolist
+      description: The root of the Todolist type's schema.
+      type: object
+      properties:
+        id:
+          description: id of this Todolist
+          type: string
+        activityId:
+          description: activityId of this Todolist
+          type: string
+        activityName:
+          description: activityName of this Todolist
+          type: string
+        startDate:
+          description: startDate of this Todolist
+          type: string
+        endDate:
+          description: endDate of this Todolist
+          type: string
+        dueDate:
+          description: dueDate of this Todolist
+          type: string
+        processDefinitionId:
+          description: processDefinitionId of this Todolist
+          type: string
+        processInstanceId:
+          description: processInstanceId of this Todolist
+          type: string
+        userId:
+          description: userId of this Todolist
+          type: string
+tags:
+  - name: Todolist
+    description: Todolist resource

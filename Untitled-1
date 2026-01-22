@@ -1,0 +1,39 @@
+@echo off
+setlocal EnableDelayedExpansion
+
+set /p MAX_NUMBER=Input Max Number:
+
+echo 최대 반복 횟수: %MAX_NUMBER% 
+echo 실행을 시작합니다...
+
+set /a current_number=0
+
+:loop
+if %current_number% equ %MAX_NUMBER% goto end
+
+set /a current_number+=1
+
+echo.
+echo ===== 실행 %current_number%/%MAX_NUMBER% =====
+echo.
+
+:: 환경변수 설정 - Playwright에서 사용할 수 있도록 export 
+set CURRENT_NUMBER=%current_number%
+set "PLAYWRIGHT_CURRENT_NUMBER=%current_number%"
+
+:: call 명령어를 사용하여 Playwright 실행 후에도 배치 파일이 계속 실행되도록 함
+call npx playwright test
+
+:: 에러 코드 체크 (선택사항)
+if %ERRORLEVEL% NEQ 0 (
+  echo Playwright 실행 중 오류 발생: %ERRORLEVEL%
+  echo 계속 진행합니다...
+)
+
+:: 잠시 대기 (선택사항)
+timeout /t 2 /nobreak > nul
+
+goto loop
+
+:end
+echo All done! 

@@ -1,0 +1,38 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dev-process-gpt-ingress
+  namespace: dev
+  annotations:
+    # BackendConfig 참조 (600초 타임아웃 적용)
+    cloud.google.com/backend-config: '{"default": "dev-backend-config"}'
+    # SSL 인증서 (기존 인증서 사용)
+    networking.gke.io/managed-certificates: "process-gpt-ssl-cert"
+    # 글로벌 정적 IP (기존 IP 사용)
+    kubernetes.io/ingress.global-static-ip-name: "process-gpt-ip"
+    # 추가 타임아웃 설정
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "600"
+spec:
+  rules:
+  - host: uengine.process-gpt.io
+    http:
+      paths:
+      - path: /*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: gateway  # dev 네임스페이스의 gateway 서비스
+            port:
+              number: 80
+  - host: jhyg.process-gpt.io
+    http:
+      paths:
+      - path: /*
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: gateway
+            port:
+              number: 80

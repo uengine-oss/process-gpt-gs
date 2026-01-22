@@ -1,0 +1,5 @@
+commands/
+k8s/
+*.md
+.git/
+

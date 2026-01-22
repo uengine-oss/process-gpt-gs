@@ -1,0 +1,143 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-studio-service
+spec:
+  selector:
+    app: supabase-studio
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-kong-service
+spec:
+  selector:
+    app: supabase-kong
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-auth-service
+spec:
+  selector:
+    app: supabase-auth
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9999
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-rest-service
+spec:
+  selector:
+    app: supabase-rest
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: realtime-dev-supabase-realtime-service
+spec:
+  selector:
+    app: realtime-dev-supabase-realtime
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 4000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-storage-service
+spec:
+  selector:
+    app: supabase-storage
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-imgproxy-service
+spec:
+  selector:
+    app: supabase-imgproxy
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-meta-service
+spec:
+  selector:
+    app: supabase-meta
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-edge-functions-service
+spec:
+  selector:
+    app: supabase-edge-functions
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5432
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-analytics-service
+spec:
+  selector:
+    app: supabase-analytics
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-db-service
+spec:
+  selector:
+    app: supabase-db
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5432
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: supabase-vector-service
+spec:
+  selector:
+    app: supabase-vector
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8383

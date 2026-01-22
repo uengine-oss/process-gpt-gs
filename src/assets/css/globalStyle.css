@@ -1,0 +1,1579 @@
+h1, h2, h3, h4, h5, h6 {
+    margin:0px !important;
+}
+
+hr {
+    opacity: 1 !important;
+}
+
+.agent-chat-info-content {
+    height: calc(100vh - 205px);
+    overflow: auto;
+}
+
+.delegate-task-form-table .v-table__wrapper {
+    max-height: calc(100vh - 500px);
+}
+
+.knowledge-management-table .v-data-table .v-table__wrapper {
+    height: calc(100vh - 265px) !important;
+    overflow: auto !important;
+}
+
+.process-definition-chat-tree-box .is-work-height {
+    height: calc(100vh - 194px);
+}
+
+.bpmn-uengine-viewer-laneAssignments .v-expansion-panel-text__wrapper {
+    padding: 0px !important;
+}
+
+.todo-task-item-card-style:not(:first-of-type) {
+    margin-top: 8px;
+}
+
+.todo-task-item-card-style:last-child {
+    margin-bottom: 8px;
+}
+
+.version-manager-vuediff-box {
+    height: 100% !important;
+    overflow-y: auto !important;
+}
+
+.version-manager-vuediff-box .vue-diff-viewer  {
+    font-size: 14px !important;
+}
+
+.version-manager-vuediff-box .vue-diff-viewer{
+    padding-top: 0px !important;
+}
+
+.version-history-switch .v-label {
+    font-size: 14px !important;
+}
+
+.connection-info-tab-headers {
+    height: calc(100vh - 500px);
+    overflow: auto;
+}
+
+.is-pc {
+    display: block;
+}
+
+.is-mobile {
+    display: none;
+}
+
+.organization-chart-search-container {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.organization-chart-search-container {
+
+}
+
+.mcp-secret-monaco-editor {
+    height: calc(100vh - 550px) !important;
+}
+
+.mcp-environment-monaco-editor {
+    height: calc(100vh - 500px) !important;
+}
+
+.manage-access-tab-table-box .v-data-table {
+    height: calc(100vh - 280px) !important;
+}
+
+.mcp-server-list-box {
+    height: calc(100vh - 250px) !important;
+    overflow: auto;
+}
+
+.sort-chip-select-wrapper .v-field__input {
+    padding: 4px 0px 0px 0px !important;
+}
+
+.sort-chip-select-wrapper .v-field__append-inner {
+    padding: 5px 0px 0px 0px !important;
+}
+
+.sort-chip-select-wrapper  .v-field__append-inner {
+    width: 24px !important;
+}
+
+.language-chip-select-wrapper,
+.chip-select-wrapper {
+    padding-right: 0px !important;
+}
+.language-chip-select-wrapper .v-field__input {
+    padding: 0px !important;
+    font-size: 14px;
+}
+
+.language-chip-select-wrapper .v-field__append-inner {
+    padding-top: 4px !important;
+}
+
+.chip-select-wrapper .v-field__input {
+    padding: 0px !important;
+    color: white;
+    font-size: 14px;
+}
+.chip-select-wrapper .v-field__append-inner {
+    padding-top: 4px !important;
+    color: white;
+}
+
+
+.work-item-tab-box .ps__rail-y,
+.work-item-tab-box .ps__rail-x {
+    display: none !important;
+}
+
+.font-weight-medium {
+    font-weight: 400 !important;
+}
+
+.vue-bpmn-diagram-container-view-mode .bjs-container {
+    height: 100% !important;
+}
+
+.form-definition-preview-form section {
+    margin-bottom: 8px !important;
+}
+
+.form-layout-card-contents-desktop {
+    /* 여러 개의 컬럼이 있을 때 세로 구분선 적용 */
+    [class*="col-"]:not(:only-child):not(:last-child) {
+        border-right: solid 1px rgba(0, 0, 0, 0.2);
+        padding-right: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.form-layout-card-contents-desktop .form-layout-card {
+    border: none !important;
+
+}
+
+.gantt_cal_ltitle {
+    cursor: default !important;
+    background: white !important;
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+}
+
+
+.gantt_cal_cover {
+    z-index: 9999 !important;
+}
+
+.gantt-detail-overlay {
+    position: absolute; /* 또는 fixed */
+    top: 4px;
+    right: 2px;
+    width: 40vw; /* 패널 너비 */
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+    z-index: 100;
+    border-left: 1px solid #eee;
+    transition: transform 0.2s;
+}
+
+.gantt-detail-overlay-contents {
+    max-height: 50vh;
+    overflow: auto;;
+}
+
+.dynamic-form .v-field--disabled {
+    opacity: 1 !important;
+    background-color: #eaeaea !important;
+    pointer-events: none !important;
+}
+
+.tenant-back-btn {
+    position:absolute;
+    left:15px; top:15px;
+}
+
+.no-bpmn-found-text {
+    margin-left:18px;
+}
+
+.processVariables-zoom {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    z-index: 1;
+}
+
+.proc-menu-btn-box button {
+    margin-right:3px;
+    cursor: pointer;
+    background: none;
+    width:20px !important;
+    height:20px !important;
+}
+
+.definitionMap-add-card { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.vue-bpmn-diagram-container {
+    height: 100%;
+    width: 100%;
+}
+
+.highlight:not(.djs-connection) .djs-visual> :nth-child(1) {
+    stroke-width: 5px !important;
+    stroke: #68369A !important;
+    /* fill: #68369A !important; */
+}
+
+
+.border-animation {
+    padding: 3px;
+    background-image: 
+        linear-gradient(90deg, rgb(var(--v-theme-primary))  50%, transparent 50%),
+        linear-gradient(90deg, rgb(var(--v-theme-primary))  50%, transparent 50%),
+        linear-gradient(0deg, rgb(var(--v-theme-primary))  50%, transparent 50%),
+        linear-gradient(0deg, rgb(var(--v-theme-primary))  50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 15px 3px, 15px 3px, 3px 15px, 3px 15px;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    animation: border-dance 1s infinite linear;
+    border-radius: 20px;
+}
+
+/* AI thinking 효과 - 왼쪽에서 오른쪽으로 물흐르는 색상 변화 */
+.thinking-wave-text {
+    display: inline-block;
+}
+
+.thinking-char {
+    display: inline-block;
+    animation: char-shimmer 2s ease-in-out infinite;
+}
+
+.completed.djs-connection .djs-visual > path {
+    stroke: #68369a !important;
+}
+
+.completed.djs-connection .djs-visual > defs > marker > path {
+    stroke: #68369a !important;
+    fill: #68369a !important;
+}
+
+.running-task-line.djs-connection .djs-visual > path {
+    stroke-width: 3px !important;
+    stroke-dasharray: 18, 12 !important;
+    animation: line-running-animation 1.5s linear infinite !important;
+}
+
+.running-task-line.djs-connection .djs-visual > defs > marker > path {
+    stroke: #68369A !important;
+    fill: #68369A !important;
+}
+
+.running:not(.djs-connection):not(.generated) .djs-visual > :nth-child(2) {
+    stroke-width: 5px !important;
+    stroke-dasharray: 20, 20 !important;
+    animation: running-animation 1.5s linear infinite;
+}
+
+.completed:not(.djs-connection) .djs-visual > :nth-child(1) {
+    stroke-width: 5px !important;
+    stroke: #68369A !important;
+}
+
+.stopped:not(.djs-connection) .djs-visual> :nth-child(1) {
+    stroke-width: 5px !important;
+    stroke: #e53935 !important;
+}
+
+.cancelled:not(.djs-connection) .djs-visual> :nth-child(1) {
+    stroke-width: 5px !important;
+    stroke: #e53935 !important;
+}
+
+.error.djs-connection .djs-visual > path {
+    stroke: #ff0000 !important;
+}
+
+.error.djs-connection .djs-visual > defs > marker > path {
+    stroke: #ff0000 !important;
+    fill: #ff0000 !important;
+}
+
+
+.error:not(.djs-connection) .djs-visual > :nth-child(1) {
+    stroke-width: 5px !important;
+    stroke: #ff0000 !important;
+    stroke-dasharray: 10, 10 !important;
+}
+
+
+.warning.djs-connection .djs-visual > path {
+    stroke: #ffa500 !important;
+}
+
+.warning.djs-connection .djs-visual > defs > marker > path {
+    stroke: #ffa500 !important;
+    fill: #ffa500 !important;
+}
+
+.default-gray-btn {
+    background-color: #808080;
+    color: white;
+}
+
+.warning:not(.djs-connection) .djs-visual > :nth-child(1) {
+    stroke-width: 5px !important;
+    stroke: #ffa500 !important;
+    stroke-dasharray: 10, 10 !important;
+}
+
+
+/* 팔레트 커스텀 부분 */
+.vue-bpmn-diagram-container .separator {
+    display: none;
+}
+
+/* 프로스레스바 스타일  (시작)*/
+.my-progress-linear .v-progress-linear__indeterminate {
+    background: linear-gradient(to right, #E1F5FE, #80DEEA, #1565C0) !important;
+}
+/* 프로스레스바 스타일  (끝)*/
+
+/* .vue-bpmn-diagram-container .djs-direct-editing-parent {
+    width:80px !important;
+    height:60px !important;
+} */
+
+.vue-bpmn-diagram-container .djs-direct-editing-parent {
+    background-color: inherit !important;
+    border: none !important;
+    border-radius: 8px;
+}
+
+/* bpm .bpmn-icon-screw-wrench 아이콘 나타나지 않아 넣어둔 부분 */
+.bpmn-icon-screw-wrench {
+    background: url(../images/bpmn/icon/support.png) !important;
+    background-size: 20px 20px !important; /* 이미지를 요소 안에 맞춤, 이미지가 잘릴 수 있음 */
+    background-repeat: no-repeat !important; /* 이미지 반복 없음 */
+    background-position: center !important;
+    background-color:white !important;
+}
+/* bpm .bpmn-icon-screw-wrench 아이콘 나타나지 않아 넣어둔 부분 */
+
+.djs-palette .djs-palette-entries .group .entry:hover {
+    color: rgb(var(--v-theme-primary)) !important;
+    cursor: pointer !important;
+}
+
+.vue-bpmn-diagram-container .djs-palette .djs-palette-entries .entry {
+    width: 40px;
+}
+
+.vue-bpmn-diagram-container .djs-palette {
+    width: 740px !important;
+    height: 50px;
+    left:5px; top:5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.dry-run-process-dialog {
+    max-width: 100vw !important; 
+    height: 100vh !important;
+}
+
+.dry-run-process-dialog .v-overlay__content {
+    margin: 0px !important; 
+    max-width: 100vw !important; 
+    height: 100vh !important;
+    width: 100vw !important; 
+    max-height: 100vh !important;
+}
+
+.dry-run-process-dialog .v-overlay__content .dry-run-process-card {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+.dry-run-process-dialog .v-overlay__content .dry-run-process-card .dry-run-process-card-title {
+    display: none;
+}
+
+.dry-run-process-dialog .v-overlay__content .dry-run-process-card .dry-run-process-card-text {
+    padding: 0px !important;
+}
+
+.delegate-task-form-search .v-field__input{
+    padding: 0px !important;
+}
+
+.vue-bpmn-diagram-container .djs-context-pad .entry {
+    width: 30px;
+    height: 30px;
+    /* border: solid 1px rgba(124, 124, 124, 0.3); */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.7);
+}
+
+.djs-palette .entry {
+    font-size: 24px !important;
+}
+
+.vue-bpmn-diagram-container .djs-context-pad .group {
+    min-width: 100px;
+}
+
+.vue-bpmn-diagram-container .djs-context-pad .group > div:hover {
+    background-color: #E0E0E0 !important;
+}
+
+.chat-display-none {
+    display: none;
+    height: 100vh !important;
+    width:100%;
+}
+.chat-display-block {
+    display: block;
+}
+.process-gpt-execute-component-dialog .work-item-tab-item-process-box-empty {
+    height: calc(100vh - 176px);
+    overflow: auto
+}
+
+.work-item-tab-item-process-box-empty {
+    height: calc(100vh - 260px);
+    color: black;
+    overflow: auto
+}
+
+.work-item-tab-item-process-box-full {
+    height: calc(100vh - 130px);
+}
+
+.process-gpt-execute-component-dialog .work-item-tab-process-box-empty {
+    height: calc(100vh - 176px);
+    overflow: auto
+}
+
+.work-item-tab-process-box-full {
+    height: calc(100vh - 130px);
+    overflow: auto
+}
+
+.work-item-tab-process-box-empty {
+    height: calc(100vh - 257px);
+    overflow: auto
+}
+
+.process-gpt-execute-component-dialog .work-item-form-box-height-empty {
+    height: calc(100vh - 96px);
+    overflow: auto
+}
+
+.work-item-form-box-height-full {
+    height: calc(100vh - 70px);
+    overflow: auto
+}
+
+.work-item-form-box-height-empty {
+    height: calc(100vh - 190px);
+    overflow: auto
+}
+
+.border-primary {
+    border: solid 3px #1976D2; /* 예시 색상, 실제 프로젝트의 primary 색상을 사용하세요 */
+}
+.border-purple {
+    border: solid 3px #7B1FA2;
+}
+
+.canvas-full-layout {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:1007 !important;
+}
+
+.mainbox {
+    position: relative;
+    overflow: hidden;
+}
+
+.task-btn{
+    position: absolute;
+    top: 10px;
+    right: 5px
+}
+
+.work-item-dialog-card .task-btn {
+    position: relative;
+    top: 12px !important;
+    right: 18px !important;
+}
+
+.centered-input:deep(input) {
+    text-align: center;
+}
+
+.centered-input {
+    margin-right:10px;
+}
+
+.form-dialog-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.form-code-field {
+    margin-bottom: 8px;
+}
+
+.form-apply-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.form-layout-card {
+    border-radius: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+
+.process-variable-tbody tr td {
+    height:24px !important;
+}
+
+.process-variable-tbody .v-data-table-footer {
+    padding:0px !important;
+}
+
+.user-task-panel-check-points .check-points-field-box {
+    overflow: auto;
+}
+
+.icon-rotate-90 {
+    transform: rotate(90deg);
+}
+.icon-rotate-180 {
+    transform: rotate(180deg);
+}
+.icon-rotate-270 {
+    transform: rotate(270deg);
+}
+
+.node-content {
+    padding: 0px 4px 3px 4px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.node-content-text-box {
+    padding: 4px; 
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+    border-top: 5px solid rgba(var(--v-theme-primary));
+    height: 100%;
+    width: 150px;
+}
+
+.node-content-title-box {
+    text-align: center;
+    padding: 4px;
+    height: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.node-content-title-box > div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.3;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.list-page-completed-box {
+    height: calc(100vh - 240px);
+    overflow-y: auto;
+}
+
+.node-content-img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top:0px;
+    background-color: #E0E0E0;
+}
+
+.process-consulting-chat-layout-card {
+    height: 95vh;
+}
+
+.process-consulting-chat-layout-card .process-consulting-chat-components .chat-info-title {
+    display: none;
+}
+
+.delete-input-details .v-input__details {
+    display: none !important;
+}
+
+.delete-input-details .form-text-field .v-input__details {
+    display: block !important;
+}
+
+.message-input-box {
+    font-size: 20px !important;
+    max-height: 180px;
+    overflow: auto;
+    width: 100%;
+}
+
+.message-input-box .v-field__prepend-inner {
+    height:40px;
+}
+
+.row-layout-box {
+    max-height:320px;
+    overflow: auto;
+}
+
+.user-input-generator-textarea {
+    margin: 4px !important;
+}
+
+.process-definition-version-dialog-textarea .v-field__field {
+    /* 이전: 고정 height 25vh 때문에 내용이 잘려보이는 문제 발생 */
+    /* 자동 높이 + 최대 높이만 제한하여 더 자연스럽게 보이도록 조정 */
+    height: auto;
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+.agent-field-User-input-generator .user-input-generator-textarea .v-field__field {
+    max-height: calc(100vh - 420px);
+    overflow-y: auto;
+}
+.marketplace-bpmn-preview-skeleton-loader .v-skeleton-loader__image {
+    height: calc(100vh - 84px) !important;
+    border-radius: 8px !important;
+}
+
+.work-item-skeleton-loader .v-skeleton-loader__image {
+    height: calc(100% - 50px);
+    border-radius: 8px;
+}
+
+.process-definition-skeleton-loader .v-skeleton-loader__image {
+    height: calc(100vh - 120px);
+    border-radius: 8px;
+}
+
+.process-instance-chat-skeleton-loader .v-skeleton-loader__image {
+    height: calc(100vh - 280px);
+    border-radius: 8px;
+}
+
+.agent-field-skeleton .v-skeleton-loader__image {
+    border-radius: 10px !important;
+    height: 40vh !important;
+}
+
+.row-layout-box > div{
+    border:solid 1px #D1D1D1;
+    margin-bottom:10px;
+    border-radius: 8px;
+}
+
+.work-itme-current-component .v-checkbox .v-input__details {
+    display: none;
+}
+
+.form-layout-card-contents .v-checkbox {
+    min-height: 40px;
+    border-radius: 10px;
+    border: solid 1px rgba(0,0,0,0.2) !important;
+    margin-bottom: 4px;
+}
+
+.work-itme-current-component .v-checkbox label {
+    opacity: 0.6 !important;
+}
+.work-itme-current-component .form-checkbox-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+.work-itme-current-component .form-radio-field .v-radio-group {
+    margin-top: 8px;
+}
+.work-itme-current-component .form-radio-field .form-radio-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.work-itme-current-component .form-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.processExecute {
+    position: absolute;
+    right: 80px;
+    top: 20px;
+    z-index: 1;
+}
+
+.test-variables-table-box tr {
+    border: solid 2px black !important;
+}
+
+#apexTreeWrapper {
+    height: 100% !important;
+}
+
+#apexTreeWrapper > svg {
+    height: 99.2% !important;
+    width: 100% !important;
+}
+
+#apexTreeWrapper #toolbar {
+    gap:0px !important;
+}
+
+#apexTreeWrapper #toolbar #zoom-in,
+#apexTreeWrapper #toolbar #zoom-out,
+#apexTreeWrapper #toolbar #fit-screen,
+#apexTreeWrapper #toolbar #export {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    margin:0 4px 2px 0;
+    border: none !important;
+}
+
+#apexTreeWrapper #toolbar #zoom-in:hover,
+#apexTreeWrapper #toolbar #zoom-out:hover,
+#apexTreeWrapper #toolbar #fit-screen:hover,
+#apexTreeWrapper #toolbar #export:hover {
+    background-color: #E0E0E0 !important;
+}
+
+.apextree-node > div {
+    border: none !important;
+}
+
+.node-content-btn-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.node-content-btn {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 2px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    transition:  background-color 0.2s;
+    padding: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.node-content-btn:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.node-content-icon {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* skeleton 관련 style */
+.tutorial-main-skeleton .v-skeleton-loader__heading {
+    display: none;
+}
+
+.tutorial-main-skeleton .v-skeleton-loader__image {
+    height: calc(100vh - 70px);
+}
+
+
+.main-page-skeleton .v-skeleton-loader__heading,
+.execute-skeleton-top .v-skeleton-loader__heading,
+.execute-skeleton-bottom .v-skeleton-loader__heading,
+.dry-run-process-skeleton .v-skeleton-loader__heading,
+.test-process-skeleton .v-skeleton-loader__heading,
+.test-process-work-list-skeleton .v-skeleton-loader__heading {
+    display: none;
+}
+
+.main-page-skeleton .v-skeleton-loader__image {
+    height:97vh;
+}
+
+.main-page-skeleton .main-page-skeleton-right1 {
+    margin-bottom:28px;
+}
+
+.main-page-skeleton .main-page-skeleton-right1 .v-skeleton-loader__image {
+    height:9vh;
+}
+
+.main-page-skeleton .main-page-skeleton-right2 .v-skeleton-loader__image {
+    height:84vh;
+}
+
+.execute-skeleton-bottom .v-skeleton-loader__image {
+    height:65vh;
+}
+
+.dry-run-process-skeleton .v-skeleton-loader__image {
+    height:70vh;
+}
+
+.test-process-skeleton .v-skeleton-loader__image {
+    height:75vh;
+}
+
+.execute-skeleton-bottom .v-skeleton-loader__image {
+    height:65vh;
+}
+
+
+.test-process-work-list-skeleton .v-skeleton-loader__image {
+    height:70vh;
+}
+
+.process-title-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.no-border .v-field__outline {
+    display: none;
+}
+.instance-select-box {
+    border: none;
+    cursor: pointer;
+    color:white;
+    background-color: rgb(var(--v-theme-primary), 0.8) !important;
+    border-radius: 10px;
+    text-align: center;
+    padding: 4px;
+    font-size: 12px;
+    width: 96px;
+}
+.todo-task-unfold-btn,
+.todo-task-fold-btn {
+    cursor: pointer;
+    display: none !important;
+}
+/* 선택된 배경색을 나타내는 클래스 - 영어로 'choice'로 변경 */
+.choice-background-color {
+    background-color: rgb(var(--v-theme-primary)) !important;
+    color: white;
+}
+
+.instance-select-box:focus {
+    background-color: #f5f5f5; /* 포커스 시 색상 */
+}
+
+
+/* 채팅 레이아웃 관련 UI 시작 */
+.process-consulting-ai-first-screen {
+    position: relative;
+}
+
+.work-item-activity-box-mobile .chat-view-box {
+    height: calc(100vh - 310px) !important
+}
+
+
+.instance-card-tab-6 {
+    height: calc(100vh - 250px);
+    overflow: auto;
+}
+
+.instance-card-tab-4 .chat-message-bubble,
+.work-item-activity-box .chat-message-bubble {
+  position: relative;
+  max-width: 92% !important;
+  min-width: 92% !important;
+  margin-bottom: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.process-consulting-ai-first-screen .chat-view-box-col {
+    height: calc(100vh - 250px) !important;   /* shrink 허용! */
+    overflow-y: auto;
+}
+
+.chat-info-view-wrapper-chats {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    min-height: 0; /* 중요! 안 주면 flexbox에서 스크롤 안 생기는 경우 있음 */
+}
+
+.app-base-card-is-pc-height {
+    max-height: calc(100vh - 246px);
+}
+
+.mobile-left-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+.feedback-form {
+    position: fixed;
+    right: 36px;
+    bottom: 16px;
+    width: 400px;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    transition: all 0.3s ease;
+    height: calc(100vh - 250px);
+} 
+
+.feedback-form .form-definition-box,
+.feedback-form .form-definition-chat-box {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+}
+
+.feedback-form .form-definition-simulation-chat-box {
+    height: calc(100vh - 300px);
+}
+
+.form-definition-chat-box {
+    height: calc(100vh - 260px);
+}
+.feedback-form .chat-view-box-col {
+    height: 100%;
+}
+
+.chat-info-view-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-info-view-area {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.chat-message-bubble {
+  position: relative;
+  max-width: 70%;
+  margin-bottom: 4px;
+}
+
+.chat-message-bubble .form-layout-card:only-child {
+    margin-bottom: 0px !important
+}
+
+/* 헤더 영역 */
+.chat-info-header {
+    flex: 0 0 auto;
+}
+
+/* 중간 텍스트 박스영역 */
+.chat-view-box {
+    flex: 1 1 auto;
+}
+
+.instance-card-Process-instance-running-box .chat-message-bubble {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.instance-card-gantt-area {
+    height: calc(100vh - 246px);
+}
+.project-card-gantt-area {
+    height: calc(100vh - 200px);
+}
+
+.project-card-kanban-board .todo-list-card-box {
+    height: calc(100vh - 230px);
+}
+
+.project-window-box {
+    height: calc(100vh - 180px);
+    overflow: auto;
+}
+
+.project-card-kanban-instanceList {
+    height: calc(100vh - 180px);
+    overflow: auto;
+}
+
+
+
+/* 채팅창 입력 및 버튼 영역 */
+.chat-info-message-input-box {
+    flex: 0 0 auto;
+}
+/* 채팅 레이아웃 관련 UI 끝  */
+
+.instance-running-bpmn-viewer {
+    height: calc(100vh - 210px) !important;
+}
+
+.instance-card-Process-instance-running-box {
+    height: calc(100vh - 200px) !important;
+    overflow-y: auto;
+}
+
+
+.no-scrollbar {
+    height: 100% !important;
+}
+
+.instance-card-kanban-board .todo-list-card-box {
+    height: calc(100vh - 360px);
+}
+
+.form-work-item-delegate-task-form-dialog-pc {
+    width: 60vw;
+    min-width: 375px;
+}
+
+.form-work-item-delegate-task-form-dialog-mobile {
+    width: 100vw;
+    height: 100vh;
+}  
+.form-work-item-delegate-task-form-dialog-mobile .v-overlay__content {
+    margin: 0px !important; 
+    max-width: 100vw !important; 
+    height: 100vh !important;
+    width: 100vw !important; 
+    max-height: 100vh !important;
+}
+    
+.is-work-height {
+    height: calc(100vh - 131px);
+}
+
+.mobile-side-bar-btn {
+    position: fixed;
+    left: 16px;
+    bottom: 48px;
+    z-index: 999;
+}
+.todolist-card-box {
+    padding: 4px !important;
+    height: calc(100vh - 130px);
+    overflow: auto;
+}
+.todolist-card-box-is-mobile {
+    height: 100vh;
+    overflow: auto;
+}
+
+.instance-card-kanban-board-box {
+    height: calc(100vh - 248px);
+}
+
+.todo-list-card-box > div {
+    width:100%;
+    height:100%;
+}
+
+.todo-list-card-box {
+    height: calc(100vh - 220px);
+    overflow: auto;
+}
+
+
+.main-search-box {
+    max-width: 400px;
+    width: 90vw;
+}
+
+.notification-dd-box {
+    max-width: 400px;
+    width: 90vw;
+}
+
+.mobile-menu-nav {
+    top: 111px !important;
+    width: 300px !important;
+    height: calc(100% - 111px) !important;
+    border-radius: 10px !important;
+}
+
+.add-marketplace-dialog-input-box {
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.agent-field-dialog-contents {
+    max-height: 100%;
+    overflow: auto;
+}
+.agent-chat-info-organization-edit-dialog .organization-edit-dialog-contents {
+    height: calc(-252px + 100vh);
+    overflow: auto;
+}
+
+.organization-edit-dialog-contents {
+    max-height: calc(-300px + 100vh);
+    overflow: auto;
+}
+
+
+/* ... 로딩 애니메이션 */
+.loading-dots span {
+    animation: loading-dot 2s infinite;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.loading-dots span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.loading-dots span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.loading-dots span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.instance-card-tab-4 .chat-view-box {
+    max-height: calc(100vh - 250px);
+}
+
+.instance-card-tab-5 .chat-view-box {
+}
+
+.instance-card-process-box {
+    height: 73vh;
+}
+
+.node-info-btn {
+    display: none !important;
+}
+
+@keyframes loading-dot {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    5% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    65% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    70%, 100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+
+@keyframes border-dance {
+    0% {
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+    }
+    100% {
+        background-position: 30px 0, -30px 100%, 0 -30px, 100% 30px;
+    }
+}
+
+@keyframes running-animation {
+    0% {
+        stroke-dashoffset: 80;
+        stroke: #68369A;
+    }
+    50% {
+        stroke-dashoffset: 40;
+        stroke: #68369A;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke: #68369A;
+    }
+}
+
+@keyframes line-running-animation {
+    0% {
+        stroke-dashoffset: 30;
+        stroke: #68369A;
+    }
+    100% {
+        stroke-dashoffset: -30;
+        stroke: #68369A;
+    }
+}
+
+/* 점선이 한 방향으로 흘러가는 애니메이션 */
+.dot-border-animation {
+    position: relative !important;
+    border-radius: 20px !important;
+}
+
+.dot-border-animation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: 
+        repeating-linear-gradient(90deg, #68369A 0px, #68369A 10px, transparent 10px, transparent 20px) 0 0/100% 3px no-repeat,
+        repeating-linear-gradient(180deg, #68369A 0px, #68369A 10px, transparent 10px, transparent 20px) 100% 0/3px 100% no-repeat,
+        repeating-linear-gradient(270deg, #68369A 0px, #68369A 10px, transparent 10px, transparent 20px) 0 100%/100% 3px no-repeat,
+        repeating-linear-gradient(0deg, #68369A 0px, #68369A 10px, transparent 10px, transparent 20px) 0 0/3px 100% no-repeat;
+    animation: border-flow 0.5s linear infinite;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes border-flow {
+    0% {
+        background-position: 0 0, 100% 0, 0 100%, 0 0;
+    }
+    100% {
+        background-position: 20px 0, 100% 20px, -20px 100%, 0 -20px;
+    }
+}
+
+@keyframes char-shimmer {
+    0%, 70%, 100% {
+        color: #333333;
+    }
+    15%, 35% {
+        color: #bababa;
+    }
+}
+@media only screen and (max-width: 1450px) {
+    .vue-bpmn-diagram-container .djs-palette {
+        width: 375px !important;
+        height: 94px !important;
+    }
+}
+
+.is-sidebar-mobile {
+    display: none !important;
+}
+
+@media only screen and (max-width: 1279px) {
+    .is-sidebar-pc {
+        display: none !important;
+    }
+    .is-sidebar-mobile {
+        display: block !important;
+    }
+
+
+    .agent-chat-info-content {
+        height: calc(100vh - 170px);
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .version-manager-vuediff-box .vue-diff-viewer {
+        font-size: 11px !important;
+    }
+
+    .version-manager-vuediff-box pre {
+        padding-left: 0px !important;
+    }
+    
+    .version-manager-vuediff-box .vue-diff-viewer .vue-diff-row .lineNum {
+        width: 26px !important;
+        padding-left: 0px !important;
+    }
+    .version-manager-vuediff-box .vue-diff-viewer .vue-diff-row.vue-diff-row-split .code {
+        width: calc(50% - 16px) !important;
+        padding-right: 0px !important;
+    }
+    
+    .process-definition-version-dialog-textarea .v-field__field {
+        height: 25vh;
+        overflow-y: auto;
+    }
+
+    .add-marketplace-dialog-input-box {
+        max-height: calc(100vh - 122px);
+        overflow: auto;
+    }
+    
+    .connection-info-tab-headers {
+        height: calc(100vh - 315px);
+    }
+
+    .connection-info-tab:not(:last-child) {
+        margin-bottom: 8px;
+    }
+    
+    .is-pc {
+        display: none;
+    }
+
+    .is-mobile {
+        display: block;
+    }
+    .mcp-environment-monaco-editor {
+        height: calc(100vh - 330px) !important;
+    }
+    .mcp-secret-monaco-editor {
+        height: calc(100vh - 380px) !important;
+    }
+
+    .manage-access-tab-table-box .v-data-table {
+        height: calc(100vh - 160px) !important;
+    }
+    
+    .mcp-server-list-box {
+        height: calc(100vh - 200px) !important;
+        overflow: auto;
+    }
+
+    .gantt-detail-overlay {
+        max-width: 300px;
+    }
+
+    .project-card-gantt-area {
+        height: calc(100vh - 50px);
+    }
+
+    .project-card-kanban-instanceList {
+        height: calc(100vh - 50px);
+    }
+
+    .project-window-box {
+        height:  calc(100vh - 50px);
+       
+    }
+    .kanban-column {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .todo-task-unfold-btn,
+    .todo-task-fold-btn {
+        display: block !important;
+    }
+
+    /* #apexTreeWrapper > svg {
+        height: 96% !important;
+        width: 100% !important;
+    } */
+
+    .node-info-btn {
+        display: flex !important;
+    }
+
+    .instance-card-tab-6 {
+        height: calc(100vh - 200px);
+        overflow: auto;
+    }
+
+    .process-consulting-ai-third-screen {
+        height: 100%;
+    }
+
+    .process-definition-map-chat .process-consulting-ai-third-screen {
+        max-height: calc(100vh - 200px) !important;
+        height: calc(100vh - 200px) !important;
+    }
+
+    .app-base-card-is-mobile-height,
+    .instance-card-process-box {
+        max-height: calc(100vh - 200px);
+        height: calc(100vh - 200px);
+    }
+
+    .work-itme-current-component .v-checkbox {
+        border: none !important;
+    }
+
+    .form-layout-card-contents-mobile {
+        .row {
+            flex-direction: column !important;
+        }
+        
+        [class*="col-"] {
+            width: 100% !important;
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+            margin-bottom: 1rem;
+        }
+        
+        /* 여러 개의 컬럼이 있을 때만 border-bottom 적용 */
+        [class*="col-"]:not(:only-child):not(:last-child) {
+            border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .form-layout-card-contents-desktop {
+        /* 여러 개의 컬럼이 있을 때 세로 구분선 적용 */
+        [class*="col-"]:not(:only-child):not(:last-child) {
+            border-right: none;
+            padding-right: none;
+            margin-right: none;
+        }
+    }
+
+    .instance-running-bpmn-viewer {
+        height: calc(100vh - 260px) !important;
+    }
+
+    .instance-card-Process-instance-running-box {
+        height: calc(100vh - 70px) !important;
+        overflow-y: auto;
+    }
+
+    .instance-card-tab-4 .chat-view-box {
+        max-height: calc(100vh - 200px);
+    }
+
+    .instance-card-tab-7 .instance-card-tab-height {
+        height: calc(100vh - 200px);
+        overflow: auto;
+    }
+    
+    .todo-list-card-box {
+        max-height: calc(100vh - 100px) !important;
+        height: 100% !important;
+        overflow: auto;
+        padding-right: 40px !important;
+    }
+    .todo-task-column-box-pc {
+        padding-right: 20px !important;
+    }
+    .instance-card-title {
+        padding-top: 16px !important;
+    }
+    .instance-card-id {
+        display: none;
+    }
+    
+    .is-work-height {
+        height: 100vh;
+    }
+
+    
+
+    .leftSidebar {
+        width: 350px !important;
+    }
+
+    .instance-card-kanban-board-box {
+        height: 100%;
+    }
+
+    .isMobile-add-todo-dialog-box {
+        height: 100vh;
+    }
+
+    .isMobile-add-todo-dialog {
+        height: calc(100% - 96px);
+        overflow: auto;
+    }
+    .mobile-menu-nav {
+        top:0px !important;
+        height: calc(100% - 90px) !important;
+        border-radius: 10px !important;
+        width: 100vw !important;
+    }
+
+    .agent-field-dialog-contents {
+        max-height: 100%;
+        overflow: auto;
+    }
+
+    .organization-edit-dialog-contents {
+        height: calc(100vh - 100px);
+        overflow: auto;
+    }
+
+    .agent-chat-info-organization-edit-dialog .organization-edit-dialog-contents {
+        height: 100%;
+    }
+
+    .list-page-completed-box {
+        height: calc(100vh - 110px);
+        overflow-y: auto;
+    }
+
+    .feedback-form {
+        width: 50vw;
+        right: 4px;
+        bottom: 4px;
+        height: calc(100vh - 200px);
+    }
+}
+
+
+@media only screen and (max-width:550px) {
+    .vue-bpmn-diagram-container .djs-palette {
+        width: 230px !important;
+        height:185px !important;
+    }
+}
+
+
+

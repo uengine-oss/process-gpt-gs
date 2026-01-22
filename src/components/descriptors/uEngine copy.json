@@ -1,0 +1,111 @@
+// {
+//     "name": "uengine",
+//     "prefix": "uengine",
+//     "uri": "http://uengine",
+//     "xml": {
+//         "tagAlias": "lowerCase"
+//     },
+//     "associations": [],
+//     "types": [
+//         {
+//             "name": "ProcessVariables",
+//             "extends": ["bpmn:RootElement"],
+//             "properties": [
+//               {
+//                 "name": "variables",
+//                 "isMany": true,
+//                 "type": "ProcessVariable"
+//               }
+//             ]
+//           },
+//           {
+//             "name": "ProcessVariable",
+//             "properties": [
+//               {
+//                 "name": "key",
+//                 "isAttr": true,
+//                 "type": "String"
+//               },
+//               {
+//                 "name": "value",
+//                 "type": "String"
+//               }
+//             ]
+//           },
+//         {
+//             "name": "Properties",
+//             "superClass": ["Element"],
+//             "properties": [
+//                 {
+//                     "name": "role",
+//                     "type": "String"
+//                 },
+//                 {
+//                     "name": "pythonCode",
+//                     "type": "String"
+//                 },
+//                 {
+//                     "name": "description",
+//                     "type": "String"
+//                 },
+//                 {
+//                     "name": "definition",
+//                     "type": "String"
+//                 },
+//                 {
+//                     "name": "checkpoints",
+//                     "isMany": true,
+//                     "type": "Checkpoint"
+//                 },
+//                 {
+//                     "name": "instanceData",
+//                     "isMany": true,
+//                     "type": "Data"
+//                 },
+//                 {
+//                     "name": "ExtendedProperties",
+//                     "isMany": true,
+//                     "type": "ExtendedProperty"
+//                 }
+//             ]
+//         },
+//         {
+//             "name": "Checkpoint",
+//             "superClass": ["Element"],
+//             "properties": [
+//                 {
+//                     "name": "checkpoint",
+//                     "type": "String"
+//                 }
+//             ]
+//         },
+//         {
+//             "name": "ExtendedProperty",
+//             "superClass": ["Element"],
+//             "properties": [
+//                 {
+//                     "name": "key",
+//                     "type": "String"
+//                 },
+//                 {
+//                     "name": "value",
+//                     "type": "String"
+//                 }
+//             ]
+//         },
+//         {
+//             "name": "Data",
+//             "superClass": ["Element"],
+//             "properties": [
+//                 {
+//                     "name": "key",
+//                     "type": "String"
+//                 },
+//                 {
+//                     "name": "category",
+//                     "type": "String"
+//                 }
+//             ]
+//         }
+//     ]
+// }

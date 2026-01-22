@@ -1,0 +1,45 @@
+{
+    "name": "uengine",
+    "prefix": "uengine",
+    "uri": "http://uengine",
+    "xml": {
+        "tagAlias": "lowerCase"
+    },
+    "associations": [],
+    "types": [
+        {
+            "name": "Properties",
+            "superClass": ["Element"],
+            "properties": [
+                {
+                    "name": "json",
+                    "type": "String"
+                },
+                {
+                    "name": "variables",
+                    "isMany": true,
+                    "type": "Variable"
+                }
+            ]
+        },
+        {
+            "name": "Variable",
+            "superClass": ["Element"],
+            "properties": [
+                {
+                    "name": "key",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "type": "String"
+                },
+                {
+                    "name": "json",
+                    "type": "String"
+                }
+            ]
+        }
+    ]
+}
