@@ -55,8 +55,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div v-if="editable" class="d-flex align-center">
-                            <v-chip variant="elevated"
+                        <div class="d-flex align-center">
+                            <v-chip 
+                                v-if="editable"
+                                variant="elevated"
                                 :color="item.is_admin ? 'primary' : 'gray'"
                                 class="chip-select-wrapper"
                                 size="x-small"
@@ -77,17 +79,17 @@
                                     </template>
                                 </v-select>
                             </v-chip>
+                            <v-btn 
+                                v-if="isAdmin"
+                                @click="openDeleteDialog(item)" 
+                                icon
+                                variant="text"
+                                size="small"
+                                class="ml-2"
+                            >
+                                <v-icon color="error">mdi-delete</v-icon>
+                            </v-btn>
                         </div>
-                        <v-btn 
-                            v-if="isAdmin"
-                            @click="openDeleteDialog(item)" 
-                            icon
-                            variant="text"
-                            size="small"
-                            class="ml-2"
-                        >
-                            <v-icon color="error">mdi-delete</v-icon>
-                        </v-btn>
                     </div>
                 </template>
             </v-data-table>
