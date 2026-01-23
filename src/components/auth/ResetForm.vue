@@ -10,11 +10,11 @@ const props = defineProps({
 const { proxy } = getCurrentInstance();
 
 const email = ref('');
-const emailRules = ref([(v: string) => !!v || 'E-mail is required', (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
+const emailRules = ref([(v: string) => !!v || '이메일 주소는 필수 입력사항입니다.', (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
 
 const password = ref('');
 const passwordRules = ref([
-    (v: string) => !!v || 'Password is required',
+    (v: string) => !!v || '비밀번호는 필수 입력사항입니다.',
 ]);
 
 

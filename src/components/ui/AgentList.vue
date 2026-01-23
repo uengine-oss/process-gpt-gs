@@ -280,14 +280,10 @@ export default {
 .empty-state {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 16px 8px;
-    text-align: center;
+    justify-content: start;
+    padding: 8px;
     gap: 8px;
-}
-
-.empty-state {
+    text-align: center;
     color: #666;
 }
 

@@ -69,7 +69,7 @@ export default {
             required: value => !!value || 'Required.',
             min: v => v.length >= 8 || 'Min 8 characters',
             emailMatch: v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-            emailRequired: v => !!v || 'E-mail is required',
+            emailRequired: v => !!v || '이메일 주소는 필수 입력사항입니다.',
         },
         passwordShow: false,
         userInfo: {

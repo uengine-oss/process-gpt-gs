@@ -129,6 +129,11 @@ hr {
 }
 
 
+.pwdInput .v-input__control {
+    background: #E8F0FE;
+    border-radius: 10px;
+}
+
 .work-item-tab-box .ps__rail-y,
 .work-item-tab-box .ps__rail-x {
     display: none !important;

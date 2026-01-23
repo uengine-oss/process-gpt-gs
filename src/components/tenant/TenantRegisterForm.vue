@@ -66,9 +66,9 @@ export default {
                 (v) => !!v || 'Name is required',
                 (v) => (v && v.length <= 10) || 'Name must be less than 10 characters'
             ],
-            email: [(v) => !!v || 'E-mail is required', (v) => /.+@.+\..+/.test(v) || 'E-mail must be valid'],
+            email: [(v) => !!v || '이메일 주소는 필수 입력사항입니다.', (v) => /.+@.+\..+/.test(v) || 'E-mail must be valid'],
             password: [
-                (v) => !!v || 'Password is required',
+                (v) => !!v || '비밀번호는 필수 입력사항입니다.',
             ],
         }
     }),

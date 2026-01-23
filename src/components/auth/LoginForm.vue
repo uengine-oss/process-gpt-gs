@@ -14,9 +14,9 @@ const storedEmail = localStorage.getItem('email') || '';
 const username = ref(storedEmail);
 
 const passwordRules = ref([
-    (v: string) => !!v || 'Password is required',
+    (v: string) => !!v || '비밀번호는 필수 입력사항입니다.',
 ]);
-const emailRules = ref([(v: string) => !!v || 'E-mail is required', (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
+const emailRules = ref([(v: string) => !!v || '이메일 주소는 필수 입력사항입니다.', (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
 
 function validate(values: any, { setErrors }: any) {
     return authStore.signIn(username.value.toLowerCase(), password.value);
@@ -63,7 +63,6 @@ onBeforeUnmount(() => {
                 @keydown="checkCapsLock"
                 @keyup="checkCapsLock"
                 @focus="checkCapsLock"
-                style="background: #E8F0FE;"
             ></VTextField>
             <div v-if="isCapsLockOn" class="caps-lock-warning">
                 <v-chip size="small" color="warning" class="mt-1">
@@ -72,12 +71,12 @@ onBeforeUnmount(() => {
                 </v-chip>
             </div>
         </div>
-        <div :class="['d-flex', 'flex-wrap', 'align-center', 'my-3', 'ml-n2', { 'mt-6': isCapsLockOn }]">
+        <!-- <div :class="['d-flex', 'flex-wrap', 'align-center', 'my-3', 'ml-n2', { 'mt-6': isCapsLockOn }]">
             <v-checkbox v-model="checkbox" :rules="[(v:any) => !!v || 'You must agree to continue!']" required hide-details color="primary">
                 <template v-slot:label>{{ $t('loginPage.remeber') }}</template>
             </v-checkbox>
-        </div>
-        <v-btn class="cp-login" size="large" rounded="pill" :loading="isSubmitting" color="primary" block type="submit" flat>{{ $t('loginPage.login') }}</v-btn>
+        </div> -->
+        <v-btn class="cp-login mt-4" size="large" rounded="pill" :loading="isSubmitting" color="primary" block type="submit" flat>{{ $t('loginPage.login') }}</v-btn>
         <div v-if="errors.apiError" class="mt-2">
             <v-alert color="error">{{ errors.apiError }}</v-alert>
         </div>

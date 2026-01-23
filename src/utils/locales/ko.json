@@ -1347,7 +1347,7 @@
     "VerticalSidebar": {
         "instanceList": "인스턴스",
         "projectList": "프로젝트",
-        "agentList": "에이전트",
+        "agentList": "에이전트/조직",
         "instanceMyGroup": "내 그룹 인스턴스",
         "saveFileName": "저장될 파일명",
         "downloadDefinitionList": "정의 내보내기",
