@@ -531,7 +531,7 @@
         "affiliatedTeam": "Affiliated Team"
     },
     "loginPage": {
-        "title": "Welcome to Process GPT",
+        "title": "Welcome to Process-GPT",
         "google": "Sign in with Google",
         "or": "or sign in with",
         "userName": "Email",
@@ -542,7 +542,7 @@
         "forgotPassword": "Forgot password?"
     },
     "createAccount": {
-        "title": "Welcome to Process GPT",
+        "title": "Welcome to Process-GPT",
         "already": "Already have an Account?",
         "login": "Sign In",
         "userName": "User Name",

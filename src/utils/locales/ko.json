@@ -531,7 +531,7 @@
         "affiliatedTeam": "소속 팀"
     },
     "loginPage": {
-        "title": "Welcome to Process GPT",
+        "title": "Welcome to Process-GPT",
         "google": "구글 로그인",
         "or": "또는 다음 계정으로 로그인",
         "userName": "이메일",
@@ -542,7 +542,7 @@
         "forgotPassword": "비밀번호 찾기"
     },
     "createAccount": {
-        "title": "Welcome to Process GPT",
+        "title": "Welcome to Process-GPT",
         "already": "이미 계정이 있으신가요?",
         "login": "로그인",
         "userName": "닉네임",
