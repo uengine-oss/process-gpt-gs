@@ -6,14 +6,20 @@
         <template v-slot:activator="{ props }">
             <div v-bind="props">
                 <div>
-                    <div class="d-flex align-center flex-fill border border-borderColor header-search rounded-pill px-5 ">
-                        <Icons :icon="'magnifer-linear'" :size="22" />
-                        <v-text-field v-model="searchKeyword" variant="plain" density="compact"
-                            class="position-relative pt-0 ml-3 custom-placeholer-color" 
-                            :placeholder="$t('headerMenu.search')"
-                            single-line hide-details
-                            @keyup.enter="search"
-                        ></v-text-field>
+                    <div class="search-input-wrapper">
+                        <div class="d-flex align-center flex-fill border border-borderColor header-search rounded-pill px-5" :class="{ 'border-error': showLimitWarning }">
+                            <Icons :icon="'magnifer-linear'" :size="22" />
+                            <v-text-field v-model="searchKeyword" variant="plain" density="compact"
+                                class="position-relative pt-0 ml-3 custom-placeholer-color" 
+                                :placeholder="$t('headerMenu.search')"
+                                single-line hide-details
+                                :maxlength="maxLength"
+                                @keyup.enter="search"
+                            ></v-text-field>
+                        </div>
+                        <div v-if="showLimitWarning" class="limit-warning-message">
+                            최대 {{ maxLength }}자까지 입력 가능합니다.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,10 +79,19 @@ export default {
         searchResult: [],
         searching: false,
         searchMenuOpen: false,
-        hasSearched: false
+        hasSearched: false,
+        showLimitWarning: false,
+        maxLength: 127
     }),
     watch: {
         searchKeyword(newVal, oldVal) {
+            // 최대 길이 도달 시 경고 표시
+            if (newVal && newVal.length >= this.maxLength) {
+                this.showLimitWarning = true;
+            } else {
+                this.showLimitWarning = false;
+            }
+            
             if (newVal.length == 0 || (newVal != oldVal && !this.searching)) {
                 this.searchResult = [];
                 this.hasSearched = false;
@@ -129,3 +144,19 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+.search-input-wrapper {
+    position: relative;
+}
+
+.border-error {
+    border-color: rgb(var(--v-theme-error)) !important;
+}
+
+.limit-warning-message {
+    color: rgb(var(--v-theme-error)) !important;
+    font-size: 12px !important;
+    margin-top: 4px !important;
+    padding-left: 16px !important;
+}
+</style>

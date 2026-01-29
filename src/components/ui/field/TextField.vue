@@ -8,6 +8,9 @@
             :variant="localReadonly ? 'filled' : 'outlined'"
             :hide-details="hideDetails"
             :density="density"
+            :maxlength="maxLength"
+            :error="showLimitWarning"
+            :error-messages="showLimitWarning ? [`최대 ${maxLength}자까지 입력 가능합니다.`] : []"
             @click="handleFieldClick"
             ref="textField"
         >
@@ -56,6 +59,8 @@ export default {
             localAlias: "",
             localType: "",
             localDisabled: false,
+            showLimitWarning: false,
+            maxLength: 127,
 
             settingInfos: [
                 commonSettingInfos["localName"],
@@ -84,7 +89,13 @@ export default {
         },
 
         localModelValue: {
-            handler() {
+            handler(newVal) {
+                // 최대 길이 도달 시 경고 표시
+                if (newVal && newVal.length >= this.maxLength) {
+                    this.showLimitWarning = true;
+                } else {
+                    this.showLimitWarning = false;
+                }
                 this.$emit('update:modelValue', this.localModelValue)
             },
             deep: true,
@@ -183,5 +194,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+.form-text-field .v-input__details {
+    padding: 8px 16px 16px 16px !important;
+}
 </style>

@@ -107,7 +107,9 @@
                                 v-if="information.version_tag === 'major' || information.version_tag === 'minor'"
                                 v-model="information.message"
                                 :label="$t('ProcessDefinitionVersionDialog.message')"
-                                hide-details
+                                :maxlength="messageMaxLength"
+                                :error="showMessageLimitWarning"
+                                :error-messages="showMessageLimitWarning ? [`최대 ${messageMaxLength}자까지 입력 가능합니다.`] : []"
                                 auto-grows
                             ></v-textarea>
                             <div v-if="isDiffGenerating"
@@ -140,7 +142,9 @@
                         <v-textarea
                             v-model="information.message"
                             :label="$t('ProcessDefinitionVersionDialog.message')"
-                            hide-details
+                            :maxlength="messageMaxLength"
+                            :error="showMessageLimitWarning"
+                            :error-messages="showMessageLimitWarning ? [`최대 ${messageMaxLength}자까지 입력 가능합니다.`] : []"
                             rows="3"
                         ></v-textarea>
                     </div>
@@ -222,6 +226,8 @@ export default {
         isDuplicateId: false,
         overwriteConfirm: false,
         idCheckTimeout: null,
+        showMessageLimitWarning: false,
+        messageMaxLength: 4000,
         // 마이너 / 메이저 타입 선택 가능 (minor가 상단)
         versionTagItems: ['minor', 'major'],
         versionHelpDetails: [
@@ -323,6 +329,16 @@ export default {
                     }, 2000);
                 } else {
                     this.isGeneratingId = false;
+                }
+            },
+        },
+        // Message 필드 감시: 최대 글자수 제한 경고
+        'information.message': {
+            handler(newVal) {
+                if (newVal && newVal.length >= this.messageMaxLength) {
+                    this.showMessageLimitWarning = true;
+                } else {
+                    this.showMessageLimitWarning = false;
                 }
             },
         },

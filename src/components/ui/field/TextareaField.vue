@@ -6,8 +6,12 @@
             :readonly="localReadonly" 
             :rows="rows" 
             :variant="localReadonly ? 'filled' : 'outlined'" 
-            :hide-details="hideDetails" 
+            :hide-details="hideDetails"
             :density="density"
+            :maxlength="maxLength"
+            :error="showLimitWarning"
+            :error-messages="showLimitWarning ? [`최대 ${maxLength}자까지 입력 가능합니다.`] : []"
+            :class="{ 'show-limit-warning': showLimitWarning }"
         >
             <template v-slot:label>
                 <span style="color:black;">
@@ -15,6 +19,9 @@
                 </span>
             </template>
         </v-textarea>
+        <div v-if="showLimitWarning" class="limit-warning-message">
+            최대 {{ maxLength }}자까지 입력 가능합니다.
+        </div>
     </div>
 </template>
 
@@ -55,6 +62,8 @@ export default {
             localRows: "",
             localDisabled: false,
             localReadonly: false,
+            showLimitWarning: false,
+            maxLength: 4000,
 
             settingInfos: [
                 commonSettingInfos["localName"],
@@ -85,7 +94,13 @@ export default {
         },
 
         localModelValue: {
-            handler() {
+            handler(newVal) {
+                // 최대 길이 도달 시 경고 표시
+                if (newVal && newVal.length >= this.maxLength) {
+                    this.showLimitWarning = true;
+                } else {
+                    this.showLimitWarning = false;
+                }
                 this.$emit('update:modelValue', this.localModelValue)
             },
             deep: true,
@@ -150,5 +165,33 @@ export default {
 <style lang="scss">
 .form-text-area {
     margin-bottom: 16px;
+    position: relative;
+}
+
+.form-text-area .v-input__details {
+    padding: 8px 16px 16px 16px !important;
+}
+
+.limit-warning-message {
+    color: rgb(var(--v-theme-error)) !important;
+    font-size: 12px !important;
+    margin-top: 4px !important;
+    padding-left: 16px !important;
+}
+
+.show-limit-warning :deep(.v-field__outline) {
+    --v-field-border-opacity: 1 !important;
+    color: rgb(var(--v-theme-error)) !important;
+}
+
+.show-limit-warning :deep(.v-field) {
+    --v-field-border-opacity: 1 !important;
+}
+
+.show-limit-warning :deep(.v-field__outline__start),
+.show-limit-warning :deep(.v-field__outline__end),
+.show-limit-warning :deep(.v-field__outline__notch::before),
+.show-limit-warning :deep(.v-field__outline__notch::after) {
+    border-color: rgb(var(--v-theme-error)) !important;
 }
 </style>
