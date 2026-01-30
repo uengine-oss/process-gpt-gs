@@ -233,6 +233,50 @@ async function setupSupabase() {
     }
 }
 
+let authAuditListenerAttached = false;
+function setupAuthAuditLogging() {
+    if (authAuditListenerAttached) return;
+    if (!window.$supabase) return;
+
+    authAuditListenerAttached = true;
+
+    // IMPORTANT:
+    // - onAuthStateChange 콜백 안에서는 네트워크를 await 하지 않는다.
+    //   (일부 환경/버전에서 로그인 완료 흐름을 블로킹할 수 있음)
+    window.$supabase.auth.onAuthStateChange((event: string, session: any) => {
+        // 성공 로그인만 기록 (실패는 signInWithPassword 쪽에서 기록)
+        if (event !== 'SIGNED_IN') return;
+
+        try {
+            const email = session?.user?.email ?? null;
+            const provider = session?.user?.app_metadata?.provider ?? null;
+
+            const rpcPromise = window.$supabase.rpc('record_auth_audit', {
+                p_action: 'login',
+                p_email: email,
+                p_success: true,
+                p_error_message: null,
+                p_tenant_id: (window.$tenantName as any) || null,
+                p_metadata: {
+                    source: 'onAuthStateChange',
+                    event,
+                    provider
+                }
+            });
+            void rpcPromise.then(({ error }: any) => {
+                if (error) {
+                    console.warn('[auth_login_audit] SIGNED_IN 기록 실패:', error);
+                }
+            }).catch((e: any) => {
+                console.warn('[auth_login_audit] SIGNED_IN 기록 실패:', e);
+            });
+        } catch (e) {
+            // 감사 로그 실패는 앱 동작에 영향 없도록 무시
+            console.warn('[auth_login_audit] SIGNED_IN 기록 실패:', e);
+        }
+    });
+}
+
 async function setupTenant() {
     const subdomain = window.location.hostname.split('.')[0];
 
@@ -276,6 +320,7 @@ async function setupTenant() {
 async function initializeApp() {
     await setupSupabase();
     await setupTenant();
+    setupAuthAuditLogging();
     
     // 동적 언어 설정 (localStorage에 저장된 언어 우선, 없으면 자동 감지)
     const savedLocale = localStorage.getItem('locale');

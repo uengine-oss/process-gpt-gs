@@ -11,6 +11,25 @@ class StorageBaseError extends Error {
 export default class StorageBaseSupabase {
     //extends StorageBase{
 
+    async recordAuthAudit({ action, email, success, errorMessage, tenantId, metadata }) {
+        try {
+            const supabase = window.$supabase;
+            if (!supabase || typeof supabase.rpc !== 'function') return;
+
+            await supabase.rpc('record_auth_audit', {
+                p_action: action,
+                p_email: email ?? null,
+                p_success: Boolean(success),
+                p_error_message: errorMessage ?? null,
+                p_tenant_id: tenantId ?? null,
+                p_metadata: metadata ?? {}
+            });
+        } catch (e) {
+            // 감사 로그 기록 실패는 UX를 깨지 않도록 조용히 무시 (콘솔만)
+            console.warn('[auth_login_audit] 기록 실패:', e);
+        }
+    }
+
     async isConnection() {
         try {
             // 먼저 현재 세션 상태를 확인
@@ -188,6 +207,14 @@ export default class StorageBaseSupabase {
                     // 로그인 성공
                     return result.data;
                 } else if (result.error && result.error.message.includes("Email not confirmed")){
+                    await this.recordAuthAudit({
+                        action: 'login',
+                        email: userInfo.email,
+                        success: false,
+                        errorMessage: result.error.message,
+                        tenantId: window.$tenantName || null,
+                        metadata: { method: 'password', reason: 'email_not_confirmed' }
+                    });
                     // 계정 인증이 완료 되지 않았습니다. 메시지 출력 부분
                     await window.$app_.try({
                         action: () => Promise.reject(new Error()),
@@ -197,6 +224,14 @@ export default class StorageBaseSupabase {
                         error: true
                     };
                 } else {
+                    await this.recordAuthAudit({
+                        action: 'login',
+                        email: userInfo.email,
+                        success: false,
+                        errorMessage: result.error?.message || 'login_failed',
+                        tenantId: window.$tenantName || null,
+                        metadata: { method: 'password' }
+                    });
                     const users = await this.list('users');
                     if (users && users.length > 0) {
                         const checkedId = users.some((user) => user.email == userInfo.email);
@@ -221,6 +256,14 @@ export default class StorageBaseSupabase {
                     }
                 }
             } else {
+                await this.recordAuthAudit({
+                    action: 'login',
+                    email: userInfo.email,
+                    success: false,
+                    errorMessage: 'not_registered_email',
+                    tenantId: window.$tenantName || null,
+                    metadata: { method: 'password', reason: 'not_registered_email' }
+                });
                 // 가입된 이메일이 아닐때 메시지 출력부분
                 await window.$app_.try({
                     action: () => Promise.reject(new Error()),
@@ -242,6 +285,28 @@ export default class StorageBaseSupabase {
                     scopes: 'openid'
                 }
             });
+
+            // OAuth는 리다이렉트 기반이라 여기서 “최종 성공/실패”를 알 수 없고,
+            // 대신 시도 시작/실패만 기록한다. (최종 성공은 SIGNED_IN 이벤트에서 기록)
+            if (error) {
+                await this.recordAuthAudit({
+                    action: 'login_oauth',
+                    email: null,
+                    success: false,
+                    errorMessage: error.message,
+                    tenantId: window.$tenantName || null,
+                    metadata: { provider: 'keycloak' }
+                });
+            } else {
+                await this.recordAuthAudit({
+                    action: 'login_oauth',
+                    email: null,
+                    success: true,
+                    errorMessage: null,
+                    tenantId: window.$tenantName || null,
+                    metadata: { provider: 'keycloak' }
+                });
+            }
         } catch (e) {
             throw new StorageBaseError('error in signInWithKeycloak', e, arguments);
         }
@@ -324,6 +389,17 @@ export default class StorageBaseSupabase {
 
     async signOut() {
         try {
+            // 가능한 한 인증된 상태에서 로그아웃 시각을 먼저 기록
+            const auditEmail = window.localStorage.getItem('email');
+            await this.recordAuthAudit({
+                action: 'logout',
+                email: auditEmail,
+                success: true,
+                errorMessage: null,
+                tenantId: window.$tenantName || null,
+                metadata: { source: 'StorageBaseSupabase.signOut' }
+            });
+
             window.localStorage.removeItem('accessToken');
             window.localStorage.removeItem('author');
             window.localStorage.removeItem('userName');
@@ -578,7 +654,8 @@ export default class StorageBaseSupabase {
             let result;
             if (options && options.match) {
                 result = await window.$supabase.from(obj.table).upsert(value).match(options.match);
-
+            } else if (options && options.onConflict) {
+                result = await window.$supabase.from(obj.table).upsert(value, { onConflict: options.onConflict });
             } else if (obj.searchVal) {
                 result = await window.$supabase.from(obj.table).upsert(value).eq(obj.searchKey, obj.searchVal);
             } else {
