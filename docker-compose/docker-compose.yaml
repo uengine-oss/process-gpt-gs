@@ -2,7 +2,7 @@
 
 services:
   frontend:
-    image: ghcr.io/uengine-oss/process-gpt:latest
+    image: ghcr.io/uengine-oss/process-gpt-gs:latest
     ports:
       - "8080:8080"
     environment:
@@ -20,7 +20,7 @@ services:
       SUPABASE_KEY: ${SERVICE_ROLE_KEY}
       SUPABASE_JWT_SECRET: ${JWT_SECRET}
       DB_NAME: ${DB_NAME:-${POSTGRES_DB}}
-      DB_USER: ${DB_USER:-${POSTGRES_USER}}
+      DB_USER: supabase_admin
       DB_PASSWORD: ${DB_PASSWORD:-${POSTGRES_PASSWORD}}
       DB_HOST: ${DB_HOST:-${POSTGRES_HOST}}
       DB_PORT: ${DB_PORT:-${POSTGRES_PORT}}
@@ -254,7 +254,7 @@ services:
       PORT: 4000
       DB_HOST: ${POSTGRES_HOST}
       DB_PORT: ${POSTGRES_PORT}
-      DB_USER: ${POSTGRES_USER}
+      DB_USER: supabase_admin
       DB_PASSWORD: ${POSTGRES_PASSWORD}
       DB_NAME: ${POSTGRES_DB}
       DB_AFTER_CONNECT_QUERY: 'SET search_path TO _realtime'
@@ -327,7 +327,7 @@ services:
       PG_META_DB_HOST: ${POSTGRES_HOST}
       PG_META_DB_PORT: ${POSTGRES_PORT}
       PG_META_DB_NAME: ${POSTGRES_DB}
-      PG_META_DB_USER: ${POSTGRES_USER}
+      PG_META_DB_USER: supabase_admin
       PG_META_DB_PASSWORD: ${POSTGRES_PASSWORD}
 
   functions:
@@ -359,7 +359,7 @@ services:
     restart: unless-stopped
     environment:
       LOGFLARE_NODE_HOST: 127.0.0.1
-      DB_USERNAME: ${POSTGRES_USER}
+      DB_USERNAME: supabase_admin
       DB_DATABASE: _supabase
       DB_HOSTNAME: ${POSTGRES_HOST}
       DB_PORT: ${POSTGRES_PORT}
@@ -410,7 +410,6 @@ services:
       - ./volumes/db/logs.sql:/docker-entrypoint-initdb.d/migrations/99-logs.sql:Z
       - ./volumes/db/pooler.sql:/docker-entrypoint-initdb.d/migrations/99-pooler.sql:Z
       - db-config:/etc/postgresql-custom
-      - ./volumes/db/init.sql:/docker-entrypoint-initdb.d/init.sql
 
 
 volumes:
