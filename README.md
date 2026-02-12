@@ -116,7 +116,7 @@ docker compose logs -f db
 - **프론트엔드 / 게이트웨이 (Nginx)**: `http://localhost:8088`
 - **Completion 서비스**: `http://localhost:8000`
 - **Memento 서비스**: `http://localhost:8005`
-- **Supabase Studio**: `http://localhost:${STUDIO_PORT}` (예: 54323)
+- **Supabase Studio**: `http://localhost:54323` (예: 54323)
 - **Kong (공개 API)**: `http://localhost:${KONG_HTTP_PORT}` (예: 54321)
 
 > **필수:** 서비스를 띄운 뒤 **반드시** [Supabase 초기 설정 (DB + 스토리지)](#supabase-초기-설정-db--스토리지)을 진행해야 합니다. 이 단계를 건너뛰면 서비스를 정상적으로 이용할 수 없습니다.
