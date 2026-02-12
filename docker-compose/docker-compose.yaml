@@ -14,6 +14,18 @@ services:
     image: ghcr.io/uengine-oss/process-gpt-completion:latest
     ports:
       - "8000:8000"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/langchain-chat/sanity-check', timeout=3).read()"
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 30s
     environment:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       SUPABASE_URL: ${SUPABASE_URL}
@@ -30,8 +42,10 @@ services:
       SMTP_USERNAME: ${SMTP_USERNAME:-${SMTP_USER}}
       SMTP_PASSWORD: ${SMTP_PASSWORD:-${SMTP_PASS}}
     depends_on:
-      - db
-      - rest
+      db:
+        condition: service_healthy
+      rest:
+        condition: service_started
 
   polling-service:
     image: ghcr.io/uengine-oss/process-gpt-polling-service:latest
@@ -134,10 +148,12 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./volumes/email-templates:/usr/share/nginx/auth-templates:ro
     depends_on:
-      - frontend
-      - completion
-      - memento
-      - fcm-service
+      completion:
+        condition: service_healthy
+      frontend:
+        condition: service_started
+      memento:
+        condition: service_started
 
   # Supabase
   studio:
@@ -459,7 +475,7 @@ services:
       - ./volumes/db/_supabase.sql:/docker-entrypoint-initdb.d/migrations/97-_supabase.sql:Z
       - ./volumes/db/logs.sql:/docker-entrypoint-initdb.d/migrations/99-logs.sql:Z
       - ./volumes/db/pooler.sql:/docker-entrypoint-initdb.d/migrations/99-pooler.sql:Z
-      - ./volumes/db/init.sql:/docker-entrypoint-initdb.d/init-scripts/100-init.sql:Z
+      # - ./volumes/db/init.sql:/docker-entrypoint-initdb.d/init-scripts/100-init.sql:Z
       - db-config:/etc/postgresql-custom
 
 volumes:
