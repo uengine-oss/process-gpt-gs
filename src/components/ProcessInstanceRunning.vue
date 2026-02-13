@@ -83,9 +83,51 @@ export default {
     async mounted() {
         if (this.instance.status == 'NEW') {
             const worklist = await backend.getWorkListByInstId(this.instance.instId);
-            const definition = await backend.getRawDefinition(worklist[0].defId)
-            this.workItem = worklist[0];
-            this.taskId = this.workItem.taskId;
+
+            // NOTE:
+            // - getWorkListByInstId()는 정렬을 보장하지 않는다(기본 orderBy가 id).
+            // - 폼 값이 하나라도 들어가면 todolist 레코드가 여러 개 생성/업데이트될 수 있고,
+            //   이 때 worklist[0]이 "실제로 상태/로그가 업데이트되는 작업"이 아닐 수 있다.
+            // - 그래서 "현재 진행중에 가장 가까운 task"를 골라 그 taskId를 구독한다.
+            const normalized = Array.isArray(worklist) ? worklist : [];
+            const currentActivityIds = Array.isArray(this.instance.currentActivityIds) ? this.instance.currentActivityIds : [];
+
+            const byUpdatedDesc = (a, b) => {
+                const at = a?.updatedAt ? new Date(a.updatedAt).getTime() : 0;
+                const bt = b?.updatedAt ? new Date(b.updatedAt).getTime() : 0;
+                return bt - at;
+            };
+
+            const upper = (v) => (v == null ? '' : String(v).toUpperCase());
+            const isInProgressLike = (w) => {
+                const s = upper(w?.status);
+                return s === 'IN_PROGRESS' || s === 'SUBMITTED' || s === 'NEW' || s === 'RUNNING';
+            };
+
+            // 1) 인스턴스의 currentActivityIds와 매칭되는 workItem 중 진행중 우선
+            let picked =
+                normalized
+                    .filter(w => w && w.taskId && currentActivityIds.includes(w.tracingTag))
+                    .sort((a, b) => (isInProgressLike(b) - isInProgressLike(a)) || byUpdatedDesc(a, b))[0];
+
+            // 2) 그래도 없으면 진행중 성격의 workItem 중 최신
+            if (!picked) {
+                picked = normalized.filter(w => w && w.taskId && isInProgressLike(w)).sort(byUpdatedDesc)[0];
+            }
+
+            // 3) 마지막 fallback: 최신(updatedAt) 1개
+            if (!picked) {
+                picked = normalized.filter(w => w && w.taskId).sort(byUpdatedDesc)[0];
+            }
+
+            if (!picked) {
+                // worklist가 아직 생성되지 않았거나 조회 실패
+                return;
+            }
+
+            const definition = await backend.getRawDefinition(picked.defId);
+            this.workItem = picked;
+            this.taskId = picked.taskId;
             this.bpmn = definition.bpmn
             this.taskStatus = await backend.getActivitiesStatus(this.instance.instId);
             this.defCnt++
@@ -96,7 +138,7 @@ export default {
                 this.streamingText = task.log;
                 this.parseTaskLog(task.log);
             }
-            if (task.status == "DONE") {
+            if (task.status == "DONE" || task.status == "COMPLETED") {
                 this.EventBus.emit('instances-updated');
                 this.$emit('updated');
             }
