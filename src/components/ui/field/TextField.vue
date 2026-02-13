@@ -8,9 +8,9 @@
             :variant="localReadonly ? 'filled' : 'outlined'"
             :hide-details="hideDetails"
             :density="density"
-            :maxlength="maxLength"
-            :error="showLimitWarning"
-            :error-messages="showLimitWarning ? [`최대 ${maxLength}자까지 입력 가능합니다.`] : []"
+            :maxlength="isTextLikeType ? maxLength : undefined"
+            :error="isTextLikeType && showLimitWarning"
+            :error-messages="(isTextLikeType && showLimitWarning) ? [`최대 ${maxLength}자까지 입력 가능합니다.`] : []"
             @click="handleFieldClick"
             ref="textField"
         >
@@ -60,7 +60,8 @@ export default {
             localType: "",
             localDisabled: false,
             showLimitWarning: false,
-            maxLength: 127,
+            // 기본적인 텍스트 입력 길이 제한(넉넉하게)
+            maxLength: 1024,
 
             settingInfos: [
                 commonSettingInfos["localName"],
@@ -91,7 +92,7 @@ export default {
         localModelValue: {
             handler(newVal) {
                 // 최대 길이 도달 시 경고 표시
-                if (newVal && newVal.length >= this.maxLength) {
+                if (this.isTextLikeType && newVal && newVal.length >= this.maxLength) {
                     this.showLimitWarning = true;
                 } else {
                     this.showLimitWarning = false;
@@ -104,6 +105,11 @@ export default {
     },
 
     computed: {
+        isTextLikeType() {
+            // "텍스트가 아닌 경우"는 제외 (number/date/time/color 등)
+            // 텍스트 입력이 가능한 타입만 길이 제한 적용
+            return ['text', 'email', 'url', 'password', 'tel'].includes(this.localType);
+        },
         isDateType() {
             return ['date', 'datetime-local', 'month', 'week', 'time'].includes(this.localType);
         }

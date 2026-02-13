@@ -102,8 +102,32 @@ export default {
 
             this.loadScreen = false;
             this.backend = BackendFactory.createBackend();
+
+            // 이메일 인증/초대 링크 등으로 "이미 로그인된 상태"로 진입하는 경우에도
+            // app_metadata.tenant_id가 비어 있으면 RLS(tenant_id())가 전부 막힌다.
+            // 따라서 현재 세션의 app_metadata.tenant_id를 확인하고 누락 시 자동으로 setTenant를 호출한다.
+            const ensureTenantAppMetadata = async () => {
+                try {
+                    if (!window.$supabase?.auth) return;
+                    const tenantName = window.$tenantName;
+                    if (!tenantName) return;
+
+                    const { data, error } = await window.$supabase.auth.getUser();
+                    if (error || !data?.user) return;
+
+                    const currentTenantId = data?.user?.app_metadata?.tenant_id;
+                    if (!currentTenantId || currentTenantId !== tenantName) {
+                        await this.backend.setTenant(tenantName);
+                    }
+                } catch (e) {
+                    // tenant 세팅 실패는 앱을 막지 않되, 이후 API 호출에서 RLS 에러가 날 수 있음
+                    console.warn('[tenant] ensureTenantAppMetadata failed:', e);
+                }
+            };
+
             if (window.$isTenantServer) {
                 await this.backend.checkDBConnection();
+                await ensureTenantAppMetadata();
                 this.loadScreen = true;
             } else {
                 const tenantId = await this.backend.getTenant(window.$tenantName);
@@ -137,9 +161,13 @@ export default {
                                 this.$router.push('/auth/login');
                             }
                         }
+                        // skipLoginCheck이 true여도(예: 이메일 인증 링크로 /auth/* 진입) tenant_id 누락을 복구해야 한다.
+                        await ensureTenantAppMetadata();
                         this.loadScreen = true;
                     }
                 } else {
+                    // localhost 환경도 tenant_id() 기반 RLS를 사용하므로, 세션이 있으면 tenant metadata를 보정한다.
+                    await ensureTenantAppMetadata();
                     this.loadScreen = true;
                 }
             }

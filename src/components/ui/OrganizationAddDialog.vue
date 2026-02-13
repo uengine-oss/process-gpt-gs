@@ -319,6 +319,14 @@ export default {
         }
     },
     watch: {
+        userList: {
+            immediate: true,
+            handler() {
+                // userList는 비동기로 채워질 수 있어,
+                // 최초 렌더 시 teamMembers가 비었다가 '팀 선택'을 한 번 눌러야 갱신되는 현상이 발생한다.
+                this.updateTeamData();
+            }
+        },
         teamInfo: {
             immediate: true,
             handler(newVal) {
@@ -332,13 +340,21 @@ export default {
             immediate: true,
             deep: true,
             handler(newVal) {
-                if (!this.selectedTeam && newVal && newVal.children) {
-                    const teams = newVal.children.filter(child => child.data && child.data.isTeam);
-                    if (teams.length > 0) {
-                        this.selectedTeam = teams[0];
-                        this.updateTeamData();
+                if (!newVal || !newVal.children) return;
+
+                const teams = newVal.children.filter(child => child.data && child.data.isTeam);
+                if (this.selectedTeam && this.selectedTeam.id) {
+                    // 부모에서 조직도 노드를 재생성/교체하면 selectedTeam 참조가 stale 해질 수 있어
+                    // 동일 id의 최신 노드로 다시 연결한다.
+                    const latest = teams.find(t => t.id === this.selectedTeam.id);
+                    if (latest) {
+                        this.selectedTeam = latest;
                     }
+                } else if (!this.selectedTeam && teams.length > 0) {
+                    this.selectedTeam = teams[0];
                 }
+
+                this.updateTeamData();
             }
         }
     },

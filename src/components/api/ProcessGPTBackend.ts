@@ -2852,11 +2852,20 @@ class ProcessGPTBackend implements Backend {
             if (!tenantId) {
                 return;
             }
-            const user: any = await this.getUserInfo();
-            if (!user || !user.uid) {
-                return false;
+
+            // NOTE:
+            // setTenant은 RLS/tenant 필터가 꼬여도 동작해야 하므로,
+            // public.users 조회(getUserInfo) 대신 auth.getUser()로 uid를 확보한다.
+            const { data: authData, error: authError } = await window.$supabase.auth.getUser();
+            if (authError) return false;
+            const user_id = authData?.user?.id;
+            if (!user_id) return false;
+
+            // 이미 동일 tenant_id가 세팅되어 있으면 불필요한 호출을 피한다.
+            const currentTenantId = (authData?.user as any)?.app_metadata?.tenant_id;
+            if (currentTenantId && currentTenantId === tenantId) {
+                return true;
             }
-            const user_id = user.uid;
             const request = {
                 input: {
                     user_id: user_id,

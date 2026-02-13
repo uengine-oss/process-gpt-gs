@@ -29,6 +29,7 @@
                 <v-text-field 
                     v-model="agent.endpoint" 
                     :label="$t('agentField.agentEndpoint')"
+                    :maxlength="maxLengthText"
                     class="mb-2"
                     @click:append-inner="fetchAgentData"
                 >
@@ -48,18 +49,21 @@
                 <v-text-field 
                     v-model="agent.name" 
                     :label="$t('agentField.agentName')" 
+                    :maxlength="maxLengthText"
                     :rules="nameRules"
                     class="mb-2"
                 ></v-text-field>
                 <v-textarea
                     v-model="agent.description" 
                     :label="$t('agentField.agentDescription')"
+                    :maxlength="maxLengthTextarea"
                     class="mb-2"
                     rows="3"
                 ></v-textarea>
                 <v-textarea
                     v-model="agent.skills"
                     :label="$t('agentField.agentSkills')"
+                    :maxlength="maxLengthTextarea"
                     rows="3"
                 ></v-textarea>
             </div>
@@ -68,12 +72,14 @@
                 <v-text-field 
                     v-model="agent.name" 
                     :label="$t('agentField.agentName')" 
+                    :maxlength="maxLengthText"
                     :rules="nameRules"
                     class="mb-2"
                 ></v-text-field>
                 <v-text-field 
                     v-model="agent.alias" 
                     :label="$t('agentField.alias')" 
+                    :maxlength="maxLengthText"
                     :rules="aliasRules"
                     @blur="checkAlias(agent.id)"
                     class="mb-2"
@@ -81,12 +87,14 @@
                 <v-textarea
                     v-model="agent.description" 
                     :label="$t('agentField.agentDescription')"
+                    :maxlength="maxLengthTextarea"
                     class="mb-2"
                     rows="3"
                 ></v-textarea>
                 <v-textarea
                     v-model="agent.skills" 
                     :label="$t('agentField.agentSkills')"
+                    :maxlength="maxLengthTextarea"
                     class="mb-2"
                     rows="3"
                 ></v-textarea>
@@ -96,22 +104,26 @@
                 <v-text-field 
                     v-model="agent.name" 
                     :label="$t('agentField.agentName')" 
+                    :maxlength="maxLengthText"
                     :rules="nameRules"
                     class="mb-2"
                 ></v-text-field>
                 <v-text-field 
                     v-model="agent.role" 
                     :label="$t('agentField.agentRole')" 
+                    :maxlength="maxLengthText"
                     class="mb-2"
                 ></v-text-field>
                 <v-text-field 
                     v-model="agent.goal" 
                     :label="$t('agentField.agentGoal')" 
+                    :maxlength="maxLengthText"
                     class="mb-2"
                 ></v-text-field>
                 <v-textarea
                     v-model="agent.persona" 
                     :label="$t('agentField.agentPersona')" 
+                    :maxlength="maxLengthTextarea"
                     class="mb-2"
                     rows="3"
                 ></v-textarea>
@@ -233,6 +245,9 @@ export default {
     data() {
         return {
             backend: null,
+            // 기본적인 텍스트 입력 길이 제한(넉넉하게)
+            maxLengthText: 1024,
+            maxLengthTextarea: 4000,
             agent: {
                 id: '',
                 name: '',

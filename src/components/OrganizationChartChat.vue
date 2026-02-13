@@ -296,15 +296,32 @@ export default {
             });
         },
         async updateNode() {
-            var putObj =  {
+            // 조직도(configuration: organization)는 key(고정) + tenant_id 유니크 제약이 있는 경우가 많아
+            // uuid 없이 upsert하면 2번째 저장부터 409(Conflict)가 발생할 수 있다.
+            // 따라서 최초 저장 시에도 uuid를 반드시 확보해서 이후 저장이 항상 동일 uuid로 upsert 되도록 한다.
+            if (!this.organizationChartId) {
+                try {
+                    const orgData = await this.getData(`configuration`, { match: { key: 'organization' } });
+                    if (orgData && orgData.uuid) {
+                        this.organizationChartId = orgData.uuid;
+                    }
+                } catch (e) {
+                    // ignore and fallback to local uuid
+                }
+                if (!this.organizationChartId) {
+                    this.organizationChartId = this.uuid();
+                }
+            }
+
+            const putObj =  {
+                uuid: this.organizationChartId,
                 key: 'organization',
+                tenant_id: window.$tenantName,
                 value: {
                     chart: this.organizationChart,
                 }
             };
-            if (this.organizationChartId) {
-                putObj.uuid = this.organizationChartId;
-            }
+
             await this.putObject("configuration", putObj);
         },
         async updateTeam(type, editNode, newTeam) {
